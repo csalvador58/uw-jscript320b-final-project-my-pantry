@@ -4,11 +4,11 @@ afterEach(() => {
   cleanup();
 });
 
-test('renders the PantryPage', () => {
-//   render(<PantryPage />);
-  const component = screen.getByTestId('pantry-page');
+test('renders the ReceipesPage', () => {
+  //   render(<RecipesPage />);
+  const component = screen.getByTestId('recipes-page');
   const searchBar = screen.getByTestId('search-bar');
-  const addButton = screen.getByTestId('pantry-add-button');
+  const addButton = screen.getByTestId('create-recipe-button');
 
   expect(component).toBeInDocument();
   expect(component).toContainElement(searchBar);

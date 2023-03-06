@@ -11,4 +11,5 @@ test('renders the HomePage', () => {
   const searchBar = screen.getByTestId('search-bar');
   expect(component).toBeInTheDocument();
   expect(component).toContainElement(searchBar);
+
 });

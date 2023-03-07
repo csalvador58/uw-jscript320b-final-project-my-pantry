@@ -4,8 +4,8 @@ afterEach(() => {
   cleanup();
 });
 
-test.skip('render the FormInputPage', () => {
-//   render(<FormInputPage />);
-  const component = screen.getByTestId('form-input');
+test.skip('renders the LoginPage', () => {
+  // render(<LoginPage />);
+  const component = screen.getByTestId('login-page');
   expect(component).toBeInTheDocument();
 });

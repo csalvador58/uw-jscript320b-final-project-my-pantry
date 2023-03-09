@@ -4,8 +4,10 @@ afterEach(() => {
   cleanup();
 });
 
-test.skip('render the FormInputPage', () => {
-//   render(<FormInputPage />);
-  const component = screen.getByTestId('form-input');
-  expect(component).toBeInTheDocument();
+describe('FormInputPage component', () => {
+  it.skip('renders edit page when pantry item edit is enabled', () => {
+    //   render(<FormInputPage />);
+    const component = screen.getByTestId('form-input');
+    expect(component).toBeInTheDocument();
+  });
 });

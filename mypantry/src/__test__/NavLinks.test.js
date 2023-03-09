@@ -7,7 +7,7 @@ afterEach(() => {
 });
 
 describe('NavLinks component', () => {
-  test(`renders the app's main navigation links`, () => {
+  it(`renders the app's main navigation links`, () => {
     render(
       <BrowserRouter basename='/'>
         <NavLinks />

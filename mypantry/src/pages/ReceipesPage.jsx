@@ -1,7 +1,7 @@
 import React from 'react';
 
 function RecipesPage() {
-  return <div>Recipes Page</div>;
+  return <div data-testid='recipes-page'>Recipes Page</div>;
 }
 
 export default RecipesPage;

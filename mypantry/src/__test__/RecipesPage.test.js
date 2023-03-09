@@ -1,16 +1,19 @@
 import { render, screen, cleanup } from '@testing-library/react';
+import RecipesPage from '../pages/ReceipesPage';
 
 afterEach(() => {
   cleanup();
 });
 
-test.skip('renders the ReceipesPage', () => {
-  //   render(<RecipesPage />);
-  const component = screen.getByTestId('recipes-page');
-  const searchBar = screen.getByTestId('search-bar');
-  const addButton = screen.getByTestId('create-recipe-button');
+describe('ReceipesPage component', () => {
+  it('renders the Recipes page', () => {
+    render(<RecipesPage />);
+    const component = screen.getByTestId('recipes-page');
+    // const searchBar = screen.getByTestId('search-bar');
+    // const addButton = screen.getByTestId('create-recipe-button');
 
-  expect(component).toBeInDocument();
-  expect(component).toContainElement(searchBar);
-  expect(component).toContainElement(addButton);
+    expect(component).toBeInTheDocument();
+    // expect(component).toContainElement(searchBar);
+    // expect(component).toContainElement(addButton);
+  });
 });

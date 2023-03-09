@@ -1,15 +1,22 @@
 import { render, screen, cleanup } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
+import NavLinks from '../ui/NavLinks';
 
 afterEach(() => {
   cleanup();
 });
 
-test.skip('renders the NavFooter component', () => {
-    // render(<NavLinks />);
-    const component = screen.getTestById('nav-footer');
-    const links = screen.getByTestId('nav-links')
+describe('NavLinks component', () => {
+  test(`renders the app's main navigation links`, () => {
+    render(
+      <BrowserRouter basename='/'>
+        <NavLinks />
+      </BrowserRouter>
+    );
+    const component = screen.getByTestId('nav-links');
     expect(component).toBeInTheDocument();
-    expect(links).getByText(/Home/i);
-    expect(links).getByText(/Pantry/i);
-    expect(links).getByText(/Recipe/i);
-})
+    expect(component).toHaveTextContent(/Home/i);
+    expect(component).toHaveTextContent(/Pantry/i);
+    expect(component).toHaveTextContent(/Recipes/i);
+  });
+});

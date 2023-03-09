@@ -12,8 +12,19 @@ h1.main-app-bar-title {
   text-align: center;
 }
 
-div.align-center {
+div.align-left {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+}
+
+div.align-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }

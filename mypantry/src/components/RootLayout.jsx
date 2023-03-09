@@ -1,10 +1,16 @@
 import React from 'react';
-import MainAppBar from '../ui/MainAppBar';
+import { Outlet } from 'react-router-dom';
+import MyPantryBar from '../ui/MyPantryBar';
+import NavLinks from '../ui/NavLinks';
 
 function RootLayout() {
   return (
     <div data-testid='root-layout'>
-      <MainAppBar title='My Pantry'/>
+      <MyPantryBar />
+      <main>
+        <Outlet />
+      </main>
+      <NavLinks />
     </div>
   );
 }

@@ -2,9 +2,9 @@ import * as React from 'react';
 import { AppBar, Avatar, Grid, IconButton, Tooltip } from '@mui/material/';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import classes from '../css/MainAppBar.module.css';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function MainAppBar({ title }) {
+function MyAppBar() {
   return (
     <>
       <AppBar position='static' data-testid='main-app-bar'>
@@ -14,15 +14,16 @@ function MainAppBar({ title }) {
           columns={12}
         >
           <Grid item xs={2} sm={2} md={3}>
-            <div className={classes['align-center']}>
-              <IconButton
-                size='large'
-                aria-label='Return to home page'
-                color='inherit'
-                // onClick={}
-              >
-                <FreeBreakfastIcon />
-              </IconButton>
+            <div className={classes['align-left']}>
+              <Link to='/' className={classes.link}>
+                <IconButton
+                  size='large'
+                  aria-label='Return to home page'
+                  color='inherit'
+                >
+                  <FreeBreakfastIcon />
+                </IconButton>
+              </Link>
             </div>
           </Grid>
           <Grid item xs={8} sm={8} md={6}>
@@ -30,11 +31,11 @@ function MainAppBar({ title }) {
               className={classes['main-app-bar-title']}
               data-testid='title-display'
             >
-              {title}
+              My Pantry
             </h1>
           </Grid>
           <Grid item xs={2} sm={2} md={3}>
-            <div className={classes['align-center']}>
+            <div className={classes['align-right']}>
               <Tooltip title='Show menu'>
                 <IconButton
                   size='large'
@@ -56,8 +57,4 @@ function MainAppBar({ title }) {
     </>
   );
 }
-export default MainAppBar;
-
-MainAppBar.propTypes = {
-  title: PropTypes.string.isRequired,
-};
+export default MyAppBar;

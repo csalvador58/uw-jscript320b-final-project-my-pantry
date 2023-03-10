@@ -8,13 +8,13 @@ function UserProvider({ children }) {
     setUserState((previousState) => !previousState);
   };
 
-  const userContext = {
+  const storedUserContext = {
     isLoggedIn: userState,
     updateLogin: updateLoginState,
   };
 
   return (
-    <UserContext.Provider value={userContext}>{children}</UserContext.Provider>
+    <UserContext.Provider value={storedUserContext}>{children}</UserContext.Provider>
   );
 }
 

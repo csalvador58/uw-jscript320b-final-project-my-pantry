@@ -15,7 +15,11 @@ function HomePage() {
           <h2 data-testid='login-form'>Login Screen</h2>
         </>
       )}
-      {user.isLoggedIn && <div data-testid='home-page'>Some content</div>}
+      {user.isLoggedIn && (
+        <>
+          <div data-testid='home-page'>Homepage</div>
+        </>
+      )}
       <button onClick={loginHandler}>Toggle Login</button>
     </div>
   );

@@ -24,6 +24,14 @@ div.align-right {
   justify-content: right;
 }
 
+.visible{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
 .link {
   text-decoration: none;
   color: inherit;

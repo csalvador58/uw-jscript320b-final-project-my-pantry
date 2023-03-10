@@ -3,10 +3,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material';
 import RootLayout from './components/RootLayout';
 import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage'
+import HomePage from './pages/HomePage';
 import PantryPage from './pages/PantryPage';
 import RecipesPage from './pages/ReceipesPage';
 import FormInputPage from './pages/FormInputPage';
+import UserProvider from './store/UserProvider';
 
 const theme = createTheme({
   palette: {
@@ -42,7 +43,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
     </ThemeProvider>
   );
 }

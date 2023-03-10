@@ -6,12 +6,13 @@ afterEach(() => {
 });
 
 describe('HomePage component', () => {
-  it('renders the home page', () => {
+  it('renders the login form if not logged in', () => {
     render(<HomePage />);
-
     const component = screen.getByTestId('homepage');
-    // const searchBar = screen.getByTestId('search-bar');
+    const login = screen.getByTestId('login-form');
     expect(component).toBeInTheDocument();
-    // expect(component).toContainElement(searchBar);
+    expect(component).toContainElement(login);
   });
+
+  it('renders the home page if user is logged in', () => {})
 });

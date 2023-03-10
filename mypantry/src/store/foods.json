@@ -1,0 +1,40 @@
+[
+  {
+    "value": "protein",
+    "label": "protein"
+  },
+  {
+    "value": "grain",
+    "label": "grain"
+  },
+  {
+    "value": "fruit",
+    "label": "fruit"
+  },
+  {
+    "value": "vegetable",
+    "label": "vegetable"
+  },
+
+  {
+    "value": "dairy",
+    "label": "dairy"
+  },
+
+  {
+    "value": "beverage",
+    "label": "beverage"
+  },
+  {
+    "value": "condiment",
+    "label": "condiment"
+  },
+  {
+    "value": "oils",
+    "label": "oils & solid fats"
+  },
+  {
+    "value": "sugars",
+    "label": "sugars"
+  }
+]

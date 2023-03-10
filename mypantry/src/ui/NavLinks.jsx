@@ -22,7 +22,7 @@ function NavLinks() {
           </Link>
         </li>
         {/* Add conditional render */}
-        {false && <li>
+        {true && <li>
           <Link className={classes.link} to='/edit'>
             Edit
           </Link>

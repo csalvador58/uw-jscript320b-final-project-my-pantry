@@ -36,3 +36,4 @@ describe('HomePage component', () => {
     expect(component).toContainElement(home);
   });
 });
+

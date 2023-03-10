@@ -1,0 +1,22 @@
+div.center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+h2.title {
+  margin: 2.5rem 0 0.8rem 0;
+  text-align: center;
+}
+
+.form-input-container {
+  min-width: 345px;
+  margin-top: -3rem;
+  width: 100%;
+}
+
+.form-input-grid {
+  background-color: 'inherit';
+  padding: 2rem;
+  opacity: 0.95;
+}

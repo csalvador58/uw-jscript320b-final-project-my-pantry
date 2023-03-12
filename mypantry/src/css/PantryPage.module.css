@@ -1,0 +1,14 @@
+div.outline {
+    outline: black dashed 2px;
+    height: 400px;
+    width: 80%;
+    margin: 3rem auto 0 auto;
+    text-align: center;
+}
+
+div.drop-area {
+    outline: red dashed 2px;
+    height: 100px;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+}

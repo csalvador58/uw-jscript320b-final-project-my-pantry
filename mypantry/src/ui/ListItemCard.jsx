@@ -1,12 +1,12 @@
 import React from 'react';
-import {useDraggable} from '@dnd-kit/core'
-// import { useSortable } from '@dnd-kit/sortable';
+// import {useDraggable} from '@dnd-kit/core'
+import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import classes from '../css/ListItemCard.module.css'
 
 function ListItemCard(props) {
   const { attributes, listeners, setNodeRef, transform, transition } =
-    useDraggable({ id: props.id, data: [{ type: "fruit"}, {addinfo: "hello"}] });
+  useSortable({ id: props.id, data: [{ type: "fruit"}, {addinfo: "hello"}] });
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,

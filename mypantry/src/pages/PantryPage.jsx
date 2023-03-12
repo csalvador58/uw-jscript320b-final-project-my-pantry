@@ -21,6 +21,7 @@ import ListItemCard from '../ui/ListItemCard';
 function PantryPage() {
   const [items, setItems] = useState(['Apple', 'Banana', 'Pear']);
   const [activeId, setActiveId] = useState(null);
+  const [draggedOverTrash, setDraggedOverTrash] = useState(false);
 
   const sensors = useSensors(
     useSensor(MouseSensor, {
@@ -65,20 +66,20 @@ function PantryPage() {
     //   console.log({over})
     // }
 
-    if (over && active.id !== over.id) {
-      if (over.id === 'A1') {
-        // setItems((items) => items.filter((x) => active.id !== x));
-        console.log(active.id + " was dropped in the drop area")
-      }
-      else
-        setItems((item) => {
-          const activeIndex = item.indexOf(active.id);
-          const overIndex = item.indexOf(over.id);
-          // console.log(arrayMove(item, activeIndex, overIndex));
-          return arrayMove(item, activeIndex, overIndex);
-        });
+    if (over.id === 'A1') {
+      // setItems((items) => items.filter((x) => active.id !== x));
+      setDraggedOverTrash(true);
+      console.log(active.id + ' was dropped in the drop area');
     }
-
+    if (draggedOverTrash) setDraggedOverTrash(false);
+    if (over && active.id !== over.id && active.id !== 'A1') {
+      setItems((item) => {
+        const activeIndex = item.indexOf(active.id);
+        const overIndex = item.indexOf(over.id);
+        // console.log(arrayMove(item, activeIndex, overIndex));
+        return arrayMove(item, activeIndex, overIndex);
+      });
+    }
   };
 
   return (
@@ -94,7 +95,7 @@ function PantryPage() {
           onDragStart={handleDragStart}
           onDragEnd={handleDragEnd}
         >
-          <SortableContext items={items} strategy={rectSortingStrategy}>
+          <SortableContext items={items} strategy={verticalListSortingStrategy}>
             {items.map((item) => (
               <ListItemCard key={item} id={item} />
             ))}
@@ -110,7 +111,7 @@ const DropArea = (props) => {
   const { setNodeRef } = useDroppable({ id: 'A1' });
 
   return (
-    <SortableContext items={props.items} strategy={rectSortingStrategy}>
+    <SortableContext items={props.items} strategy={verticalListSortingStrategy}>
       <div ref={setNodeRef} className={classes['drop-area']}>
         Drop Area
       </div>

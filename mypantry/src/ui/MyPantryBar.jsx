@@ -57,9 +57,7 @@ function MyAppBar() {
             </div>
           </Grid>
         </Grid>
-        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <NavLinks />
-        </Box>
       </div>
     </AppBar>
   );

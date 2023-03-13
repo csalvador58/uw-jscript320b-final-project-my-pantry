@@ -12,7 +12,7 @@ import {
 } from '@dnd-kit/core';
 import {
   arrayMove,
-  rectSortingStrategy,
+  // rectSortingStrategy,
   SortableContext,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
@@ -23,6 +23,10 @@ function PantryPage() {
   const [items, setItems] = useState(['Apple', 'Banana', 'Pear']);
   const [activeId, setActiveId] = useState(null);
   const [draggedOverTrash, setDraggedOverTrash] = useState(false);
+
+
+  // temp
+  console.log(activeId)
 
   const sensors = useSensors(
     useSensor(MouseSensor, {

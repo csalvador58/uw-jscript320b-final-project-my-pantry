@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AppBar, Avatar, Box, Grid, IconButton, Tooltip } from '@mui/material/';
+import { AppBar, Avatar, Grid, IconButton, Tooltip } from '@mui/material/';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import classes from '../css/MyPantryBar.module.css';
 import { Link } from 'react-router-dom';

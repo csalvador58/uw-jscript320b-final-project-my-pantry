@@ -85,8 +85,9 @@ function PantryPage() {
 
   return (
     <>
-      <div data-testid='pantry-page'>Pantry Page</div>
-      <SearchBar search='Pantry' />
+      <div className={classes.center} data-testid='pantry-page'>
+        <SearchBar search='Pantry' />
+      </div>
 
       <div className={classes.outline}>
         <p>Fruits</p>

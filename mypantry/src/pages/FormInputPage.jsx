@@ -40,6 +40,8 @@ function FormInputPage() {
     },
   });
 
+  const handleClose = () => {};
+
   return (
     <Box data-testid='form-input' className={classes['form-input-container']}>
       <form onSubmit={formik.handleSubmit}>
@@ -152,7 +154,7 @@ function FormInputPage() {
           <Button color='primary' variant='contained' type='submit'>
             Submit
           </Button>
-          <Button variant='contained' color='secondary' onClick={''}>
+          <Button variant='contained' color='secondary' onClick={handleClose}>
             Close
           </Button>
         </div>

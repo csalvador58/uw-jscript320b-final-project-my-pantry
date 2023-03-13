@@ -1,0 +1,22 @@
+[
+  {
+    "value": "gram",
+    "label": "(g) grams"
+  },
+  {
+    "value": "cup",
+    "label": "(c) cups"
+  },
+  {
+    "value": "ounce",
+    "label": "(fl oz) fluid ounce"
+  },
+  {
+    "value": "pound",
+    "label": "(lb) pounds"
+  },
+  {
+    "value": "piece",
+    "label": "(pc) piece"
+  }
+]

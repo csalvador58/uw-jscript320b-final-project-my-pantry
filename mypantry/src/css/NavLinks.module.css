@@ -1,0 +1,17 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  padding: 1rem;
+  color: inherit;
+}
+div.nav-link-container {
+  padding: 0.2rem;
+}

@@ -1,0 +1,6 @@
+.list-item-card {
+  margin: 1rem;
+  padding: 1rem;
+  outline: green solid 2px;
+  touch-action: auto;
+}

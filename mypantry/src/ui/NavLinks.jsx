@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from '../css/NavLinks.module.css';
 import { Link } from 'react-router-dom';
+import { Box } from '@mui/material';
 
 function NavLinks() {
   return (
-    <div className={classes.bottom}>
+    <Box sx={{backgroundColor: 'primary.main'}} className={classes['nav-link-container']}>
       <ul data-testid='nav-links' className={classes.links}>
         <li>
           <Link className={classes.link} to='/'>
@@ -28,7 +29,7 @@ function NavLinks() {
           </Link>
         </li>}
       </ul>
-    </div>
+    </Box>
   );
 }
 

@@ -1,9 +1,3 @@
-.bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .links {
   display: flex;
   flex-direction: row;
@@ -17,4 +11,7 @@
   text-decoration: none;
   padding: 1rem;
   color: inherit;
+}
+div.nav-link-container {
+  padding: 0.2rem;
 }

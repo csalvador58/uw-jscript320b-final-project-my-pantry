@@ -12,3 +12,9 @@ div.drop-area {
     width: 80%;
     margin: 2rem auto 0 auto;
 }
+
+div.center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }

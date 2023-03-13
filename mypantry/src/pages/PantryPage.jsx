@@ -16,6 +16,7 @@ import {
   SortableContext,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
+import { Button } from '@mui/material';
 import ListItemCard from '../ui/ListItemCard';
 
 function PantryPage() {
@@ -102,6 +103,11 @@ function PantryPage() {
           </SortableContext>
           <DropArea items={items} />
         </DndContext>
+      </div>
+      <div className={classes.center}>
+        <Button color='secondary' variant='contained' type='submit'>
+          Add To Pantry
+        </Button>
       </div>
     </>
   );

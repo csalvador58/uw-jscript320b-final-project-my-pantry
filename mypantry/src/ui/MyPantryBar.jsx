@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
-import { AppBar, Avatar, Grid, IconButton, Tooltip } from '@mui/material/';
+import { AppBar, Avatar, Box, Grid, IconButton, Tooltip } from '@mui/material/';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
-import classes from '../css/MainAppBar.module.css';
+import classes from '../css/MyPantryBar.module.css';
 import { Link } from 'react-router-dom';
 import UserContext from '../store/UserContext';
+import NavLinks from './NavLinks';
 
 function MyAppBar() {
   const user = useContext(UserContext);
 
   return (
     <AppBar position='static' data-testid='main-app-bar'>
-      <div style={{visibility: user.isLoggedIn ? 'visible' : 'hidden' }}>
+      <div style={{ visibility: user.isLoggedIn ? 'visible' : 'hidden' }}>
         <Grid
           className={classes['main-app-bar-container']}
           container
@@ -56,6 +57,9 @@ function MyAppBar() {
             </div>
           </Grid>
         </Grid>
+        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <NavLinks />
+        </Box>
       </div>
     </AppBar>
   );

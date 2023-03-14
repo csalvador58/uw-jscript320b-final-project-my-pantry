@@ -21,6 +21,7 @@ UserContext.PropTypes = {
   updateRecipe: PropTypes.func.isRequired,
 };
 
+// Shape of actionObject
 //  action: {
 //   type: 'add' | 'update' | 'delete'
 //   data: {

@@ -34,11 +34,15 @@ export function updateRecipeHandler(action, state, setter) {
 }
 
 function addToCollection(data) {
+  // set object reference
+  const objectRef =
+    data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
+
   // Check if already exists
   const setCollection = collection(db, data.collection);
   const queryCollection = query(
     setCollection,
-    where('name', '==', data.object.name)
+    where('name', '==', objectRef.name)
   );
 
   const snapshot = getDocs(queryCollection);
@@ -47,7 +51,7 @@ function addToCollection(data) {
     .then((response) => {
       if (response.empty) {
         const setCollection = collection(db, data.collection);
-        const addDocToCollection = addDoc(setCollection, data.object);
+        const addDocToCollection = addDoc(setCollection, objectRef);
 
         addDocToCollection
           .then((response) => {
@@ -85,6 +89,7 @@ function addToCollection(data) {
 // }
 
 function queryAllCollection(data, setter) {
+
   // returns all docs in collection
   console.log('query');
   console.log(data.collection);
@@ -107,11 +112,15 @@ function queryAllCollection(data, setter) {
 }
 
 function updateDocInCollection(data) {
+  // set object reference
+  const objectRef =
+    data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
+
   // update a single value of a field of a doc in a collection
   const setCollection = collection(db, data.collection);
   const queryCollection = query(
     setCollection,
-    where('name', '==', data.object.name)
+    where('name', '==', objectRef.name)
   );
 
   const snapshot = getDocs(queryCollection);
@@ -121,7 +130,10 @@ function updateDocInCollection(data) {
       if (!response.empty) {
         const docRef = doc(db, data.collection, response.docs[0].id);
 
-        const updateDocRef = updateDoc(docRef, data.update);
+        // set object reference
+        const updateRef =
+          data.collection === 'pantry' ? data.updatePantryObj : data.updateRecipeObj;
+        const updateDocRef = updateDoc(docRef, updateRef);
         updateDocRef.then(console.log('Update successful')).catch((e) => {
           console.error('Error reading: ' + e);
         });
@@ -133,11 +145,15 @@ function updateDocInCollection(data) {
 }
 
 function deleteDocInCollection(data) {
+  // set object reference
+  const objectRef =
+    data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
+
   // delete a single doc in a collection
   const setCollection = collection(db, data.collection);
   const queryCollection = query(
     setCollection,
-    where('name', '==', data.object.name)
+    where('name', '==', objectRef.name)
   );
 
   const snapshot = getDocs(queryCollection);

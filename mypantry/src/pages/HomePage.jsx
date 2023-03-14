@@ -11,19 +11,27 @@ function HomePage() {
     e.preventDefault();
 
     const actionObject = {
-      type: 'add',
+      type: 'delete',
       data: {
-        collection: 'pantry',
-        object: {
-          name: 'pepsi',
-          qty: 1,
-          unit: 'gallon',
+        collection: 'recipe',
+        pantryObj: {
+          name: 'crackers',
+          qty: 10,
+          unit: 'case',
+          favorite: true,
         },
-        update: {},
+        updatePantryObj: { qty: 10, unit: 'case' },
+        recipeObj: {
+          name: 'sushi',
+          ingredients: [
+            { name: 'rice', qty: 1, unit: 'cup' },
+            { name: 'salmon', qty: 3, unit: 'pieces' },
+          ],
+          favorite: true,
+        },
+        updateRecipeObj: { ingredients: [{ name: 'rice', qty: 3, unit: 'cup' },] },
       },
       isIngredient: false,
-      ingredients: [],
-      favorite: false,
     };
 
     user.updatePantry(actionObject);
@@ -97,7 +105,7 @@ function HomePage() {
           qty: 1,
           unit: 'gallon',
         },
-        update: { qty: 10 , unit: 'cans' },
+        update: { qty: 10, unit: 'cans' },
       },
       isIngredient: false,
       ingredients: [],

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 function UserProvider({ children }) {
   const [userState, setUserState] = useState(false);
-  const [pantry, setPantry] = useState([]);
-  const [recipe, setRecipe] = useState([]);
+  // const [pantry, setPantry] = useState([]);
+  // const [recipe, setRecipe] = useState([]);
 
   const updateLoginState = () => {
     setUserState((previousState) => !previousState);

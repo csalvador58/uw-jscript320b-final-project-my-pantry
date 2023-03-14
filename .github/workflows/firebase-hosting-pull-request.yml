@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MY_PANTRY_5BFBC }}'
           projectId: my-pantry-5bfbc
+          entryPoint: ./mypantry

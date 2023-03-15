@@ -6,10 +6,15 @@ function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const isLoggedIn = auth.currentUser;
-    if (isLoggedIn) {
-      navigate('/main');
-    }
+    // if (auth.currentUser) {
+    //   navigate('/main');
+    // }
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        navigate('/main');
+      }
+    });
+    return unsubscribe;
   }, [navigate]);
 
   return <div data-testid='login-page'>Login Page</div>;

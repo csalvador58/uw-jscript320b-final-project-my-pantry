@@ -18,7 +18,7 @@ function NavLinks() {
       }
     });
     return unsubscribe;
-  }, [user, navigate]);
+  }, [navigate]);
 
   return (
     <Box

@@ -26,28 +26,24 @@ export function updatePantryHandler(action, setter) {
   execute();
 }
 
-export function updateRecipeHandler(action, state, setter) {
-  //   if (action.type === 'add') {
-  //     const response = addToCollection(action.data);
-  //     setter(response);
-  //   }
-}
-
 function addToCollection(data) {
-  
+  if (!data.uid) {
+    // console.log('Error with uid');
+    return;
+  }
+
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);
 
-  // setup subcollection
-  const subCollection =
-    data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
+  // setup sub-collection
+  const subCollection = 'pantry';
 
-  // Check if already exists
+  // Query all docs in sub-collection with pantry name
   const subCollectionRef = collection(userDocRef, subCollection);
   const queryCollection = query(
     subCollectionRef,
-    where('name', '==', subCollection.name)
+    where('name', '==', data.pantryObj.name)
   );
 
   const snapshot = getDocs(queryCollection);
@@ -56,75 +52,62 @@ function addToCollection(data) {
     .then((response) => {
       if (response.empty) {
         const setCollection = collection(userDocRef, subCollection);
-        const addDocToCollection = addDoc(setCollection, subCollection);
-
+        const addDocToCollection = addDoc(setCollection, data.pantryObj);
         addDocToCollection
           .then((response) => {
-            console.log('Added document with ID: ', response.id);
+            alert('Pantry item has been added');
           })
           .catch((e) => {
-            console.error('Error adding document: ' + e);
+            alert('Error adding document: ' + e);
           });
       } else {
-        console.log('Item already exists');
+        alert('Item already exists');
       }
     })
     .catch((e) => {
-      console.error('Error reading: ' + e);
+      alert('Error reading: ' + e);
     });
 }
 
-// function queryCollection(data) {
-//   // returns matching doc in collection
-//   const setQueryCollection = query(
-//     collection(db, data.collection),
-//     where('name', '==', data.object.name)
-//   );
-//   const snapshot = getDocs(setQueryCollection);
-
-//   snapshot
-//     .then((data) => {
-//       data.forEach((doc) => {
-//         console.log(doc.id, ' => ', doc.data());
-//       });
-//     })
-//     .catch((e) => {
-//       console.error('Error reading: ' + e);
-//     });
-// }
-
 function queryAllCollection(data, setter) {
-  // returns all docs in collection
-  console.log('query');
-  console.log(data.collection);
-  const setQueryCollection = query(collection(db, data.collection));
-  const snapshot = getDocs(setQueryCollection);
+  // setup authorized-user collection
+  const userCollection = collection(db, 'authorized-users');
+  const userDocRef = doc(userCollection, data.uid);
+
+  // setup sub-collection
+  const subCollection = 'pantry';
+
+  // Query all docs in sub-collection
+  const subCollectionRef = collection(userDocRef, subCollection);
+  const snapshot = getDocs(subCollectionRef);
 
   snapshot
     .then((response) => {
-      const namesArray = [];
+      const pantryArray = [];
       response.forEach((doc) => {
         const item = doc.data();
-        namesArray.push(item.name);
+        pantryArray.push(item);
       });
-      console.log(namesArray);
-      setter(namesArray);
+      setter(pantryArray);
     })
     .catch((e) => {
-      console.error('Error reading: ' + e);
+      alert('Error reading: ' + e);
     });
 }
 
 function updateDocInCollection(data) {
-  // set object reference
-  const objectRef =
-    data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
+  // setup authorized-user collection
+  const userCollection = collection(db, 'authorized-users');
+  const userDocRef = doc(userCollection, data.uid);
 
-  // update a single value of a field of a doc in a collection
-  const setCollection = collection(db, data.collection);
+  // setup sub-collection
+  const subCollection = 'pantry';
+
+  // Query a matching doc in sub-collection with pantry name
+  const subCollectionRef = collection(userDocRef, subCollection);
   const queryCollection = query(
-    setCollection,
-    where('name', '==', objectRef.name)
+    subCollectionRef,
+    where('name', '==', data.pantryObj.name)
   );
 
   const snapshot = getDocs(queryCollection);
@@ -132,34 +115,33 @@ function updateDocInCollection(data) {
   snapshot
     .then((response) => {
       if (!response.empty) {
-        const docRef = doc(db, data.collection, response.docs[0].id);
+        const docRef = doc(userDocRef, subCollection, response.docs[0].id);
 
         // set object reference
-        const updateRef =
-          data.collection === 'pantry'
-            ? data.updatePantryObj
-            : data.updateRecipeObj;
-        const updateDocRef = updateDoc(docRef, updateRef);
-        updateDocRef.then(console.log('Update successful')).catch((e) => {
-          console.error('Error reading: ' + e);
+        const updateDocRef = updateDoc(docRef, data.pantryObj);
+        updateDocRef.then(alert('Update successful')).catch((e) => {
+          alert('Error reading: ' + e);
         });
       }
     })
     .catch((e) => {
-      console.error('Error reading: ' + e);
+      alert('Error reading: ' + e);
     });
 }
 
 function deleteDocInCollection(data) {
-  // set object reference
-  const objectRef =
-    data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
+  // setup authorized-user collection
+  const userCollection = collection(db, 'authorized-users');
+  const userDocRef = doc(userCollection, data.uid);
+
+  // setup sub-collection
+  const subCollection = 'pantry';
 
   // delete a single doc in a collection
-  const setCollection = collection(db, data.collection);
+  const subCollectionRef = collection(userDocRef, subCollection);
   const queryCollection = query(
-    setCollection,
-    where('name', '==', objectRef.name)
+    subCollectionRef,
+    where('name', '==', data.pantryObj.name)
   );
 
   const snapshot = getDocs(queryCollection);
@@ -167,16 +149,16 @@ function deleteDocInCollection(data) {
   snapshot
     .then((response) => {
       if (!response.empty) {
-        const docRef = doc(db, data.collection, response.docs[0].id);
+        const docRef = doc(userDocRef, subCollection, response.docs[0].id);
 
         const deleteDocRef = deleteDoc(docRef);
 
-        deleteDocRef.then(console.log('Delete successful')).catch((e) => {
-          console.error('Error deleting: ' + e);
+        deleteDocRef.then(alert('Delete successful')).catch((e) => {
+          alert('Error deleting: ' + e);
         });
       }
     })
     .catch((e) => {
-      console.error('Error reading: ' + e);
+      alert('Error reading: ' + e);
     });
 }

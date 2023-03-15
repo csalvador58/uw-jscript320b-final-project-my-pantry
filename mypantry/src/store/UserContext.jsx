@@ -69,17 +69,7 @@ UserContext.PropTypes = {
 //       unit: values.units,
 //       favorite: values.favorite,
 //     },
-//     updatePantryObj: {},
-//     recipeObj: {
-//       name: '',
-//       ingredients: [],
-//       favorite: false,
-//     },
-//     updateRecipeObj: {
-//       ingredients: [],
-//     },
 //   },
-//   isIngredient: false,
 // };
 
 
@@ -119,4 +109,86 @@ UserContext.PropTypes = {
 //     .catch((e) => {
 //       console.error('Error reading: ' + e);
 //     });
+// }
+
+
+// Newest
+// function addToCollection(data) {
+//   console.log(data.uid);
+//   if (!data.uid) {
+//     console.log('Error with uid');
+//     return;
+//   }
+
+//   // setup authorized-user collection
+//   const userCollection = collection(db, 'authorized-users');
+//   const userDocRef = doc(userCollection, data.uid);
+
+//   // setup sub-collection
+//   const subCollection = 'pantry';
+
+//   // Query all docs in sub-collection with pantry name
+//   const subCollectionRef = collection(userDocRef, subCollection);
+//   const queryCollection = query(
+//     subCollectionRef,
+//     where('name', '==', data.pantryObj.name)
+//   );
+
+//   const snapshot = getDocs(queryCollection);
+
+//   snapshot
+//     .then((response) => {
+//       if (response.empty) {
+//         const setCollection = collection(userDocRef, subCollection);
+//         const addDocToCollection = addDoc(setCollection, data.pantryObj);
+
+//         addDocToCollection
+//           .then((response) => {
+//             alert('Added document with ID: ', response.id);
+//           })
+//           .catch((e) => {
+//             alert('Error adding document: ' + e);
+//           });
+//       } else {
+//         alert('Item already exists');
+//       }
+//     })
+//     .catch((e) => {
+//       alert('Error reading: ' + e);
+//     });
+// }
+
+
+// // set object reference
+// const objectRef =
+// data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
+
+// // update a single value of a field of a doc in a collection
+// const setCollection = collection(db, data.collection);
+// const queryCollection = query(
+// setCollection,
+// where('name', '==', objectRef.name)
+// );
+
+// const snapshot = getDocs(queryCollection);
+
+// snapshot
+// .then((response) => {
+//   if (!response.empty) {
+//     const docRef = doc(db, data.collection, response.docs[0].id);
+
+//     // set object reference
+//     const updateRef =
+//       data.collection === 'pantry'
+//         ? data.updatePantryObj
+//         : data.updateRecipeObj;
+//     const updateDocRef = updateDoc(docRef, updateRef);
+//     updateDocRef.then(console.log('Update successful')).catch((e) => {
+//       console.error('Error reading: ' + e);
+//     });
+//   }
+// })
+// .catch((e) => {
+//   console.error('Error reading: ' + e);
+// });
 // }

@@ -10,9 +10,6 @@ function UserProvider({ children }) {
 
   const updateLoginState = (status) => {
     setUserState(status);
-
-    console.log('Is Logged in?: ')
-    console.log(userState)
   };
 
   // const updatePantryState = (action) => {
@@ -20,6 +17,7 @@ function UserProvider({ children }) {
   // };
   const updatePantryState = (action) => {
     updatePantryHandler(action, setPantryArray);
+    console.log(pantryArray);
   };
   const updateRecipeState = (action) => {
     updatePantryHandler(action, setRecipeArray);

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import UserContext from '../store/UserContext';
 import {
   Box,
@@ -18,7 +18,7 @@ import unitOfMeasure from '../store/units.json';
 import foodType from '../store/foods.json';
 import classes from '../css/FormInputPage.module.css';
 import { auth } from '../firebase';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 
 const validationSchema = yup.object({
   item: yup.string('Name of pantry item').required('Please enter a name'),
@@ -28,61 +28,51 @@ const validationSchema = yup.object({
   favorite: yup.string('Favorite?').required('Favorite?'),
 });
 
+const defaultFormikValues = {
+  item: '',
+  type: '',
+  quantity: '',
+  units: '',
+  favorite: false,
+};
+
 function FormInputPage() {
-  const [user] = useAuthState(auth);
+  const navigate = useNavigate();
   const appUser = useContext(UserContext);
 
   const formik = useFormik({
-    initialValues: {
-      item: '',
-      type: '',
-      quantity: '',
-      units: '',
-      favorite: false,
-    },
+    initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // console.log(values);
-      // alert(JSON.stringify(values, null, 2));
-      console.log(values);
-      console.log(values.item);
-      console.log(values.type);
-      console.log(values.quantity);
-      console.log(values.units);
-      console.log(values.favorite);
-      // create action object:
-      if (user) {
-        const userUID = user.id;
-        const actionObject = {
-          type: 'add',
-          data: {
-            uid: userUID,
-            collection: 'pantry',
-            pantryObj: {
-              name: values.item,
-              type: values.type,
-              qty: values.quantity,
-              unit: values.units,
-              favorite: values.favorite,
-            },
-            updatePantryObj: {},
-            recipeObj: {
-              name: '',
-              ingredients: [],
-              favorite: false,
-            },
-            updateRecipeObj: {
-              ingredients: [],
-            },
+      // get auth user id and create action object
+      const userUID = auth.currentUser.uid;
+
+      const actionObject = {
+        type: 'update',
+        data: {
+          uid: userUID,
+          collection: 'pantry',
+          pantryObj: {
+            name: values.item,
+            type: values.type,
+            qty: values.quantity,
+            unit: values.units,
+            favorite: values.favorite,
           },
-          isIngredient: false,
-        };
-        appUser.updatePantry(actionObject);
-      }
+        },
+      };
+      appUser.updatePantry(actionObject);
     },
   });
 
-  const handleClose = () => {};
+  const handleClose = () => {
+    formik.values.item = '';
+    formik.values.type = '';
+    formik.values.quantity = '';
+    formik.values.units = '';
+    formik.values.favorite = false;
+    navigate('/pantry');
+  };
 
   return (
     <Box data-testid='form-input' className={classes['form-input-container']}>

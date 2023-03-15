@@ -8,8 +8,11 @@ function UserProvider({ children }) {
   const [pantryArray, setPantryArray] = useState([]);
   const [recipeArray, setRecipeArray] = useState([]);
 
-  const updateLoginState = () => {
-    setUserState((previousState) => !previousState);
+  const updateLoginState = (status) => {
+    setUserState(status);
+
+    console.log('Is Logged in?: ')
+    console.log(userState)
   };
 
   // const updatePantryState = (action) => {

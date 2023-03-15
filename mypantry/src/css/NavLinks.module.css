@@ -1,3 +1,12 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -5,13 +14,47 @@
   margin: 1rem 0;
   padding: 0;
   justify-content: center;
+  gap: 1rem;
 }
 
-.link {
+a.links {
   text-decoration: none;
-  padding: 1rem;
-  color: inherit;
+  color: blue;
 }
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: underline;
+  color: #9c27b0;
+  font-weight: bold;
+  animation: fade-in 1000ms;
+  opacity: 1;
+}
+
 div.nav-link-container {
+  margin-top: -1rem;
   padding: 0.2rem;
+}
+
+div.nav-link-login {
+  margin: 0.5rem auto 1rem auto;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+div.nav-link-login:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nav-link-login-text {
+  color: #fff;
 }

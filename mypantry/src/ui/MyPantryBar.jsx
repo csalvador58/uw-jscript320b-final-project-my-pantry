@@ -1,17 +1,44 @@
-import React, { useContext } from 'react';
-import { AppBar, Avatar, Grid, IconButton, Tooltip } from '@mui/material/';
+import React from 'react';
+import {
+  AppBar,
+  Avatar,
+  Grid,
+  IconButton,
+  Menu,
+  MenuItem,
+  Typography,
+} from '@mui/material/';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import classes from '../css/MyPantryBar.module.css';
 import { Link } from 'react-router-dom';
-import UserContext from '../store/UserContext';
 import NavLinks from './NavLinks';
+import { auth } from '../firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { logout } from '../firebase';
+
+// Array for avatar dropdown options
+// const settings = ['Logout'];
+const setting = 'Logout';
 
 function MyAppBar() {
-  const user = useContext(UserContext);
+  const [user] = useAuthState(auth);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+  const handleLogout = () => {
+    handleCloseUserMenu();
+    logout();
+  };
 
   return (
     <AppBar position='static' data-testid='main-app-bar'>
-      <div style={{ visibility: user.isLoggedIn ? 'visible' : 'hidden' }}>
+      <div style={{ visibility: true ? 'visible' : 'hidden' }}>
         <Grid
           className={classes['main-app-bar-container']}
           container
@@ -25,7 +52,7 @@ function MyAppBar() {
                   aria-label='Return to home page'
                   color='inherit'
                 >
-                  <FreeBreakfastIcon />
+                  <FreeBreakfastIcon fontSize='large' />
                 </IconButton>
               </Link>
             </div>
@@ -40,24 +67,39 @@ function MyAppBar() {
           </Grid>
           <Grid item xs={2} sm={2} md={3}>
             <div className={classes['align-right']}>
-              <Tooltip title='Show menu'>
-                <IconButton
-                  size='large'
-                  aria-label='show menu'
-                  color='inherit'
-                  // onClick={}
-                >
-                  <Avatar
-                    data-testid='avatar'
-                    aria-label='user avatar'
-                    src=''
-                  />
-                </IconButton>
-              </Tooltip>
+              <IconButton
+                onClick={user ? handleOpenUserMenu : null}
+                sx={{ p: 0 }}
+              >
+                <Avatar data-testid='avatar' aria-label='user avatar' src='' />
+              </IconButton>
+
+              <Menu
+                sx={{ mt: '45px' }}
+                id='menu-appbar'
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+              >
+                {/* {settings.map((setting) => ( */}
+                <MenuItem key={setting} onClick={handleLogout}>
+                  <Typography textAlign='center'>{setting}</Typography>
+                </MenuItem>
+                {/* ))} */}
+              </Menu>
             </div>
           </Grid>
         </Grid>
-          <NavLinks />
+        <NavLinks />
       </div>
     </AppBar>
   );

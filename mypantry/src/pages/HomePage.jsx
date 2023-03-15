@@ -1,19 +1,42 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import UserContext from '../store/UserContext';
-
 import classes from '../css/HomePage.module.css';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import { auth, db, logout } from '../firebase';
+import { query, collection, getDocs, where } from 'firebase/firestore';
 
 function HomePage() {
-  const user = useContext(UserContext);
-  // Add a new doc
+  const appUser = useContext(UserContext);
 
+  const [user, loading, error] = useAuthState(auth);
+  const [name, setName] = useState('');
+  const navigate = useNavigate();
+  const fetchUserName = async () => {
+    try {
+      const q = query(collection(db, 'users'), where('uid', '==', user?.uid));
+      const doc = await getDocs(q);
+      const data = doc.docs[0].data();
+      setName(data.name);
+    } catch (err) {
+      console.error(err);
+      alert('An error occured while fetching user data');
+    }
+  };
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate('/');
+    fetchUserName();
+  }, [user, loading]);
+
+  // Add a new doc
   const handleAddClick = (e) => {
     e.preventDefault();
 
     const actionObject = {
-      type: 'delete',
+      type: 'add',
       data: {
-        collection: 'recipe',
+        collection: 'pantry',
         pantryObj: {
           name: 'crackers',
           qty: 10,
@@ -29,68 +52,23 @@ function HomePage() {
           ],
           favorite: true,
         },
-        updateRecipeObj: { ingredients: [{ name: 'rice', qty: 3, unit: 'cup' },] },
+        updateRecipeObj: {
+          ingredients: [{ name: 'rice', qty: 3, unit: 'cup' }],
+        },
       },
       isIngredient: false,
     };
 
     user.updatePantry(actionObject);
-    // const pantryCollection = collection(db, 'pantry');
-    // const addPantryDoc = addDoc(pantryCollection, {
-    //   name: 'Pasta',
-    //   qty: 500,
-    //   unit: 'g',
-    // });
-
-    // addPantryDoc
-    //   .then((data) => {
-    //     console.log('Added document with ID: ', data.id);
-    //   })
-    //   .catch((e) => {
-    //     console.error('Error adding document: ' + e);
-    //   });
   };
 
   const handleReadClick = async (e) => {
     e.preventDefault();
-    console.log(user.pantry);
-
-    // const pantryQueryCollection = query(
-    //   collection(db, 'pantry'),
-    //   where('name', '==', 'pasta')
-    // );
-    // const pantrySnapshot = getDocs(pantryQueryCollection);
-
-    // pantrySnapshot
-    //   .then((data) => {
-    //     data.forEach((doc) => {
-    //       console.log(doc.id, ' => ', doc.data());
-    //     });
-    //   })
-    //   .catch((e) => {
-    //     console.error('Error reading: ' + e);
-    //   });
+    console.log(appUser.pantry);
   };
 
   const handleReadAllClick = async (e) => {
     e.preventDefault();
-
-    // const pantryQueryCollection = query(collection(db, 'pantry'));
-
-    // const pantrySnapshot = getDocs(pantryQueryCollection);
-
-    // pantrySnapshot
-    //   .then((data) => {
-    //     const namesArray = [];
-    //     data.docs.forEach((doc) => {
-    //       const item = doc.data();
-    //       namesArray.push(item.name);
-    //     });
-    //     console.log(namesArray);
-    //   })
-    //   .catch((e) => {
-    //     console.error('Error reading: ' + e);
-    //   });
   };
 
   const handleUpdateClick = async (e) => {
@@ -112,29 +90,7 @@ function HomePage() {
       favorite: false,
     };
 
-    user.updatePantry(actionObject);
-
-    // const pantryCollection = collection(db, 'pantry');
-    // const pantryQueryCollection = query(
-    //   pantryCollection,
-    //   where('name', '==', 'pasta')
-    // );
-    // const pantrySnapshot = getDocs(pantryQueryCollection);
-
-    // pantrySnapshot
-    //   .then((data) => {
-    //     if (!data.empty) {
-    //       const pantryDocRef = doc(db, 'pantry', data.docs[0].id);
-
-    //       const updatePantry = updateDoc(pantryDocRef, { qty: 1, unit: 'piece' });
-    //       updatePantry.then(console.log('Update successful')).catch((e) => {
-    //         console.error('Error reading: ' + e);
-    //       });
-    //     }
-    //   })
-    //   .catch((e) => {
-    //     console.error('Error reading: ' + e);
-    //   });
+    appUser.updatePantry(actionObject);
   };
 
   const handleDeleteClick = async (e) => {
@@ -156,48 +112,29 @@ function HomePage() {
       favorite: false,
     };
 
-    user.updatePantry(actionObject);
-
-    // const pantryCollection = collection(db, 'pantry');
-    // const pantryQueryCollection = query(
-    //   pantryCollection,
-    //   where('name', '==', 'pasta')
-    // );
-    // const pantrySnapshot = getDocs(pantryQueryCollection);
-
-    // pantrySnapshot
-    //   .then((data) => {
-    //     if (!data.empty) {
-    //       const pantryDocRef = doc(db, 'pantry', data.docs[0].id);
-
-    //       const deletePantry = deleteDoc(pantryDocRef);
-    //       deletePantry.then(console.log('Delete successful')).catch((e) => {
-    //         console.error('Error deleting: ' + e);
-    //       });
-    //     }
-    //   })
-    //   .catch((e) => {
-    //     console.error('Error reading: ' + e);
-    //   });
+    appUser.updatePantry(actionObject);
   };
 
-  const loginHandler = () => {
-    user.updateLogin();
+  const handleLogout = () => {
+    logout();
+    navigate('/');
   };
+
   return (
     <div className={classes['home-container']} data-testid='homepage'>
-      {!user.isLoggedIn && (
-        <>
-          <h1>My Pantry</h1>
-          <h2 data-testid='login-form'>Login Screen</h2>
-        </>
-      )}
-      {user.isLoggedIn && (
-        <>
-          <div data-testid='home-page'>Homepage</div>
-        </>
-      )}
-      <button onClick={loginHandler}>Toggle Login</button>
+      <>
+        <div data-testid='home-page'>Homepage</div>
+      </>
+
+      <div>
+        <div>
+          Logged in as
+          <div>{name}</div>
+          <div>{user?.email}</div>
+          <button onClick={handleLogout}>Logout</button>
+        </div>
+      </div>
+
       <button onClick={handleAddClick}>Add Doc</button>
       <button onClick={handleReadClick}>Read Doc</button>
       <button onClick={handleReadAllClick}>

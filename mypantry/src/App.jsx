@@ -7,7 +7,9 @@ import HomePage from './pages/HomePage';
 import PantryPage from './pages/PantryPage';
 import RecipesPage from './pages/ReceipesPage';
 import FormInputPage from './pages/FormInputPage';
+import LoginPage from './pages/LoginPage';
 import UserProvider from './store/UserProvider';
+
 
 const theme = createTheme({
   palette: {
@@ -23,7 +25,11 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> },
+      { path: '/', element: <LoginPage /> },
+      {
+        path: '/main',
+        element: <HomePage />,
+      },
       {
         path: '/pantry',
         element: <PantryPage />,

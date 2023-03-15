@@ -8,7 +8,7 @@ import {
   updateDoc,
   deleteDoc,
 } from 'firebase/firestore';
-import db from '../db';
+import {db} from '../firebase';
 
 export function updatePantryHandler(action, setter) {
   async function execute() {
@@ -27,10 +27,10 @@ export function updatePantryHandler(action, setter) {
 }
 
 export function updateRecipeHandler(action, state, setter) {
-  if (action.type === 'add') {
-    const response = addToCollection(action.data);
-    setter(response);
-  }
+//   if (action.type === 'add') {
+//     const response = addToCollection(action.data);
+//     setter(response);
+//   }
 }
 
 function addToCollection(data) {

@@ -8,7 +8,7 @@ import {
   updateDoc,
   deleteDoc,
 } from 'firebase/firestore';
-import {db} from '../firebase';
+import { db } from '../firebase';
 
 export function updatePantryHandler(action, setter) {
   async function execute() {
@@ -27,22 +27,27 @@ export function updatePantryHandler(action, setter) {
 }
 
 export function updateRecipeHandler(action, state, setter) {
-//   if (action.type === 'add') {
-//     const response = addToCollection(action.data);
-//     setter(response);
-//   }
+  //   if (action.type === 'add') {
+  //     const response = addToCollection(action.data);
+  //     setter(response);
+  //   }
 }
 
 function addToCollection(data) {
-  // set object reference
-  const objectRef =
+  
+  // setup authorized-user collection
+  const userCollection = collection(db, 'authorized-users');
+  const userDocRef = doc(userCollection, data.uid);
+
+  // setup subcollection
+  const subCollection =
     data.collection === 'pantry' ? data.pantryObj : data.recipeObj;
 
   // Check if already exists
-  const setCollection = collection(db, data.collection);
+  const subCollectionRef = collection(userDocRef, subCollection);
   const queryCollection = query(
-    setCollection,
-    where('name', '==', objectRef.name)
+    subCollectionRef,
+    where('name', '==', subCollection.name)
   );
 
   const snapshot = getDocs(queryCollection);
@@ -50,8 +55,8 @@ function addToCollection(data) {
   snapshot
     .then((response) => {
       if (response.empty) {
-        const setCollection = collection(db, data.collection);
-        const addDocToCollection = addDoc(setCollection, objectRef);
+        const setCollection = collection(userDocRef, subCollection);
+        const addDocToCollection = addDoc(setCollection, subCollection);
 
         addDocToCollection
           .then((response) => {
@@ -89,7 +94,6 @@ function addToCollection(data) {
 // }
 
 function queryAllCollection(data, setter) {
-
   // returns all docs in collection
   console.log('query');
   console.log(data.collection);
@@ -132,7 +136,9 @@ function updateDocInCollection(data) {
 
         // set object reference
         const updateRef =
-          data.collection === 'pantry' ? data.updatePantryObj : data.updateRecipeObj;
+          data.collection === 'pantry'
+            ? data.updatePantryObj
+            : data.updateRecipeObj;
         const updateDocRef = updateDoc(docRef, updateRef);
         updateDocRef.then(console.log('Update successful')).catch((e) => {
           console.error('Error reading: ' + e);

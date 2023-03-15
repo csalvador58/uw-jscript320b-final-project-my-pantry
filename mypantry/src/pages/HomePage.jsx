@@ -60,7 +60,7 @@ function HomePage() {
       isIngredient: false,
     };
 
-    user.updatePantry(actionObject);
+    appUser.updatePantry(actionObject);
   };
 
   const handleReadClick = async (e) => {

@@ -22,6 +22,7 @@ const setting = 'Logout';
 
 function MyAppBar() {
   const [user] = useAuthState(auth);
+  
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenUserMenu = (event) => {
@@ -71,7 +72,11 @@ function MyAppBar() {
                 onClick={user ? handleOpenUserMenu : null}
                 sx={{ p: 0 }}
               >
-                <Avatar data-testid='avatar' aria-label='user avatar' src='' />
+                <Avatar
+                  data-testid='avatar'
+                  aria-label='user avatar'
+                  src={user ? user.photoURL.toString() : ' '}
+                />
               </IconButton>
 
               <Menu

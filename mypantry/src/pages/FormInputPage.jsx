@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import UserContext from '../store/UserContext';
 import {
   Box,
   Button,
@@ -16,6 +17,8 @@ import * as yup from 'yup';
 import unitOfMeasure from '../store/units.json';
 import foodType from '../store/foods.json';
 import classes from '../css/FormInputPage.module.css';
+import { auth } from '../firebase';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const validationSchema = yup.object({
   item: yup.string('Name of pantry item').required('Please enter a name'),
@@ -26,6 +29,9 @@ const validationSchema = yup.object({
 });
 
 function FormInputPage() {
+  const [user] = useAuthState(auth);
+  const appUser = useContext(UserContext);
+
   const formik = useFormik({
     initialValues: {
       item: '',
@@ -36,10 +42,43 @@ function FormInputPage() {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values)
-      alert(JSON.stringify(values, null, 2));
+      // console.log(values);
+      // alert(JSON.stringify(values, null, 2));
+      console.log(values);
+      console.log(values.item);
+      console.log(values.type);
+      console.log(values.quantity);
+      console.log(values.units);
+      console.log(values.favorite);
       // create action object:
-
+      if (user) {
+        const userUID = user.id;
+        const actionObject = {
+          type: 'add',
+          data: {
+            uid: userUID,
+            collection: 'pantry',
+            pantryObj: {
+              name: values.item,
+              type: values.type,
+              qty: values.quantity,
+              unit: values.units,
+              favorite: values.favorite,
+            },
+            updatePantryObj: {},
+            recipeObj: {
+              name: '',
+              ingredients: [],
+              favorite: false,
+            },
+            updateRecipeObj: {
+              ingredients: [],
+            },
+          },
+          isIngredient: false,
+        };
+        appUser.updatePantry(actionObject);
+      }
     },
   });
 

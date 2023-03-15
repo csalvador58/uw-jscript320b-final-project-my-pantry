@@ -9,7 +9,8 @@ import { query, collection, getDocs, where } from 'firebase/firestore';
 function HomePage() {
   const appUser = useContext(UserContext);
 
-  const [user, loading, error] = useAuthState(auth);
+  // const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [name, setName] = useState('');
   const navigate = useNavigate();
   const fetchUserName = async () => {
@@ -23,11 +24,11 @@ function HomePage() {
       alert('An error occured while fetching user data');
     }
   };
-  useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
-    fetchUserName();
-  }, [user, loading]);
+  // useEffect(() => {
+  //   if (loading) return;
+  //   if (!user) return navigate('/');
+  //   fetchUserName();
+  // }, [user, loading]);
 
   // Add a new doc
   const handleAddClick = (e) => {

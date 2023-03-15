@@ -36,7 +36,10 @@ function FormInputPage() {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
+      console.log(values)
       alert(JSON.stringify(values, null, 2));
+      // create action object:
+
     },
   });
 

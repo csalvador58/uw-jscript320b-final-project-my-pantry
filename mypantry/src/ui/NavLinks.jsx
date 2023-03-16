@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import classes from '../css/NavLinks.module.css';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { auth, signInWithGoogle } from '../firebase';
+import { auth, signInAccount } from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Box, IconButton, Paper, Typography } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
@@ -79,7 +79,7 @@ function NavLinks() {
               size='large'
               aria-label='show number of rentals in cart'
               color='inherit'
-              onClick={signInWithGoogle}
+              onClick={signInAccount}
             >
               <Typography className={classes['nav-link-login-text']}>
                 Login with{' '}

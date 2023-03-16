@@ -34,7 +34,7 @@ function Login() {
   };
 
   return (
-    <div className={classes['login-page-container']} data-testid='login-page'>
+    <div className={classes['login-page-container']} data-testid='login-page'>Login Page
       <div className='login'>
         <div className='login__container'>
           <input

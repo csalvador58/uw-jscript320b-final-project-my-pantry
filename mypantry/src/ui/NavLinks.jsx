@@ -1,11 +1,10 @@
 import React from 'react';
 import classes from '../css/NavLinks.module.css';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { Box } from '@mui/material';
 
 function NavLinks() {
-  const navigate = useNavigate();
 
   return (
     <Box

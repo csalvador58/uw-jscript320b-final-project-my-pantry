@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import UserContext from '../store/UserContext';
 // import { auth } from '../firebase';
 // import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
@@ -25,7 +26,7 @@ import { Button } from '@mui/material';
 import ListItemCard from '../ui/ListItemCard';
 
 function PantryPage() {
-  // const [userID, setUserID] = useState(null)
+  const appUser = useContext(UserContext);
   const [activeId, setActiveId] = useState(null);
   const [draggedOverTrash, setDraggedOverTrash] = useState(false);
   // const appUser = useContext(UserContext);
@@ -33,17 +34,15 @@ function PantryPage() {
   // const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   if (loading) return;
-  //   if (!user) return navigate('/');
-
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [user, loading]);
+  useEffect(() => {
+    if (!appUser.loginInfo) {
+      navigate('/');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [appUser.loginInfo]);
 
   const [items, setItems] = useState(['Apple', 'Banana', 'Pear']);
 
-  // temp
-  console.log(activeId);
 
   const sensors = useSensors(
     useSensor(MouseSensor, {

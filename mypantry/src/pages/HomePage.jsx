@@ -12,16 +12,13 @@ function HomePage() {
   // const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
-  
-  console.log('Home page: ')
-  console.log(appUser.loginInfo)
 
-  // useEffect(() => {
-  //   if (loading) return;
-  //   if (!user) return navigate('/');
-
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [user, loading]);
+  useEffect(() => {
+    if (!appUser.loginInfo) {
+      navigate('/');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [appUser.loginInfo]);
 
   // const displayPantry = appUser.pantry.map((item, index) => {
   //   return (

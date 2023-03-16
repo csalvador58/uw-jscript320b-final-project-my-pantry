@@ -22,7 +22,7 @@ import { logout } from '../firebase';
 const setting = 'Logout';
 
 function MyPantryBar() {
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
   useEffect(() => {

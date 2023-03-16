@@ -8,7 +8,7 @@ import GoogleIcon from '@mui/icons-material/Google';
 
 function NavLinks() {
   // const [user, loading, error] = useAuthState(auth);
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
   useEffect(() => {

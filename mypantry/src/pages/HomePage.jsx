@@ -1,15 +1,15 @@
-import React, { useEffect, useState, useContext } from 'react';
-import UserContext from '../store/UserContext';
+import React, { useEffect} from 'react';
+// import UserContext from '../store/UserContext';
 import classes from '../css/HomePage.module.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebase';
 
-import ListItemCard from '../ui/ListItemCard';
+// import ListItemCard from '../ui/ListItemCard';
 
 function HomePage() {
-  const appUser = useContext(UserContext);
-  const [user, loading, error] = useAuthState(auth);
+  // const appUser = useContext(UserContext);
+  const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
   useEffect(() => {

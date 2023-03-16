@@ -2,7 +2,9 @@ import { initializeApp } from 'firebase/app';
 import {
   GoogleAuthProvider,
   getAuth,
-  signInWithRedirect,
+  signInWithPopup,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
   signOut,
 } from 'firebase/auth';
 import {
@@ -30,7 +32,7 @@ const googleProvider = new GoogleAuthProvider();
 
 const signInWithGoogle = async () => {
   try {
-    const res = await signInWithRedirect(auth, googleProvider);
+    const res = await signInWithPopup(auth, googleProvider);
     const user = res.user;
     console.log('user');
     console.log(user);
@@ -52,10 +54,42 @@ const signInWithGoogle = async () => {
     alert(err.message);
   }
 };
+const logInWithEmailAndPassword = async (email, password) => {
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  }
+};
+const registerWithEmailAndPassword = async (name, email, password) => {
+  try {
+    const res = await createUserWithEmailAndPassword(auth, email, password);
+    const user = res.user;
+    await addDoc(collection(db, 'users'), {
+      uid: user.uid,
+      name,
+      authProvider: 'local',
+      email,
+    });
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  }
+};
+
 const logout = () => {
   signOut(auth);
   const clearUID = '';
   localStorage.setItem('myPantryUser', clearUID);
 };
 
-export { auth, db, signInWithGoogle, logout };
+export {
+  auth,
+  db,
+  signInWithGoogle,
+  logInWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  registerWithEmailAndPassword,
+  logout,
+};

@@ -1,10 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import UserContext from '../store/UserContext';
-// import { auth } from '../firebase';
-// import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-
-// import UserContext from '../store/UserContext';
 import SearchBar from '../components/SearchBar';
 import classes from '../css/PantryPage.module.css';
 import {
@@ -43,6 +39,7 @@ function PantryPage() {
 
   const [items, setItems] = useState(['Apple', 'Banana', 'Pear']);
 
+  console.log(activeId);
 
   const sensors = useSensors(
     useSensor(MouseSensor, {

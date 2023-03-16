@@ -1,18 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import UserContext from '../store/UserContext';
 import { useNavigate } from 'react-router-dom';
-// import { useAuthState } from 'react-firebase-hooks/auth';
-// import { auth } from '../firebase';
 
 function ErrorPage() {
-  // const [user, loading] = useAuthState(auth);
-  // const navigate = useNavigate();
+  const appUser = useContext(UserContext);
+  const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   if (loading) return;
-  //   if (!user) return navigate('/');
-
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [user, loading]);
+  useEffect(() => {
+    if (!appUser.loginInfo) {
+      navigate('/');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [appUser.loginInfo]);
 
   return <div data-testid='error-page'>Error Page</div>;
 }

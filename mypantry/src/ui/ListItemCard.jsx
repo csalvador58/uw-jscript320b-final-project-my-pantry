@@ -3,47 +3,44 @@ import React from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
-import LunchDiningIcon from '@mui/icons-material/LunchDining';
-import GrainIcon from '@mui/icons-material/Grain';
-import AppleIcon from '@mui/icons-material/Apple';
-import GrassIcon from '@mui/icons-material/Grass';
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemAvatar from '@mui/material/ListItemAvatar';
+// import ListItemIcon from '@mui/material/ListItemIcon';
+// import ListItemText from '@mui/material/ListItemText';
+// import Avatar from '@mui/material/Avatar';
+// import IconButton from '@mui/material/IconButton';
+// import LunchDiningIcon from '@mui/icons-material/LunchDining';
+// import GrainIcon from '@mui/icons-material/Grain';
+// import AppleIcon from '@mui/icons-material/Apple';
+// import GrassIcon from '@mui/icons-material/Grass';
 
-import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
-import IcecreamIcon from '@mui/icons-material/Icecream';
-import LiquorIcon from '@mui/icons-material/Liquor';
-import CakeIcon from '@mui/icons-material/Cake';
-import KitchenIcon from '@mui/icons-material/Kitchen';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+// import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
+// import IcecreamIcon from '@mui/icons-material/Icecream';
+// import LiquorIcon from '@mui/icons-material/Liquor';
+// import CakeIcon from '@mui/icons-material/Cake';
+// import KitchenIcon from '@mui/icons-material/Kitchen';
+// import FavoriteIcon from '@mui/icons-material/Favorite';
 
-import Grid from '@mui/material/Grid';
-import DeleteIcon from '@mui/icons-material/Delete';
+// import Grid from '@mui/material/Grid';
+// import DeleteIcon from '@mui/icons-material/Delete';
 import classes from '../css/ListItemCard.module.css';
 
-const foodTypes = {
-  protein: <LunchDiningIcon />,
-  grain: <GrainIcon />,
-  fruit: <AppleIcon />,
-  vegetable: <GrassIcon />,
-  dairy: <IcecreamIcon />,
-  beverage: <LiquorIcon />,
-  condiment: <AutoAwesomeMotionIcon />,
-  sugars: <CakeIcon />,
-  other: <KitchenIcon />,
-};
+// const foodTypes = {
+//   protein: <LunchDiningIcon />,
+//   grain: <GrainIcon />,
+//   fruit: <AppleIcon />,
+//   vegetable: <GrassIcon />,
+//   dairy: <IcecreamIcon />,
+//   beverage: <LiquorIcon />,
+//   condiment: <AutoAwesomeMotionIcon />,
+//   sugars: <CakeIcon />,
+//   other: <KitchenIcon />,
+// };
 
 function ListItemCard(props) {
   const { attributes, listeners, setNodeRef, transform, transition } =
-    useSortable({
-      id: props.id,
-      // data: [{ type: 'fruit' }, { addinfo: 'hello' }],
-    });
+  useSortable({ id: props.id, data: [{ type: "fruit"}, {addinfo: "hello"}] });
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
@@ -51,30 +48,9 @@ function ListItemCard(props) {
 
   return (
     <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-      <div className={classes['list-item-card']}>
-        {/* <Grid item xs={6}> */}
-          {/* <ListItem */}
-            {/* // id={id} */}
-            {/* // secondaryAction={ */}
-            {/* //   <IconButton edge='end' aria-label='delete'>
-            //     <DeleteIcon />
-            //   </IconButton>
-            // }
-          // > */}
-            {/* // <ListItemAvatar>
-              // <Avatar> */}
-                {/* {foodTypes[type]} */}
-                {props.id}
-                {/* // </Avatar>
-            // </ListItemAvatar> */}
-            {/* <ListItemText
-              className={classes.details}
-              primary={name}
-              secondary={qty + ' ' + unit + '(s)'}
-            /> */}
-          {/* // </ListItem> */}
-        {/* </Grid> */}
-      </div>
+        <div className={classes['list-item-card']}>
+            {props.id}
+        </div>
     </div>
   );
 }

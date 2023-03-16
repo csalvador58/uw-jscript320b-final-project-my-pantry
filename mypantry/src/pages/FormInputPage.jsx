@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
+import UserContext from '../store/UserContext';
 import {
   Box,
   Button,
@@ -16,6 +17,9 @@ import * as yup from 'yup';
 import unitOfMeasure from '../store/units.json';
 import foodType from '../store/foods.json';
 import classes from '../css/FormInputPage.module.css';
+import { useNavigate } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../firebase';
 
 const validationSchema = yup.object({
   item: yup.string('Name of pantry item').required('Please enter a name'),
@@ -25,22 +29,63 @@ const validationSchema = yup.object({
   favorite: yup.string('Favorite?').required('Favorite?'),
 });
 
+const defaultFormikValues = {
+  item: '',
+  type: '',
+  quantity: '',
+  units: '',
+  favorite: false,
+};
+
+
 function FormInputPage() {
+  const appUser = useContext(UserContext);
+
+  const [user, loading] = useAuthState(auth);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate('/');
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user, loading]);
+
   const formik = useFormik({
-    initialValues: {
-      item: '',
-      type: '',
-      quantity: '',
-      units: '',
-      favorite: false,
-    },
+    initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      // get auth user id and create action object
+      console.log('FormInputPage retrieving uid from local storage');
+      const savedUID = JSON.parse(localStorage.getItem('myPantryUser'));
+      console.log(savedUID);
+
+      const actionObject = {
+        type: 'add',
+        data: {
+          uid: savedUID,
+          collection: 'pantry',
+          pantryObj: {
+            name: values.item,
+            type: values.type,
+            qty: values.quantity,
+            unit: values.units,
+            favorite: values.favorite,
+          },
+        },
+      };
+      appUser.updatePantry(actionObject);
     },
   });
 
-  const handleClose = () => {};
+  const handleClose = () => {
+    formik.values.item = '';
+    formik.values.type = '';
+    formik.values.quantity = '';
+    formik.values.units = '';
+    formik.values.favorite = false;
+    navigate('/pantry');
+  };
 
   return (
     <Box data-testid='form-input' className={classes['form-input-container']}>

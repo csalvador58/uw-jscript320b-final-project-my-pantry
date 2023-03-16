@@ -1,26 +1,41 @@
-import React, { useContext } from 'react';
-import UserContext from '../store/UserContext';
+import React, { useEffect} from 'react';
+// import UserContext from '../store/UserContext';
+import classes from '../css/HomePage.module.css';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase';
+
+// import ListItemCard from '../ui/ListItemCard';
 
 function HomePage() {
-  const user = useContext(UserContext);
+  // const appUser = useContext(UserContext);
+  const [user, loading] = useAuthState(auth);
+  const navigate = useNavigate();
 
-  const loginHandler = () => {
-    user.updateLogin();
-  };
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate('/');
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user, loading]);
+
+  // const displayPantry = appUser.pantry.map((item, index) => {
+  //   return (
+  //     <li key={`index-${item.name}`}>
+  //       <ListItemCard
+  //         name={item.name}
+  //         qty={item.qty}
+  //         type={item.type}
+  //         unit={item.unit}
+  //         favorite={item.favorite}
+  //       />
+  //     </li>
+  //   );
+  // });
+
   return (
-    <div data-testid='homepage'>
-      {!user.isLoggedIn && (
-        <>
-          <h1>My Pantry</h1>
-          <h2 data-testid='login-form'>Login Screen</h2>
-        </>
-      )}
-      {user.isLoggedIn && (
-        <>
-          <div data-testid='home-page'>Homepage</div>
-        </>
-      )}
-      <button onClick={loginHandler}>Toggle Login</button>
+    <div className={classes['home-container']} data-testid='homepage'>
+      {/* <ul>{displayPantry}</ul> */}
     </div>
   );
 }

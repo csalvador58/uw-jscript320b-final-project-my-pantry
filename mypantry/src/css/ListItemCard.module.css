@@ -4,3 +4,12 @@
   outline: green solid 2px;
   touch-action: auto;
 }
+
+.details:has(p) ::first-letter {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* .details:has(p) {
+  text-decoration: none;
+} */

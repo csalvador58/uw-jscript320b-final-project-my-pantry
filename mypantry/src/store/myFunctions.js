@@ -11,6 +11,11 @@ import {
 import { db } from '../firebase';
 
 export function updatePantryHandler(action, setter) {
+  if (!action.data.uid) {
+    console.log('Error with uid in myFunction updatePantryHandler');
+    return;
+  }
+  console.log(action)
   async function execute() {
     if (action.type === 'add') {
       await addToCollection(action.data);
@@ -26,9 +31,39 @@ export function updatePantryHandler(action, setter) {
   execute();
 }
 
+export function queryAllCollection(data, setter) {
+  if (!data.uid) {
+    console.log('Error with uid in myFunction queryAllCollection');
+    return;
+  }
+  // setup authorized-user collection
+  const userCollection = collection(db, 'authorized-users');
+  const userDocRef = doc(userCollection, data.uid);
+
+  // setup sub-collection
+  const subCollection = 'pantry';
+
+  // Query all docs in sub-collection
+  const subCollectionRef = collection(userDocRef, subCollection);
+  const snapshot = getDocs(subCollectionRef);
+
+  snapshot
+    .then((response) => {
+      const pantryArray = [];
+      response.forEach((doc) => {
+        const item = doc.data();
+        pantryArray.push(item);
+      });
+      setter(pantryArray);
+    })
+    .catch((e) => {
+      alert('Error reading: ' + e);
+    });
+}
+
 function addToCollection(data) {
   if (!data.uid) {
-    // console.log('Error with uid');
+    console.log('Error with uid in myFunction addToCollection');
     return;
   }
 
@@ -69,33 +104,13 @@ function addToCollection(data) {
     });
 }
 
-function queryAllCollection(data, setter) {
-  // setup authorized-user collection
-  const userCollection = collection(db, 'authorized-users');
-  const userDocRef = doc(userCollection, data.uid);
-
-  // setup sub-collection
-  const subCollection = 'pantry';
-
-  // Query all docs in sub-collection
-  const subCollectionRef = collection(userDocRef, subCollection);
-  const snapshot = getDocs(subCollectionRef);
-
-  snapshot
-    .then((response) => {
-      const pantryArray = [];
-      response.forEach((doc) => {
-        const item = doc.data();
-        pantryArray.push(item);
-      });
-      setter(pantryArray);
-    })
-    .catch((e) => {
-      alert('Error reading: ' + e);
-    });
-}
 
 function updateDocInCollection(data) {
+  if (!data.uid) {
+    console.log('Error with uid in myFunction updateDocInCollection');
+    return;
+  }
+
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);
@@ -130,6 +145,11 @@ function updateDocInCollection(data) {
 }
 
 function deleteDocInCollection(data) {
+  if (!data.uid) {
+    console.log('Error with uid in myFunction deleteDocInCollection');
+    return;
+  }
+
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);

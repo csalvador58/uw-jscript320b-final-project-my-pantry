@@ -29,6 +29,12 @@ const signInWithGoogle = async () => {
   try {
     const res = await signInWithPopup(auth, googleProvider);
     const user = res.user;
+    console.log('user');
+    console.log(user);
+    console.log('Saving UID to local storage');
+    const saveUID = JSON.stringify(user.uid);
+    localStorage.setItem('myPantryUser', saveUID);
+
     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
     const docs = await getDocs(q);
     if (docs.docs.length === 0) {
@@ -40,14 +46,13 @@ const signInWithGoogle = async () => {
       });
     }
   } catch (err) {
-    console.error(err);
     alert(err.message);
   }
 };
-
-
 const logout = () => {
   signOut(auth);
+  const clearUID = '';
+  localStorage.setItem('myPantryUser', clearUID);
 };
 
 export { auth, db, signInWithGoogle, logout };

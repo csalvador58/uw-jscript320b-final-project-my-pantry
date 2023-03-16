@@ -8,17 +8,15 @@ import GoogleIcon from '@mui/icons-material/Google';
 
 function NavLinks() {
   // const [user, loading, error] = useAuthState(auth);
-  const [user] = useAuthState(auth);
+  const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (!user) {
-        navigate('/');
-      }
-    });
-    return unsubscribe;
-  }, [navigate]);
+    if (loading) return;
+    if (!user) return navigate('/');
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user, loading]);
 
   return (
     <Box

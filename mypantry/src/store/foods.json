@@ -30,11 +30,11 @@
     "label": "condiment"
   },
   {
-    "value": "oils",
-    "label": "oils & solid fats"
-  },
-  {
     "value": "sugars",
     "label": "sugars"
+  },
+  {
+    "value": "other",
+    "label": "other"
   }
 ]

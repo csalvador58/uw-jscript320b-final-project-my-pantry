@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   AppBar,
   Avatar,
@@ -12,17 +12,26 @@ import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import classes from '../css/MyPantryBar.module.css';
 import { Link } from 'react-router-dom';
 import NavLinks from './NavLinks';
-import { auth } from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase';
 import { logout } from '../firebase';
 
 // Array for avatar dropdown options
 // const settings = ['Logout'];
 const setting = 'Logout';
 
-function MyAppBar() {
-  const [user] = useAuthState(auth);
-  
+function MyPantryBar() {
+  const [user, loading, error] = useAuthState(auth);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate('/');
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user, loading]);
+
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenUserMenu = (event) => {
@@ -109,4 +118,4 @@ function MyAppBar() {
     </AppBar>
   );
 }
-export default MyAppBar;
+export default MyPantryBar;

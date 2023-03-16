@@ -2,7 +2,6 @@ import { initializeApp } from 'firebase/app';
 import {
   GoogleAuthProvider,
   getAuth,
-  signInWithPopup,
   signInWithRedirect,
   signOut,
 } from 'firebase/auth';

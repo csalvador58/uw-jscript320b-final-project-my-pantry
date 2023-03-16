@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const UserContext = React.createContext({
-  isLoggedIn: false,
+  loginInfo: '',
   updateLogin: () => {},
   pantry: [],
   updatePantry: () => {},
@@ -13,7 +13,7 @@ const UserContext = React.createContext({
 export default UserContext;
 
 UserContext.PropTypes = {
-  isLoggedIn: PropTypes.bool.isRequired,
+  loginInfo: PropTypes.string.isRequired,
   updateLogin: PropTypes.func.isRequired,
   pantry: PropTypes.array.isRequired,
   updatePantry: PropTypes.func.isRequired,

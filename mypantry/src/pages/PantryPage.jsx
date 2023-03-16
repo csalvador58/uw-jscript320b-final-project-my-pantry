@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { auth } from '../firebase';
-import { useAuthState } from 'react-firebase-hooks/auth';
+// import { auth } from '../firebase';
+// import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 
 // import UserContext from '../store/UserContext';
@@ -30,15 +30,15 @@ function PantryPage() {
   const [draggedOverTrash, setDraggedOverTrash] = useState(false);
   // const appUser = useContext(UserContext);
 
-  const [user, loading] = useAuthState(auth);
+  // const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
+  // useEffect(() => {
+  //   if (loading) return;
+  //   if (!user) return navigate('/');
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, loading]);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [user, loading]);
 
   const [items, setItems] = useState(['Apple', 'Banana', 'Pear']);
 

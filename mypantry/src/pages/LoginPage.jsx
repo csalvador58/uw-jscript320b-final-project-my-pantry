@@ -1,25 +1,67 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from 'react';
+import React, { useContext } from 'react';
+import UserContext from '../store/UserContext';
 import { useNavigate } from 'react-router-dom';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../firebase';
+import { useFormik } from 'formik';
+import { Box, Button, Grid, TextField } from '@mui/material';
+import * as yup from 'yup';
 import classes from '../css/LoginPage.module.css';
 
+const validationSchema = yup.object({
+  username: yup.string('Username').required('A username is required.'),
+});
+
+const defaultFormikValues = {
+  username: '',
+};
+
 function Login() {
-  const [user, loading] = useAuthState(auth);
+  const appUser = useContext(UserContext);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (loading) {
-      return;
-    }
-    if (user) navigate('/main');
-  }, [user, loading]);
+  const formik = useFormik({
+    initialValues: defaultFormikValues,
+    validationSchema: validationSchema,
+    onSubmit: (values) => {
+      console.log(values.username);
+      appUser.updateLogin(values.username);
+      formik.values.username = '';
+      navigate('/home');
+    },
+  });
 
   return (
-    <div className={classes['login-page-container']} data-testid='login-page'>
-      Main Login Page
-    </div>
+    <Box data-testid='login-page' className={classes['login-page-container']}>
+      <form onSubmit={formik.handleSubmit}>
+        <Grid container spacing={2} direction='column' columns={12}>
+          <h2 className={classes.title}>Welcome!</h2>
+
+          <Grid item xs={4}>
+            <TextField
+              fullWidth
+              id='username'
+              name='username'
+              label='Enter your name'
+              value={formik.values.username}
+              onChange={formik.handleChange}
+              error={formik.touched.username && Boolean(formik.errors.username)}
+              helperText={
+                formik.touched.username
+                  ? formik.errors.username
+                  : 'This will be used to store your data'
+              }
+            />
+          </Grid>
+          <Grid item xs={4}>
+            <div className={classes.center}>
+              <Button color='secondary' variant='contained' type='submit'>
+                Submit
+              </Button>
+            </div>
+          </Grid>
+        </Grid>
+      </form>
+    </Box>
   );
 }
 export default Login;

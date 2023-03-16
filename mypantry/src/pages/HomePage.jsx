@@ -1,23 +1,27 @@
-import React, { useEffect} from 'react';
-// import UserContext from '../store/UserContext';
+import React, { useContext, useEffect} from 'react';
+import UserContext from '../store/UserContext';
 import classes from '../css/HomePage.module.css';
-import { useAuthState } from 'react-firebase-hooks/auth';
+// import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../firebase';
+// import { auth } from '../firebase';
 
 // import ListItemCard from '../ui/ListItemCard';
 
 function HomePage() {
-  // const appUser = useContext(UserContext);
-  const [user, loading] = useAuthState(auth);
+  const appUser = useContext(UserContext);
+  // const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
+  
+  console.log('Home page: ')
+  console.log(appUser.loginInfo)
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, loading]);
+  // useEffect(() => {
+  //   if (loading) return;
+  //   if (!user) return navigate('/');
+
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [user, loading]);
 
   // const displayPantry = appUser.pantry.map((item, index) => {
   //   return (

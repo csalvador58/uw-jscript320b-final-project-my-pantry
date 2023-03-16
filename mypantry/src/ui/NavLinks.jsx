@@ -1,29 +1,29 @@
 import React, { useEffect } from 'react';
 import classes from '../css/NavLinks.module.css';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { auth, signInAccount } from '../firebase';
-import { useAuthState } from 'react-firebase-hooks/auth';
+// import { auth, signInAccount } from '../firebase';
+// import { useAuthState } from 'react-firebase-hooks/auth';
 import { Box, IconButton, Paper, Typography } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 
 function NavLinks() {
   // const [user, loading, error] = useAuthState(auth);
-  const [user, loading] = useAuthState(auth);
+  // const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
+  // useEffect(() => {
+  //   if (loading) return;
+  //   if (!user) return navigate('/');
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, loading]);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [user, loading]);
 
   return (
     <Box
       sx={{ backgroundColor: 'primary.main' }}
       className={classes['nav-link-container']}
     >
-      {user && (
+      {true && (
         <ul data-testid='nav-links' className={classes.links}>
           <li>
             <NavLink
@@ -72,7 +72,7 @@ function NavLinks() {
         </ul>
       )}
 
-      {!user && (
+      {/* {!user && (
         <div className={classes['nav-link-login']}>
           <Paper sx={{ backgroundColor: '#9c27b0' }}>
             <IconButton
@@ -96,7 +96,7 @@ function NavLinks() {
             </IconButton>
           </Paper>
         </div>
-      )}
+      )} */}
     </Box>
   );
 }

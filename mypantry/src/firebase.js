@@ -1,17 +1,17 @@
 import { initializeApp } from 'firebase/app';
-import {
-  GoogleAuthProvider,
-  getAuth,
-  signInWithPopup,
-  signOut,
-} from 'firebase/auth';
+// import {
+//   GoogleAuthProvider,
+//   getAuth,
+//   signInWithPopup,
+//   signOut,
+// } from 'firebase/auth';
 import {
   getFirestore,
-  query,
-  getDocs,
-  collection,
-  where,
-  addDoc,
+  // query,
+  // getDocs,
+  // collection,
+  // where,
+  // addDoc,
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -24,45 +24,45 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+// const auth = getAuth(app);
 const db = getFirestore(app);
-const googleProvider = new GoogleAuthProvider();
+// const googleProvider = new GoogleAuthProvider();
 
-const signInAccount = async () => {
-  try {
-    const res = await signInWithPopup(auth, googleProvider);
-    const user = res.user;
-    // console.log('user');
-    // console.log(user);
-    console.log('Saving UID to local storage');
-    const saveUID = JSON.stringify(user.uid);
-    localStorage.setItem('myPantryUser', saveUID);
+// const signInAccount = async () => {
+//   try {
+//     const res = await signInWithPopup(auth, googleProvider);
+//     const user = res.user;
+//     // console.log('user');
+//     // console.log(user);
+//     console.log('Saving UID to local storage');
+//     const saveUID = JSON.stringify(user.uid);
+//     localStorage.setItem('myPantryUser', saveUID);
 
-    const q = query(collection(db, 'users'), where('uid', '==', user.uid));
-    const docs = await getDocs(q);
-    if (docs.docs.length === 0) {
-      await addDoc(collection(db, 'users'), {
-        uid: user.uid,
-        name: user.displayName,
-        authProvider: 'google',
-        email: user.email,
-      });
-    }
-  } catch (err) {
-    alert(err.message);
-  }
-};
+//     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
+//     const docs = await getDocs(q);
+//     if (docs.docs.length === 0) {
+//       await addDoc(collection(db, 'users'), {
+//         uid: user.uid,
+//         name: user.displayName,
+//         authProvider: 'google',
+//         email: user.email,
+//       });
+//     }
+//   } catch (err) {
+//     alert(err.message);
+//   }
+// };
 
 
-const logout = () => {
-  signOut(auth);
-  const clearUID = '';
-  localStorage.setItem('myPantryUser', clearUID);
-};
+// const logout = () => {
+//   // signOut(auth);
+//   const clearUID = '';
+//   localStorage.setItem('myPantryUser', clearUID);
+// };
 
 export {
-  auth,
+  // auth,
   db,
-  signInAccount,
-  logout,
+  // signInAccount,
+  // logout,
 };

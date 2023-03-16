@@ -12,25 +12,25 @@ import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import classes from '../css/MyPantryBar.module.css';
 import { Link } from 'react-router-dom';
 import NavLinks from './NavLinks';
-import { useAuthState } from 'react-firebase-hooks/auth';
+// import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../firebase';
-import { logout } from '../firebase';
+// import { auth } from '../firebase';
+// import { logout } from '../firebase';
 
 // Array for avatar dropdown options
 // const settings = ['Logout'];
 const setting = 'Logout';
 
 function MyPantryBar() {
-  const [user, loading] = useAuthState(auth);
+  // const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
+  // useEffect(() => {
+  //   if (loading) return;
+  //   if (!user) return navigate('/');
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, loading]);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [user, loading]);
 
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -43,7 +43,7 @@ function MyPantryBar() {
   };
   const handleLogout = () => {
     handleCloseUserMenu();
-    logout();
+    // logout();
   };
 
   return (
@@ -78,13 +78,13 @@ function MyPantryBar() {
           <Grid item xs={2} sm={2} md={3}>
             <div className={classes['align-right']}>
               <IconButton
-                onClick={user ? handleOpenUserMenu : null}
+                onClick={"user ? handleOpenUserMenu : null"}
                 sx={{ p: 0 }}
               >
                 <Avatar
                   data-testid='avatar'
                   aria-label='user avatar'
-                  src={user ? user.photoURL.toString() : ' '}
+                  src={"user ? user.photoURL.toString() : ' '"}
                 />
               </IconButton>
 
@@ -105,7 +105,7 @@ function MyPantryBar() {
                 onClose={handleCloseUserMenu}
               >
                 {/* {settings.map((setting) => ( */}
-                <MenuItem key={setting} onClick={handleLogout}>
+                <MenuItem key={setting} onClick={''}>
                   <Typography textAlign='center'>{setting}</Typography>
                 </MenuItem>
                 {/* ))} */}

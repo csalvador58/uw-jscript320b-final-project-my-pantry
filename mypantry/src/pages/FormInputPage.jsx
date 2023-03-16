@@ -18,8 +18,6 @@ import unitOfMeasure from '../store/units.json';
 import foodType from '../store/foods.json';
 import classes from '../css/FormInputPage.module.css';
 import { useNavigate } from 'react-router-dom';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../firebase';
 
 const validationSchema = yup.object({
   item: yup.string('Name of pantry item').required('Please enter a name'),
@@ -37,33 +35,26 @@ const defaultFormikValues = {
   favorite: false,
 };
 
-
 function FormInputPage() {
   const appUser = useContext(UserContext);
-
-  const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, loading]);
+    if (!appUser.loginInfo) {
+      navigate('/');
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [appUser.loginInfo]);
 
   const formik = useFormik({
     initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // get auth user id and create action object
-      console.log('FormInputPage retrieving uid from local storage');
-      const savedUID = JSON.parse(localStorage.getItem('myPantryUser'));
-      console.log(savedUID);
 
       const actionObject = {
         type: 'add',
         data: {
-          uid: savedUID,
+          uid: appUser.loginInfo,
           collection: 'pantry',
           pantryObj: {
             name: values.item,

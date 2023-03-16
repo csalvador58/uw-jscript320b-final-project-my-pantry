@@ -8,7 +8,7 @@ function UserProvider({ children }) {
     console.log('User Provider was entered')
   }, [])
 
-  const [userState, setUserState] = useState(false);
+  const [userState, setUserState] = useState('');
   const [pantryArray, setPantryArray] = useState([]);
   const [recipeArray, setRecipeArray] = useState([]);
 
@@ -28,7 +28,7 @@ function UserProvider({ children }) {
   };
 
   const storedUserContext = {
-    isLoggedIn: userState,
+    loginInfo: userState,
     updateLogin: updateLoginState,
     pantry: pantryArray,
     updatePantry: updatePantryState,

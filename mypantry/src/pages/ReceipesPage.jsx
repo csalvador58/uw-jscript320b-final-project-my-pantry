@@ -1,24 +1,25 @@
-import React, {useEffect} from 'react';
+import React, { useContext, useEffect } from 'react';
 import SearchBar from '../components/SearchBar';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../firebase';
+import UserContext from '../store/UserContext';
 
 function RecipesPage() {
-  const [user, loading] = useAuthState(auth);
+  const appUser = useContext(UserContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
-
+    if (!appUser.loginInfo) {
+      navigate('/');
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, loading]);
+  }, [appUser.loginInfo]);
 
-  return <>
-  <div data-testid='recipes-page'>Recipes Page</div>
-  <SearchBar search='Recipes' />
-  </>
+  return (
+    <>
+      <div data-testid='recipes-page'>Recipes Page</div>
+      <SearchBar search='Recipes' />
+    </>
+  );
 }
 
 export default RecipesPage;

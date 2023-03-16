@@ -1,107 +1,67 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
+import UserContext from '../store/UserContext';
 import { useNavigate } from 'react-router-dom';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import {
-  auth,
-  registerWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signInWithGoogle,
-} from '../firebase';
+import { useFormik } from 'formik';
+import { Box, Button, Grid, TextField } from '@mui/material';
+import * as yup from 'yup';
 import classes from '../css/LoginPage.module.css';
 
-function Login() {
-  const [user, loading] = useAuthState(auth);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+const validationSchema = yup.object({
+  username: yup.string('Username').required('A username is required.'),
+});
 
-  // Register email
-  const [emailReg, setEmailReg] = useState('');
-  const [passwordReg, setPasswordReg] = useState('');
-  const [name, setName] = useState('');
+const defaultFormikValues = {
+  username: '',
+};
+
+function Login() {
+  const appUser = useContext(UserContext);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (loading) {
-      return;
-    }
-    if (user) navigate('/main');
-  }, [user, loading]);
-
-  const register = () => {
-    if (!name) alert('Please enter name');
-    registerWithEmailAndPassword(name, email, password);
-  };
+  const formik = useFormik({
+    initialValues: defaultFormikValues,
+    validationSchema: validationSchema,
+    onSubmit: (values) => {
+      console.log(values.username);
+      appUser.updateLogin(values.username);
+      formik.values.username = '';
+      navigate('/home');
+    },
+  });
 
   return (
-    <div className={classes['login-page-container']} data-testid='login-page'>Main Login Page
-      <div className='login'>
-        <div className='login__container'>
-          <input
-            type='text'
-            className='login__textBox'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder='E-mail Address'
-          />
-          <input
-            type='password'
-            className='login__textBox'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder='Password'
-          />
-          <button
-            className='login__btn'
-            onClick={() => signInWithEmailAndPassword(email, password)}
-          >
-            Login
-          </button>
-          <button
-            className='login__btn login__google'
-            onClick={signInWithGoogle}
-          >
-            Login with Google
-          </button>
-          <div>
-            <div className='register'>
-              <div className='register__container'>
-                <input
-                  type='text'
-                  className='register__textBox'
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder='Full Name'
-                />
-                <input
-                  type='text'
-                  className='register__textBox'
-                  value={emailReg}
-                  onChange={(e) => setEmailReg(e.target.value)}
-                  placeholder='E-mail Address'
-                />
-                <input
-                  type='password'
-                  className='register__textBox'
-                  value={passwordReg}
-                  onChange={(e) => setPasswordReg(e.target.value)}
-                  placeholder='Password'
-                />
-                <button className='register__btn' onClick={register}>
-                  Register
-                </button>
-                <button
-                  className='register__btn register__google'
-                  onClick={signInWithGoogle}
-                >
-                  Register with Google
-                </button>
-              </div>
+    <Box data-testid='login-page' className={classes['login-page-container']}>
+      <form onSubmit={formik.handleSubmit}>
+        <Grid container spacing={2} direction='column' columns={12}>
+          <h2 className={classes.title}>Welcome!</h2>
+
+          <Grid item xs={4}>
+            <TextField
+              fullWidth
+              id='username'
+              name='username'
+              label='Enter your name'
+              value={formik.values.username}
+              onChange={formik.handleChange}
+              error={formik.touched.username && Boolean(formik.errors.username)}
+              helperText={
+                formik.touched.username
+                  ? formik.errors.username
+                  : 'This will be used to store your data'
+              }
+            />
+          </Grid>
+          <Grid item xs={4}>
+            <div className={classes.center}>
+              <Button color='secondary' variant='contained' type='submit'>
+                Submit
+              </Button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Grid>
+        </Grid>
+      </form>
+    </Box>
   );
 }
 export default Login;

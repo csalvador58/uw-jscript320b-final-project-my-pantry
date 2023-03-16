@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {
   AppBar,
   Avatar,
@@ -12,25 +12,22 @@ import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import classes from '../css/MyPantryBar.module.css';
 import { Link } from 'react-router-dom';
 import NavLinks from './NavLinks';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../firebase';
-import { logout } from '../firebase';
-
-// Array for avatar dropdown options
-// const settings = ['Logout'];
-const setting = 'Logout';
+import UserContext from '../store/UserContext';
 
 function MyPantryBar() {
-  const [user, loading] = useAuthState(auth);
+  const [avatarMenu, setAvatarMenu] = useState({ name: '', state: '' });
+  const appUser = useContext(UserContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate('/');
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, loading]);
+    if (appUser.loginInfo) {
+      setAvatarMenu(() => {
+        const state = appUser.loginInfo ? true : false;
+        return { name: appUser.loginInfo, isLoggedIn: state };
+      });
+    }
+  }, [appUser.loginInfo]);
 
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -41,9 +38,15 @@ function MyPantryBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const handleLogout = () => {
+  const handleLoginLogout = () => {
+    if (avatarMenu.isLoggedIn) {
+      // logout user
+      appUser.updateLogin('');
+    }
+    // Navigate to login screen to login
+    navigate('/');
+
     handleCloseUserMenu();
-    logout();
   };
 
   return (
@@ -78,13 +81,17 @@ function MyPantryBar() {
           <Grid item xs={2} sm={2} md={3}>
             <div className={classes['align-right']}>
               <IconButton
-                onClick={user ? handleOpenUserMenu : null}
+                onClick={
+                  appUser.loginInfo
+                    ? handleOpenUserMenu
+                    : () => alert('Please log into your account.')
+                }
                 sx={{ p: 0 }}
               >
                 <Avatar
                   data-testid='avatar'
                   aria-label='user avatar'
-                  src={user ? user.photoURL.toString() : ' '}
+                  src={''}
                 />
               </IconButton>
 
@@ -104,9 +111,17 @@ function MyPantryBar() {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                {/* {settings.map((setting) => ( */}
-                <MenuItem key={setting} onClick={handleLogout}>
-                  <Typography textAlign='center'>{setting}</Typography>
+                {avatarMenu.isLoggedIn && (
+                  <MenuItem key={avatarMenu.name} onClick={handleCloseUserMenu}>
+                    <Typography textAlign='center'>
+                      Current User: {avatarMenu.name}
+                    </Typography>
+                  </MenuItem>
+                )}
+                <MenuItem key={'login-logout'} onClick={handleLoginLogout}>
+                  <Typography textAlign='center'>
+                    {avatarMenu.isLoggedIn ? 'Logout' : 'Login'}
+                  </Typography>
                 </MenuItem>
                 {/* ))} */}
               </Menu>

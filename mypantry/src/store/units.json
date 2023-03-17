@@ -12,6 +12,10 @@
     "label": "(fl oz) fluid ounce"
   },
   {
+    "value": "gallon",
+    "label": "(g) gallons"
+  },
+  {
     "value": "pound",
     "label": "(lb) pounds"
   },

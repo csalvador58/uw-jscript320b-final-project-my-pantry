@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import UserContext from '../store/UserContext';
 import { useNavigate } from 'react-router-dom';
+import { Grid } from '@mui/material';
 import SearchBar from '../components/SearchBar';
 import classes from '../css/PantryPage.module.css';
 import {
@@ -20,11 +20,13 @@ import {
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { Button } from '@mui/material';
-import ListItemCard from '../ui/ListItemCard';
+import ListItemCard from '../ui/ListCard/ListItemCard';
+// import { loadDb } from '../script/loadDb';
 
 function PantryPage() {
   const appUser = useContext(UserContext);
   const [pantryIds, setPantryIds] = useState([]);
+  const [searchFilter, setSearchFilter] = useState([]);
   const [activeId, setActiveId] = useState(null);
   const [draggedOverTrash, setDraggedOverTrash] = useState(false);
   const navigate = useNavigate();
@@ -37,19 +39,20 @@ function PantryPage() {
   }, [appUser.loginInfo]);
 
   useEffect(() => {
-    const actionObject = {
-      type: 'query',
-      data: {
-        uid: appUser.loginInfo,
-        collection: 'pantry',
-        pantryObj: {},
-      },
-    };
-    appUser.updatePantry(actionObject);
+    if (appUser.loginInfo) {
+      const actionObject = {
+        type: 'query',
+        data: {
+          uid: appUser.loginInfo,
+          collection: 'pantry',
+          pantryObj: {},
+        },
+      };
+      appUser.updatePantry(actionObject);
+    }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
 
   const sensors = useSensors(
     useSensor(MouseSensor, {
@@ -111,49 +114,65 @@ function PantryPage() {
   };
 
   const updatePantryHandler = () => {
-    // const actionObject = {
-    //   type: 'query',
-    //   data: {
-    //     uid: appUser.loginInfo,
-    //     collection: 'pantry',
-    //     pantryObj: {},
-    //   },
-    // };
-    // appUser.updatePantry(actionObject);
-
     const test = appUser.pantry;
     console.log('test update');
     console.log(test);
 
+    if (appUser.pantry) {
+      const update = appUser.pantry.map((item) => item.id);
+      setPantryIds(update);
 
-    const update = appUser.pantry.map((item) => item.id);
-    setPantryIds(update)
-
-    console.log('pantryIds')
-    console.log(pantryIds)
-
+      console.log('pantryIds');
+      console.log(pantryIds);
+    }
   };
 
+  const searchData = appUser.pantry.map((item) => {
+    return { id: item.id, name: item.name };
+  });
+  console.log('searchData');
+  console.log(searchData);
 
+  const searchHandler = (filterData) => {
+    setSearchFilter(filterData.id);
+  };
+
+  console.log('searchFilter')
+  console.log(searchFilter)
+
+  const displayIds = searchFilter ? searchFilter : pantryIds;
+  console.log('displayIds')
+  console.log(displayIds)
 
   return (
     <>
       <div className={classes.center} data-testid='pantry-page'>
-        <SearchBar search='Pantry' />
+        <SearchBar
+          search='Pantry'
+          data={searchData}
+          setFilter={searchHandler}
+        />
       </div>
 
       <div className={classes.outline}>
-        <p>Fruits</p>
+        <p>Pantry Items</p>
         <DndContext
           sensors={sensors}
           collisionDetection={closestCenter}
           onDragStart={handleDragStart}
           onDragEnd={handleDragEnd}
         >
-          <SortableContext items={pantryIds} strategy={verticalListSortingStrategy}>
-            {pantryIds.map((item) => (
-              <ListItemCard key={item} id={item} />
-            ))}
+          <SortableContext
+            items={pantryIds}
+            strategy={verticalListSortingStrategy}
+          >
+            <Grid container columns={12}>
+              {displayIds.map((item) => (
+                <Grid item key={item} xs={6}>
+                  <ListItemCard id={item} />
+                </Grid>
+              ))}
+            </Grid>
           </SortableContext>
           {/* <DropArea items={items} /> */}
         </DndContext>

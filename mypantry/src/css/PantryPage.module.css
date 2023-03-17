@@ -4,6 +4,7 @@ div.outline {
     width: 80%;
     margin: 3rem auto;
     text-align: center;
+    overflow: scroll;
 }
 
 div.drop-area {
@@ -17,4 +18,8 @@ div.center {
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+
+  div.activeDrag {
+    opacity: 0.4;
   }

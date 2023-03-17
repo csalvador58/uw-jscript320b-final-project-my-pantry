@@ -41,7 +41,12 @@ function Login() {
               fullWidth
               id='username'
               name='username'
-              label='Enter your name'
+              label='Please enter your name'
+              InputProps={{
+                inputProps: {
+                  style: { textAlign: 'center' },
+                },
+              }}
               value={formik.values.username}
               onChange={formik.handleChange}
               error={formik.touched.username && Boolean(formik.errors.username)}

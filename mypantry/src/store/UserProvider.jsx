@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import UserContext from './UserContext';
 import PropTypes from 'prop-types';
 import { updatePantryHandler } from './myFunctions';
 
 function UserProvider({ children }) {
-  useEffect(() => {
-    console.log('User Provider was entered')
-  }, [])
 
   const [userState, setUserState] = useState('');
   const [pantryArray, setPantryArray] = useState([]);
@@ -16,12 +13,15 @@ function UserProvider({ children }) {
     setUserState(status);
   };
 
+  // useEffect(() => {
+  //   console.log(pantryArray);
+  // }, [pantryArray, setPantryArray])
+
   // const updatePantryState = (action) => {
   //   updatePantryHandler(action, pantryArray, setPantryArray);
   // };
   const updatePantryState = (action) => {
     updatePantryHandler(action, setPantryArray);
-    console.log(pantryArray);
   };
   const updateRecipeState = (action) => {
     updatePantryHandler(action, setRecipeArray);

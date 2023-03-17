@@ -19,7 +19,7 @@ import {
   // rectSortingStrategy,
   rectSwappingStrategy,
   SortableContext,
-  verticalListSortingStrategy,
+  // verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { Button } from '@mui/material';
 import ListItemCard from '../ui/ListCard/ListItemCard';
@@ -37,7 +37,7 @@ function PantryPage() {
       navigate('/');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [appUser.loginInfo]);
+  }, []);
 
   useEffect(() => {
     // Run query at mount
@@ -92,19 +92,38 @@ function PantryPage() {
 
     console.log({ active });
     console.log({ over });
-    // if (over) {
-    //   console.log('Item dropped in A1 drop area: ')
-    //   console.log({active})
-    //   console.log({over})
-    // }
 
-    if (over.id === 'A1') {
+    if (over.id === 'delete') {
       // setItems((items) => items.filter((x) => active.id !== x));
       setDraggedOverTrash(true);
-      console.log(active.id + ' was dropped in the drop area');
+      if (appUser.loginInfo) {
+        // console.log('deleting item sent to trash');
+        const actionObject = {
+          type: 'delete',
+          data: {
+            uid: appUser.loginInfo,
+            collection: 'pantry',
+            pantryObj: {
+              name: '',
+              type: '',
+              qty: '',
+              unit: '',
+              favorite: false,
+              id: active.id,
+            },
+          },
+        };
+        appUser.updatePantry(actionObject);
+        setTimeout(() => {
+          const update = appUser.pantry.map((item) => item.id);
+          setDisplayIds(update);
+        }, 0);
+      }
+      console.log(active.id + ' was dropped in the delete drop area');
     }
     if (draggedOverTrash) setDraggedOverTrash(false);
-    if (over && active.id !== over.id && active.id !== 'A1') {
+    // Update sort order
+    if (over && active.id !== over.id && active.id !== 'delete') {
       setDisplayIds((item) => {
         const activeIndex = item.indexOf(active.id);
         const overIndex = item.indexOf(over.id);
@@ -140,7 +159,7 @@ function PantryPage() {
     setTimeout(() => {
       const setDisplay = appUser.pantry.map((item) => item.id);
       setDisplayIds(setDisplay);
-    }, 0);
+    }, 1000);
   }, [appUser.pantry]);
 
   return (
@@ -153,13 +172,14 @@ function PantryPage() {
         />
       </div>
 
-      <div className={classes.outline}>
-        <DndContext
-          sensors={sensors}
-          collisionDetection={closestCenter}
-          onDragStart={handleDragStart}
-          onDragEnd={handleDragEnd}
-        >
+      <DndContext
+        sensors={sensors}
+        collisionDetection={closestCenter}
+        onDragStart={handleDragStart}
+        onDragEnd={handleDragEnd}
+      >
+        {' '}
+        <div className={classes.outline}>
           <SortableContext items={displayIds} strategy={rectSwappingStrategy}>
             <Grid container columns={12}>
               {displayIds.map((item) => (
@@ -169,15 +189,13 @@ function PantryPage() {
               ))}
             </Grid>
           </SortableContext>
-          <DragOverlay>{activeId ? <Item id={activeId} /> : null}</DragOverlay>
-          {/* <DropArea items={items} /> */}
-        </DndContext>
-      </div>
-      <div className={classes.center}>
-        <Button color='secondary' variant='contained' type='button'>
-          Add To Pantry
-        </Button>
-        {/* <Button
+        </div>
+        <DragOverlay>{activeId ? <Item id={activeId} /> : null}</DragOverlay>
+        <div className={classes.center}>
+          <Button color='secondary' variant='contained' type='button'>
+            Add To Pantry
+          </Button>
+          {/* <Button
           color='secondary'
           variant='contained'
           type='button'
@@ -185,20 +203,22 @@ function PantryPage() {
         >
           Update
         </Button> */}
-      </div>
+        </div>
+        <DropArea items={displayIds} />
+      </DndContext>
     </>
   );
 }
 
 const DropArea = (props) => {
-  const { setNodeRef } = useDroppable({ id: 'A1' });
+  const { setNodeRef } = useDroppable({ id: 'delete' });
 
   return (
-    <SortableContext items={props.items} strategy={verticalListSortingStrategy}>
-      <div ref={setNodeRef} className={classes['drop-area']}>
-        Drop Area
-      </div>
-    </SortableContext>
+    // <SortableContext items={props.items} strategy={verticalListSortingStrategy}>
+    <div ref={setNodeRef} className={classes['drop-area']}>
+      Drop Area
+    </div>
+    // </SortableContext>
   );
 };
 

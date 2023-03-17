@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import UserContext from './UserContext';
 import PropTypes from 'prop-types';
 import { updatePantryHandler } from './myFunctions';

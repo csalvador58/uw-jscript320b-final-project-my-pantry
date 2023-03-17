@@ -1,25 +1,37 @@
 div.outline {
-    outline: black dashed 2px;
-    height: 400px;
-    width: 80%;
-    margin: 3rem auto;
-    text-align: center;
-    overflow: scroll;
+  height: 400px;
+  width: 80%;
+  margin: 3rem auto;
+  text-align: center;
+  overflow: scroll;
 }
 
 div.drop-area {
-    outline: red dashed 2px;
-    height: 100px;
-    width: 80%;
-    margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto 0 auto;
+  width: 100px;
 }
 
 div.center {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
+  display: flex;
+  justify-content: center;
+}
 
-  div.activeDrag {
-    opacity: 0.4;
-  }
+
+div.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+
+
+div.activeDrag {
+  opacity: 0.4;
+}
+
+svg.delete {
+  font-size: 5rem;
+}

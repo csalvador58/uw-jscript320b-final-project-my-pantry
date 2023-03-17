@@ -4,41 +4,34 @@ import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 
 const filter = createFilterOptions();
 
-// const pantryItem = [
-//   { name: 'potato', type: 'vegetable', quantity: '300', unit: 'g' },
-//   { name: 'chicken', type: 'poultry', quantity: '4', unit: 'lbs' },
-//   { name: 'pasta', type: 'grain', quantity: '500', unit: 'g' },
-//   { name: 'cheese', type: 'dairy', quantity: '500', unit: 'g' },
-//   { name: 'vinegar', type: 'condiment', quantity: '12', unit: 'oz' },
-//   { name: 'tomato', type: 'vegetable', quantity: '200', unit: 'g' },
-// ];
-
 function SearchBar({ search, data, setFilter }) {
   const [value, setValue] = useState(null);
+  // set array of search options
+  const options = data;
 
   return (
     <Autocomplete
       value={value}
       onChange={(event, newValue) => {
-        console.log('event');
-        console.log(event);
-        console.log(newValue);
-
+        // console.log('event')
+        // console.log(event)
+        // console.log('newValue')
+        // console.log(newValue)
+        
         if (typeof newValue === 'string') {
           setValue({
-            name: newValue,
+            name: '',
           });
-          console.log('im here 1');
+          // Reset filters
+          setFilter('reset');
         } else if (newValue && newValue.inputValue) {
           // Create a new value from the user input
           setValue({
             name: newValue.inputValue,
           });
-          console.log('im here 2');
         } else {
           setValue(newValue);
-          console.log('im here 3');
-          setFilter(newValue.id);
+          setFilter(newValue);
         }
       }}
       filterOptions={(options, params) => {
@@ -61,7 +54,7 @@ function SearchBar({ search, data, setFilter }) {
       handleHomeEndKeys
       data-testid={`search-${search}`}
       id={`search-${search}`}
-      options={data}
+      options={options}
       getOptionLabel={(option) => {
         // Value selected with enter, right from the input
         if (typeof option === 'string') {

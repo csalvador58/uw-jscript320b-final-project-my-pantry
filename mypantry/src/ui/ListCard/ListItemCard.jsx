@@ -29,9 +29,10 @@ function ListItemCard(props) {
   });
 
   useEffect(() => {
-    const update = appUser.pantry.find((item) => item.id === props.id);
-    setItemData(update);
-
+    setTimeout(() => {
+      const update = appUser.pantry.find((item) => item.id === props.id);
+      setItemData(update);
+    }, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

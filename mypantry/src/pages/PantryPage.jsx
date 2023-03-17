@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState, forwardRef } from 'react';
 import UserContext from '../store/UserContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import SearchBar from '../components/SearchBar';
 import classes from '../css/PantryPage.module.css';
@@ -16,12 +16,13 @@ import {
 } from '@dnd-kit/core';
 import {
   arrayMove,
-  // rectSortingStrategy,
+  rectSortingStrategy,
   rectSwappingStrategy,
   SortableContext,
-  verticalListSortingStrategy,
+  // verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { Button } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
 import ListItemCard from '../ui/ListCard/ListItemCard';
 // import { loadDb } from '../script/loadDb';
 
@@ -36,7 +37,7 @@ function PantryPage() {
     if (!appUser.loginInfo) {
       navigate('/');
     }
-    
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -72,10 +73,6 @@ function PantryPage() {
     })
   );
 
-  // const { setNodeRef } = useDroppable({
-  //   id: 'A1',
-  //   // data: { accepts: ['fruit'] },
-  // });
   const handleDragStart = (event) => {
     setActiveId(event.active.id);
   };
@@ -87,13 +84,8 @@ function PantryPage() {
       return;
     }
 
-    // console.log('Drag end 1 called');
-    // console.log('Active: ' + active.id);
-    // console.log('Over: ' + over.id);
-
-    // console.log({ active });
-    // console.log({ over });
-
+    // console.log('Active: ' + active.id)
+    // console.log('Over: ' + over.id)
     if (over.id === 'delete') {
       // setItems((items) => items.filter((x) => active.id !== x));
       setDraggedOverTrash(true);
@@ -146,16 +138,17 @@ function PantryPage() {
     }
   };
 
-  // useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       const setDisplay = appUser.pantry.map((item) => item.id);
       setDisplayIds(setDisplay);
-    }, 2000);
-  // }, [appUser.pantry]);
+    }, 1000);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
-      <div className={classes.center} data-testid='pantry-page'>
+      <div className={classes.search} data-testid='pantry-page'>
         <SearchBar
           search='Pantry'
           data={searchData}
@@ -183,9 +176,11 @@ function PantryPage() {
         </div>
         <DragOverlay>{activeId ? <Item id={activeId} /> : null}</DragOverlay>
         <div className={classes.center}>
-          <Button color='secondary' variant='contained' type='button'>
-            Add To Pantry
-          </Button>
+          <Link to='/edit'>
+            <Button color='secondary' variant='contained' type='button'>
+              Add To Pantry
+            </Button>
+          </Link>
         </div>
         <DropArea items={displayIds} />
       </DndContext>
@@ -197,11 +192,11 @@ const DropArea = (props) => {
   const { setNodeRef } = useDroppable({ id: 'delete' });
 
   return (
-    <SortableContext items={props.items} strategy={verticalListSortingStrategy}>
-    <div ref={setNodeRef} className={classes['drop-area']}>
-      Drop Area
-    </div>
-     </SortableContext>
+    <SortableContext items={props.items} strategy={rectSortingStrategy}>
+      <div ref={setNodeRef} className={classes['drop-area']}>
+        <DeleteIcon className={classes.delete} />
+      </div>
+    </SortableContext>
   );
 };
 

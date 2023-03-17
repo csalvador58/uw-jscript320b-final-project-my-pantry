@@ -161,7 +161,8 @@ function deleteDocInCollection(data) {
   const subCollectionRef = collection(userDocRef, subCollection);
   const queryCollection = query(
     subCollectionRef,
-    where('id', '==', data.pantryObj.id)
+    // need to update to ID
+    where('name', '==', data.pantryObj.name)
   );
 
   const snapshot = getDocs(queryCollection);

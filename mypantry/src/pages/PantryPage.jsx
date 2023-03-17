@@ -109,7 +109,7 @@ function PantryPage() {
         appUser.updatePantry(actionObject);
         setTimeout(() => {
           const update = appUser.pantry.map((item) => item.id);
-          setDisplayIds(update);
+          setDisplayIds([...update]);
         }, 0);
       }
       // console.log(active.id + ' was dropped in the delete drop area');
@@ -117,11 +117,13 @@ function PantryPage() {
     if (draggedOverTrash) setDraggedOverTrash(false);
     // Update sort order
     if (over && active.id !== over.id && active.id !== 'delete') {
-      setDisplayIds((item) => {
-        const activeIndex = item.indexOf(active.id);
-        const overIndex = item.indexOf(over.id);
-        return arrayMove(item, activeIndex, overIndex);
-      });
+      setTimeout(() => {
+        setDisplayIds((item) => {
+          const activeIndex = item.indexOf(active.id);
+          const overIndex = item.indexOf(over.id);
+          return arrayMove(item, activeIndex, overIndex);
+        });
+      }, 0);
     }
   };
 
@@ -132,19 +134,26 @@ function PantryPage() {
   const searchHandler = (filterData) => {
     if (filterData === 'reset' || filterData === null) {
       const update = appUser.pantry.map((item) => item.id);
-      setDisplayIds(update);
+      setDisplayIds([...update]);
     } else if (appUser.pantry.some((item) => item.id === filterData.id)) {
       setDisplayIds([filterData.id]);
     }
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      const setDisplay = appUser.pantry.map((item) => item.id);
-      setDisplayIds(setDisplay);
-    }, 1000);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // setTimeout(() => {
+    console.log('updating setDisplay line 145');
+    const setDisplay = appUser.pantry.map((item) => item.id);
+    setDisplayIds(setDisplay);
+    // }, 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, []);
+
+  const updateHandler = () => {
+    const setDisplay = appUser.pantry.map((item) => item.id);
+    setDisplayIds(setDisplay);
+  };
 
   return (
     <>
@@ -181,6 +190,15 @@ function PantryPage() {
               Add To Pantry
             </Button>
           </Link>
+
+          <Button
+            color='secondary'
+            variant='contained'
+            type='button'
+            onClick={updateHandler}
+          >
+            Update List
+          </Button>
         </div>
         <DropArea items={displayIds} />
       </DndContext>

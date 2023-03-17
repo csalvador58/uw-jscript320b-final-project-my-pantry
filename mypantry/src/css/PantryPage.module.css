@@ -16,6 +16,7 @@ div.drop-area {
 div.center {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
 

@@ -9,7 +9,7 @@ import {
 import { v4 as uuidv4 } from 'uuid';
 import { db } from '../firebase';
 
-const UID = 'test2';
+const UID = 'test';
 const initializeDB = [
   {
     type: 'add',

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import UserContext from '../store/UserContext';
 import { useNavigate } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
@@ -23,11 +24,9 @@ import ListItemCard from '../ui/ListItemCard';
 
 function PantryPage() {
   const appUser = useContext(UserContext);
+  const [pantryIds, setPantryIds] = useState([]);
   const [activeId, setActiveId] = useState(null);
   const [draggedOverTrash, setDraggedOverTrash] = useState(false);
-  // const appUser = useContext(UserContext);
-
-  // const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -37,9 +36,20 @@ function PantryPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [appUser.loginInfo]);
 
-  const [items, setItems] = useState(['Apple', 'Banana', 'Pear']);
+  useEffect(() => {
+    const actionObject = {
+      type: 'query',
+      data: {
+        uid: appUser.loginInfo,
+        collection: 'pantry',
+        pantryObj: {},
+      },
+    };
+    appUser.updatePantry(actionObject);
 
-  console.log(activeId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
 
   const sensors = useSensors(
     useSensor(MouseSensor, {
@@ -91,7 +101,7 @@ function PantryPage() {
     }
     if (draggedOverTrash) setDraggedOverTrash(false);
     if (over && active.id !== over.id && active.id !== 'A1') {
-      setItems((item) => {
+      setPantryIds((item) => {
         const activeIndex = item.indexOf(active.id);
         const overIndex = item.indexOf(over.id);
         // console.log(arrayMove(item, activeIndex, overIndex));
@@ -99,6 +109,32 @@ function PantryPage() {
       });
     }
   };
+
+  const updatePantryHandler = () => {
+    // const actionObject = {
+    //   type: 'query',
+    //   data: {
+    //     uid: appUser.loginInfo,
+    //     collection: 'pantry',
+    //     pantryObj: {},
+    //   },
+    // };
+    // appUser.updatePantry(actionObject);
+
+    const test = appUser.pantry;
+    console.log('test update');
+    console.log(test);
+
+
+    const update = appUser.pantry.map((item) => item.id);
+    setPantryIds(update)
+
+    console.log('pantryIds')
+    console.log(pantryIds)
+
+  };
+
+
 
   return (
     <>
@@ -114,17 +150,25 @@ function PantryPage() {
           onDragStart={handleDragStart}
           onDragEnd={handleDragEnd}
         >
-          <SortableContext items={items} strategy={verticalListSortingStrategy}>
-            {items.map((item) => (
+          <SortableContext items={pantryIds} strategy={verticalListSortingStrategy}>
+            {pantryIds.map((item) => (
               <ListItemCard key={item} id={item} />
             ))}
           </SortableContext>
-          <DropArea items={items} />
+          {/* <DropArea items={items} /> */}
         </DndContext>
       </div>
       <div className={classes.center}>
-        <Button color='secondary' variant='contained' type='submit'>
+        <Button color='secondary' variant='contained' type='button'>
           Add To Pantry
+        </Button>
+        <Button
+          color='secondary'
+          variant='contained'
+          type='button'
+          onClick={updatePantryHandler}
+        >
+          Update
         </Button>
       </div>
     </>

@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import UserContext from '../store/UserContext';
+import { v4 as uuidv4 } from 'uuid';
 import {
   Box,
   Button,
@@ -62,6 +63,7 @@ function FormInputPage() {
             qty: values.quantity,
             unit: values.units,
             favorite: values.favorite,
+            id: uuidv4(),
           },
         },
       };

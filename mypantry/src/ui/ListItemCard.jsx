@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 // import {useDraggable} from '@dnd-kit/core'
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
@@ -25,6 +25,7 @@ import { CSS } from '@dnd-kit/utilities';
 // import Grid from '@mui/material/Grid';
 // import DeleteIcon from '@mui/icons-material/Delete';
 import classes from '../css/ListItemCard.module.css';
+import UserContext from '../store/UserContext';
 
 // const foodTypes = {
 //   protein: <LunchDiningIcon />,
@@ -39,18 +40,23 @@ import classes from '../css/ListItemCard.module.css';
 // };
 
 function ListItemCard(props) {
+  const appUser = useContext(UserContext);
+  const itemData = appUser.pantry.find(item => item.id === props.id);
   const { attributes, listeners, setNodeRef, transform, transition } =
-  useSortable({ id: props.id, data: [{ type: "fruit"}, {addinfo: "hello"}] });
+    useSortable({
+      id: props.id,
+      data: [{ name: itemData.name , type: itemData.type}],
+    });
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
   };
 
+  
+
   return (
     <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-        <div className={classes['list-item-card']}>
-            {props.id}
-        </div>
+      <div className={classes['list-item-card']}>{itemData.name}</div>
     </div>
   );
 }

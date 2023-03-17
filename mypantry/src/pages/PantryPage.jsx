@@ -19,7 +19,7 @@ import {
   // rectSortingStrategy,
   rectSwappingStrategy,
   SortableContext,
-  // verticalListSortingStrategy,
+  verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { Button } from '@mui/material';
 import ListItemCard from '../ui/ListCard/ListItemCard';
@@ -36,6 +36,7 @@ function PantryPage() {
     if (!appUser.loginInfo) {
       navigate('/');
     }
+    
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -86,12 +87,12 @@ function PantryPage() {
       return;
     }
 
-    console.log('Drag end 1 called');
-    console.log('Active: ' + active.id);
-    console.log('Over: ' + over.id);
+    // console.log('Drag end 1 called');
+    // console.log('Active: ' + active.id);
+    // console.log('Over: ' + over.id);
 
-    console.log({ active });
-    console.log({ over });
+    // console.log({ active });
+    // console.log({ over });
 
     if (over.id === 'delete') {
       // setItems((items) => items.filter((x) => active.id !== x));
@@ -119,7 +120,7 @@ function PantryPage() {
           setDisplayIds(update);
         }, 0);
       }
-      console.log(active.id + ' was dropped in the delete drop area');
+      // console.log(active.id + ' was dropped in the delete drop area');
     }
     if (draggedOverTrash) setDraggedOverTrash(false);
     // Update sort order
@@ -131,16 +132,6 @@ function PantryPage() {
       });
     }
   };
-
-  // const updatePantryHandler = () => {
-  //   if (appUser.pantry) {
-  //     const update = appUser.pantry.map((item) => item.id);
-  //     setDisplayIds(update);
-
-  //     console.log('DisplayIds');
-  //     console.log(displayIds);
-  //   }
-  // };
 
   const searchData = appUser.pantry.map((item) => {
     return { id: item.id, name: item.name };
@@ -155,12 +146,12 @@ function PantryPage() {
     }
   };
 
-  useEffect(() => {
+  // useEffect(() => {
     setTimeout(() => {
       const setDisplay = appUser.pantry.map((item) => item.id);
       setDisplayIds(setDisplay);
-    }, 1000);
-  }, [appUser.pantry]);
+    }, 2000);
+  // }, [appUser.pantry]);
 
   return (
     <>
@@ -195,14 +186,6 @@ function PantryPage() {
           <Button color='secondary' variant='contained' type='button'>
             Add To Pantry
           </Button>
-          {/* <Button
-          color='secondary'
-          variant='contained'
-          type='button'
-          onClick={updatePantryHandler}
-        >
-          Update
-        </Button> */}
         </div>
         <DropArea items={displayIds} />
       </DndContext>
@@ -214,11 +197,11 @@ const DropArea = (props) => {
   const { setNodeRef } = useDroppable({ id: 'delete' });
 
   return (
-    // <SortableContext items={props.items} strategy={verticalListSortingStrategy}>
+    <SortableContext items={props.items} strategy={verticalListSortingStrategy}>
     <div ref={setNodeRef} className={classes['drop-area']}>
       Drop Area
     </div>
-    // </SortableContext>
+     </SortableContext>
   );
 };
 

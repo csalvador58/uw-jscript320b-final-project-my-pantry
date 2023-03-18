@@ -1,7 +1,7 @@
-// import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Box, Button, Grid, TextField } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-// import UserContext from '../store/UserContext';
+import UserContext from '../store/UserContext';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import classes from '../css/RecipesPage.module.css';
@@ -12,7 +12,7 @@ import { v4 as uuidv4 } from 'uuid';
 const BASE_URL = 'https://api.edamam.com/api/recipes/v2';
 const APP_ID = process.env.REACT_APP_EDAMAM_RECIPE_ID;
 const API_KEY = process.env.REACT_APP_EDAMAM_RECIPE_API;
-let IMAGE_SIZE = 'REGULAR';
+const LOCAL_STORE_TEMP_RECIPES = 'myPantry-temp-recipes';
 
 const validationSchema = yup.object({
   query: yup
@@ -27,49 +27,105 @@ const defaultFormikValues = {
 };
 
 function RecipesPage() {
-  // const appUser = useContext(UserContext);
+  const appUser = useContext(UserContext);
+  const [newData, setNewData] = useState(recipesObj);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   if (!appUser.loginInfo) {
-  //     navigate('/');
-  //   }
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [appUser.loginInfo]);
+  useEffect(() => {
+    if (!appUser.loginInfo) {
+      navigate('/');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [appUser.loginInfo]);
+
+  useEffect(() => {
+    if (appUser.loginInfo) {
+      console.log('Loading recipes from local...');
+      try {
+        if (JSON.parse(localStorage.getItem(LOCAL_STORE_TEMP_RECIPES))) {
+          const errorCheck = JSON.parse(
+            localStorage.getItem(LOCAL_STORE_TEMP_RECIPES)
+          );
+
+          try {
+            // This will throw error if
+            if (errorCheck[0].error) {
+              console.log(
+                'Data from local storage if not valid from last API fetch. It will not be used.'
+              );
+            }
+          } catch (info) {
+            // Local storage data is good to use.
+            console.log(
+              'Data from local storage is ok to use and will be loaded'
+            );
+            setNewData(
+              JSON.parse(localStorage.getItem(LOCAL_STORE_TEMP_RECIPES))
+            );
+          }
+        } else {
+          console.log('No data to local storage data to load from.');
+        }
+      } catch (error) {
+        console.log(
+          `Temp browser storage has an error reading local storage data for My Pantry. Clearing store data: myPantry-temp-recipes`
+        );
+        localStorage.removeItem(LOCAL_STORE_TEMP_RECIPES);
+      }
+    }
+  }, [appUser.loginInfo]);
 
   const formik = useFormik({
     initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // console.log(values);
-
       // create string from query input
       const queryStr = values.query;
       const query = queryStr.replace(/,/g, '%2C').replace(/ /g, '%20');
 
       // create string from exclude input
-      const excludeStr = values.exclude;
-      const arrayExclude = excludeStr.split(/,\s|,\s*|\s*,\s*/);
-      const exclude = arrayExclude
-        .map((item) => `&excluded=${item.replace(/ /g, '%20')}`)
-        .join('');
+      let exclude;
+      if (values.exclude) {
+        const excludeStr = values.exclude;
+        const arrayExclude = excludeStr.split(/,\s|,\s*|\s*,\s*/);
+        exclude = arrayExclude
+          .map((item) => `&excluded=${item.replace(/ /g, '%20')}`)
+          .join('');
+      } else {
+        exclude = '';
+      }
 
       // create url
-      const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}&imageSize=${IMAGE_SIZE}${exclude}&random=true&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
+      const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
 
       fetch(url)
         .then(function (data) {
           return data.json();
         })
         .then(function (responseJson) {
-          // set data in local storage
-          const myPantryData = JSON.stringify(responseJson);
-          localStorage.setItem('myPantry-temp-recipes', myPantryData);
+          try {
+            // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
+            if (responseJson[0].error) {
+              console.log(
+                'Error is present from fetch. Data will not be saved.'
+              );
+            }
+          } catch (info) {
+            setNewData(responseJson);
 
+            const data = JSON.stringify(responseJson);
+            localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, data);
+          }
+        })
+        .catch((e) => {
+          if (e instanceof SyntaxError) {
+            console.log(e, true);
+          } else {
+            console.log(e, false);
+          }
         });
 
       resetFormik();
-      // resetEditDataState();
     },
   });
 
@@ -79,12 +135,8 @@ function RecipesPage() {
   };
 
   const resetFormik = () => {
-    formik.values.query = '';
-    formik.values.exclude = '';
+    formik.resetForm();
   };
-
-  const myPantryData = JSON.parse(localStorage.getItem('myPantry-temp-recipes'));
-  const initRecipeDB = myPantryData ? myPantryData : recipesObj;
 
   return (
     <>
@@ -136,9 +188,18 @@ function RecipesPage() {
                 <Button color='primary' variant='contained' type='submit'>
                   Submit
                 </Button>
+                {/* <Button
+                  color='secondary'
+                  variant='contained'
+                  type='button'
+                  onClick={resetFormik}
+                >
+                  Clear
+                </Button> */}
                 <Button
                   variant='contained'
                   color='secondary'
+                  type='button'
                   onClick={handleClose}
                 >
                   Close
@@ -146,21 +207,22 @@ function RecipesPage() {
               </div>
             </Grid>
             <Grid container item xs={12}>
-              {initRecipeDB.hits.map((recipe) => {
-                return (
-                  <Grid
-                    key={uuidv4()}
-                    item
-                    xs={12}
-                    sm={6}
-                    md={4}
-                    p={1}
-                    zeroMinWidth
-                  >
-                    <RecipeCard food={recipe} />
-                  </Grid>
-                );
-              })}
+              {newData &&
+                newData.hits.map((recipe) => {
+                  return (
+                    <Grid
+                      key={uuidv4()}
+                      item
+                      xs={12}
+                      sm={6}
+                      md={4}
+                      p={1}
+                      zeroMinWidth
+                    >
+                      <RecipeCard food={recipe} />
+                    </Grid>
+                  );
+                })}
             </Grid>
           </Grid>
         </form>
@@ -170,4 +232,3 @@ function RecipesPage() {
 }
 
 export default RecipesPage;
-

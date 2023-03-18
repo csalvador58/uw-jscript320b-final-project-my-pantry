@@ -70,7 +70,6 @@ function RecipeCard({ food }) {
       favoriteCheck.pantryObj.name === food.recipe.label
         ? 'secondary'
         : 'primary';
-    console.log(favIcon);
   }
 
   return (

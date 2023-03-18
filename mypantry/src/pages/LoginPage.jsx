@@ -23,9 +23,24 @@ function Login() {
     initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values.username);
+      // console.log(values.username);
       appUser.updateLogin(values.username);
       formik.values.username = '';
+
+      setTimeout(() => {
+        if (appUser.loginInfo) {
+          const actionObject = {
+            type: 'query',
+            data: {
+              uid: appUser.loginInfo,
+              collection: 'pantry',
+              pantryObj: {},
+            },
+          };
+          appUser.updatePantry(actionObject);
+        }
+      }, 0);
+
       navigate('/home');
     },
   });

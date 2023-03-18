@@ -38,6 +38,7 @@ function MyPantryBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
   const handleLoginLogout = () => {
     if (avatarMenu.isLoggedIn) {
       // logout user
@@ -89,10 +90,13 @@ function MyPantryBar() {
                 sx={{ p: 0 }}
               >
                 <Avatar
+                  sx={{ bgcolor: '#9c27b0' }}
                   data-testid='avatar'
                   aria-label='user avatar'
                   src={''}
-                />
+                >
+                  {appUser.loginInfo.slice(0, 1).toUpperCase()}
+                </Avatar>
               </IconButton>
 
               <Menu

@@ -1,0 +1,11 @@
+div.error-page-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+p.error-info {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+}

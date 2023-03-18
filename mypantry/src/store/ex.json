@@ -1,0 +1,25 @@
+{
+  "uid": "Chris",
+  "collection": "recipe",
+  "pantryObj": {
+      "name": "Parmesan Chicken, Provolone And Ham Bundles",
+      "subheader": "Betty Crocker",
+      "image": "https://edamam-product-images.s3.amazonaws.com/web-img/57b/57b94a1f07de5f32836e2a8aad825745.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHcaCXVzLWVhc3QtMSJHMEUCIQDb%2BsQZMkw1Gp9WZYkETb4QPV4ffV5u%2FrImqLlG0x4elAIgV60fnaeREv%2BqceR1cOlqdoZYHOcn3xrNtPgL5rBI3Z0quQUIQBAAGgwxODcwMTcxNTA5ODYiDGSWmhwF8B%2FIGqDDsiqWBc7SyQzZNjkOpzpctq%2B%2FnN%2B60q0Z5Ycj%2ByxWu3sbtC8PPwYTjkHY87340V%2BeO%2FXTO%2FYxj3kI61C9YgTTvNDWvNqgALy5q%2BgKPNIaYSDgp9Iuezh%2B4vw6jCiN%2B29nBhVY0xGY4VlajjrfDaO%2FS4P67VgOSKjzOIy5JDvtPlvpZxz4lpWS5%2FdgDV6bQ1uJn9zri8XoZ2pR30Lo%2BJusv2Q7Mj7T%2BGUUK9dkXo38FpeOiSeNAL%2FsKoTysQDzTHleWgZNcRznz5gspRnCeHCZwh%2BUtQF552thEhxPXQbHuedZff5RBS4o9io%2FNgAxGGubPizgsdTEw7VUZpp4Cue4hlfpdqat5GLb6nfufT%2BkzU71gCMExawBKazb0OXntwkxYPRgubFPsF82JbpCvbuXb7mlDhzdEWPrObznC2Tsl9eBOlHB95UXIlCLTGM9KDjLwljgPAbRlRDeMhHij6Ugza7K4n4jMyJ%2BaCGJGBiUqzj%2B%2Fi4M76UkIIi9UclecpEX26LzRo9dyufiJvi%2BKS%2B5KcbL16UELchcehwd%2BxjoBjfPm9DCGvl8G8sDj8vQHPGYdrAIHHc50xA4OrrVZzdeRzOEH2nk0xP6%2B5XkK9Qkv4TZnK9fxXNDCrx4t22%2F6CLQ5C%2Fg8yNJ5pHTtZCj0m%2BFq0MW1wvNNKkulLaoMf7DhQjTbb7Gl57CJ%2BVn9T%2FQVE3PnDYJpazSoIbNLluow493TDQM5xOkPErzR8LJtT6eXrQti2U1QRgs2l0PFcK0gfcZkgfiQ44ogYxmHoxH%2F7lIE0P9jUmjYEM2YLSvd5zr8FYfDFqsFvDbQNQWi1x9wSqsqiO3uWjOk3R34z3jQ%2FfVvuTfMy8e8mNidqCyDKU3iW8Ipr%2FEjApGCuMwMPfD1aAGOrEB7CEyy1ZVJid7DViCwTDRGkhYOSU8ZurRLwU6hHIP9fxQgCFBa01Qp9xkwPQGo%2B%2FNO5MoYJYdX%2BxpQqZbEgc1ffJGyagDwRf4CbucD5w3EcfsnpblXkD5xFzu3DBtF6w4Ozro%2FuYdkDPnOAABDkV3VnQccVQN7sjUuEus4qdbQ%2FefdHNgGMzWWUeqMJTn5Z7pIVtx77fqLwac5dbFqcsK8HCLUNFmp2r7fb0Ss%2FhKX0X%2B&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T082405Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFE4VD5CNB%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9909ebfc4ee421e439707fabc083223b4e36d8294a194ef418e0414f3780eb09",
+      "alt": "Parmesan Chicken, Provolone And Ham Bundles",
+      "cuisine": "italian",
+      "type": "lunch/dinner",
+      "calories": 3320,
+      "ingredients": [
+          "2 cups Original Bisquick® mix",
+          "1/2 teaspoon garlic powder",
+          "1/2 cup boiling water",
+          "4 slices (3/4 oz each) provolone cheese",
+          "4 thin slices (about 1 oz each) cooked ham",
+          "4 large (about 1/2 lb) uncooked chicken breast tenders (not breaded)",
+          "1 tablespoon butter or margarine, melted",
+          "4 teaspoons grated Parmesan cheese",
+          "1 cup tomato pasta sauce, heated"
+      ],
+      "id": "a54e83e0-912f-446a-a145-4d5f18cbf2db"
+  }
+}

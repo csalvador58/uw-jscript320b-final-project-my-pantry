@@ -11,11 +11,13 @@ div.drop-area {
   justify-content: center;
   margin: 2rem auto 0 auto;
   width: 100px;
+  border-style: solid;
 }
 
 div.center {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
 
@@ -35,3 +37,4 @@ div.activeDrag {
 svg.delete {
   font-size: 5rem;
 }
+

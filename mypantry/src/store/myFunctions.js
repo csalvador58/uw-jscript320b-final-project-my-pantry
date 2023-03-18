@@ -11,11 +11,10 @@ import {
 import { db } from '../firebase';
 
 export function updatePantryHandler(action, setter) {
-  if (!action.data.uid) {
-    console.log('Error with uid in myFunction updatePantryHandler');
-    return;
-  }
-  console.log(action)
+  // if (!action.data.uid) {
+  //   console.log('Error with uid in myFunction updatePantryHandler');
+  //   return;
+  // }
   async function execute() {
     if (action.type === 'add') {
       await addToCollection(action.data);
@@ -32,16 +31,16 @@ export function updatePantryHandler(action, setter) {
 }
 
 export function queryAllCollection(data, setter) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction queryAllCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction queryAllCollection');
+  //   return;
+  // }
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // Query all docs in sub-collection
   const subCollectionRef = collection(userDocRef, subCollection);
@@ -55,6 +54,17 @@ export function queryAllCollection(data, setter) {
         pantryArray.push(item);
       });
       setter(pantryArray);
+
+      // set data in local storage
+      const storageName = data.collection === 'pantry' ? 'myPantry-pantry' : 'myPantry-fav-recipes';
+      const myPantryData = JSON.stringify(data);
+      localStorage.setItem(storageName, myPantryData);
+   
+      // const storageName = data.collection === 'pantry' ? 'myPantry-pantry' : 'myPantry-recipes';
+      // const myPantryData = JSON.parse(localStorage.getItem(storageName));
+      
+      // const myPantryData = "";
+      // localStorage.setItem(storageName, myPantryData);
     })
     .catch((e) => {
       alert('Error reading: ' + e);
@@ -62,17 +72,18 @@ export function queryAllCollection(data, setter) {
 }
 
 function addToCollection(data) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction addToCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction addToCollection');
+  //   return;
+  // }
 
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  // const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // Query all docs in sub-collection with pantry name
   const subCollectionRef = collection(userDocRef, subCollection);
@@ -97,26 +108,35 @@ function addToCollection(data) {
           });
       } else {
         alert('Item already exists');
+        // deleteDocInCollection(action.data);
+        deleteDocIfFavorites();
+
+
       }
     })
     .catch((e) => {
       alert('Error reading: ' + e);
     });
+    const deleteDocIfFavorites = () => {
+      if(data.collection === 'recipe') {
+        deleteDocInCollection(data);
+        alert('Recipe will be removed from your favorites')
+      }
+    }
 }
 
-
 function updateDocInCollection(data) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction updateDocInCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction updateDocInCollection');
+  //   return;
+  // }
 
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // Query a matching doc in sub-collection with pantry name
   const subCollectionRef = collection(userDocRef, subCollection);
@@ -145,23 +165,24 @@ function updateDocInCollection(data) {
 }
 
 function deleteDocInCollection(data) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction deleteDocInCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction deleteDocInCollection');
+  //   return;
+  // }
 
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // delete a single doc in a collection
   const subCollectionRef = collection(userDocRef, subCollection);
   const queryCollection = query(
     subCollectionRef,
-    where('id', '==', data.pantryObj.id)
+    // need to update to ID
+    where('name', '==', data.pantryObj.name)
   );
 
   const snapshot = getDocs(queryCollection);

@@ -40,7 +40,14 @@ function ListItemCard(props) {
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({
       id: props.id,
-      data: [{ name: itemData.name, type: itemData.type }],
+      data: [
+        {
+          name: itemData.name,
+          type: itemData.type,
+          qty: itemData.qty,
+          unit: itemData.unit,
+        },
+      ],
     });
   const style = {
     transform: CSS.Transform.toString(transform),

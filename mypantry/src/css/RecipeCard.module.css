@@ -1,0 +1,13 @@
+.no-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* display: block; */
+  width: calc(80%);
+  min-width: 1px;
+}
+
+.recipe-card-container {
+    max-width: 345px;
+    height: "100%"
+}

@@ -7,6 +7,7 @@ function UserProvider({ children }) {
 
   const [userState, setUserState] = useState('');
   const [pantryArray, setPantryArray] = useState([]);
+  const [editData, setEditData] = useState({});
   const [recipeArray, setRecipeArray] = useState([]);
 
   const updateLoginState = (status) => {
@@ -23,17 +24,25 @@ function UserProvider({ children }) {
   const updatePantryState = (action) => {
     updatePantryHandler(action, setPantryArray);
   };
-  const updateRecipeState = (action) => {
+  const updateFavorites = (action) => {
     updatePantryHandler(action, setRecipeArray);
   };
+
+  const updateEditState = (obj) => {
+    setEditData(obj)
+  }
+
 
   const storedUserContext = {
     loginInfo: userState,
     updateLogin: updateLoginState,
     pantry: pantryArray,
     updatePantry: updatePantryState,
-    recipes: recipeArray,
-    updateRecipe: updateRecipeState,
+    editData: editData,
+    updateEditData: updateEditState,
+    favorite: recipeArray,
+    toggleFav: updateFavorites,
+    
   };
 
   return (

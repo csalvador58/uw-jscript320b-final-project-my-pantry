@@ -15,7 +15,6 @@ export function updatePantryHandler(action, setter) {
     console.log('Error with uid in myFunction updatePantryHandler');
     return;
   }
-  console.log(action)
   async function execute() {
     if (action.type === 'add') {
       await addToCollection(action.data);
@@ -103,7 +102,6 @@ function addToCollection(data) {
       alert('Error reading: ' + e);
     });
 }
-
 
 function updateDocInCollection(data) {
   if (!data.uid) {

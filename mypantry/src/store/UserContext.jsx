@@ -6,8 +6,12 @@ const UserContext = React.createContext({
   updateLogin: () => {},
   pantry: [],
   updatePantry: () => {},
+  editData: {},
+  updateEditData: () => {},
   recipes: [],
   updateRecipe: () => {},
+  favorite: [],
+  toggleFav: () => {},
 });
 
 export default UserContext;
@@ -17,6 +21,8 @@ UserContext.PropTypes = {
   updateLogin: PropTypes.func.isRequired,
   pantry: PropTypes.array.isRequired,
   updatePantry: PropTypes.func.isRequired,
+  editData: PropTypes.object.isRequired,
+  updateEditData: PropTypes.func.isRequired,
   recipes: PropTypes.array.isRequired,
   updateRecipe: PropTypes.func.isRequired,
 };
@@ -56,7 +62,6 @@ UserContext.PropTypes = {
 //   }
 // }
 
-
 // const actionObject = {
 //   type: 'add',
 //   data: {
@@ -71,7 +76,6 @@ UserContext.PropTypes = {
 //     },
 //   },
 // };
-
 
 // function addToCollection(data) {
 //   // setup authorized-user collection
@@ -110,7 +114,6 @@ UserContext.PropTypes = {
 //       console.error('Error reading: ' + e);
 //     });
 // }
-
 
 // Newest
 // function addToCollection(data) {
@@ -157,7 +160,6 @@ UserContext.PropTypes = {
 //       alert('Error reading: ' + e);
 //     });
 // }
-
 
 // // set object reference
 // const objectRef =

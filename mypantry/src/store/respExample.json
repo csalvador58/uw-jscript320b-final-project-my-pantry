@@ -1,0 +1,1149 @@
+{
+    "from": 1,
+    "to": 20,
+    "count": 586,
+    "_links": {},
+    "hits": [
+      {
+        "recipe": {
+          "label": "Spicy Corona Mexican Stew",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/83e/83ea44200730428d649eb63a7752a7ac-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3d289fc69dbd01d61175c7889c9adf970aac622e19d5cf28926ba50df77ea078",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/83e/83ea44200730428d649eb63a7752a7ac-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8f1d4f401d04a1a5d65b4120fabae38cd1f2a6e4a29cbeff3def54c4c1aad1ac",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/83e/83ea44200730428d649eb63a7752a7ac.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ed49d734035f95735a28428b8e0c2f7888484dc7627fc0563bf5229b8cca2a9f",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "Foodista",
+          "url": "http://www.foodista.com/recipe/DPMLYQ87/spicy-corona-mexican-stew",
+          "shareAs": "http://www.edamam.com/recipe/spicy-corona-mexican-stew-d38df81d9b721a6cebf8a182224cb72b/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "1/2 large red onion, chopped",
+            "2 cloves garlic, minced",
+            "1 bag frozen mixed bell pepper",
+            "1 pound boneless pork chops, cut into bite sized pieces",
+            "1 cup Corona beer",
+            "1 large lime, juiced",
+            "2 cups chicken broth",
+            "1 cup instant brown rice",
+            "1 can mild peppers",
+            "2 cups tomatoes, chopped",
+            "1 can black beans, low sodium, drained",
+            "2 teaspoons cumin",
+            "2 teaspoons chili powder",
+            "1 pinch red pepper",
+            "2 tablespoons olive oil",
+            "1 large avocado, chopped",
+            "6 tablespoons low fat sour cream",
+            "6 tablespoons low fat mozzarella cheese, shredded",
+            "Your favorite salad mix"
+          ],
+          "calories": 3429.9154149240035,
+          "cuisineType": [
+            "mexican"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/d38df81d9b721a6cebf8a182224cb72b?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Scrumptious Rice with Chicken and Veggies",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/359/359f7049f5d296d985542a8bdb65c921-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cd226f6d56f5d8356a28da61db7ec0e5c8ce7ef985ce19fdc3cb619a7ed9cb06",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/359/359f7049f5d296d985542a8bdb65c921-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=df26f375f8f17d57973d2d5a005a85dccc27a67512c2ab973a17e324fc7f09ec",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/359/359f7049f5d296d985542a8bdb65c921.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=03b7626c8bdf56c38125cd61c99bdc508a845a5c55d0eefab9a0412d62dc2c86",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/359/359f7049f5d296d985542a8bdb65c921-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3192459a01cbd67b17ad06f7a8bd882761743479e5fca2ab314361363df53922",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "steptohealth.com",
+          "url": "https://steptohealth.com/scrumptious-rice-with-chicken-and-veggies/",
+          "shareAs": "http://www.edamam.com/recipe/scrumptious-rice-with-chicken-and-veggies-ddf6bd5984300f23b6685b869c80bf68/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "2 tomatoes (80 g)",
+            "Olive oil",
+            "1 onion (60 g)",
+            "Salt and black pepper",
+            "1 cup of rice (240 g)",
+            "2 garlic cloves (6 g)",
+            "3 chicken breasts or thighs (300 g)",
+            "1 cup of peas (150 g)",
+            "5 saffron threads (1 g)",
+            "1/2 green or red pepper (40 g)",
+            "1 cube of chicken broth"
+          ],
+          "calories": 4075.3193579999997,
+          "cuisineType": [
+            "mediterranean"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/ddf6bd5984300f23b6685b869c80bf68?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Slow Cooker French Cream Chicken Recipe",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/273/273a9c39ecc331c1511e656807d880ab-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fe13aa622bdf9c5625ed915bd536258352a1f523c4edb91c0aaa502eb5694072",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/273/273a9c39ecc331c1511e656807d880ab-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6ff8ee7db30f20fbe4e93eccfedfbe1e1826c1aff63972ca19f3e2d027796ac2",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/273/273a9c39ecc331c1511e656807d880ab.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2d1656b743c6ef0186e5d9053680079c3d4ce3b455860f95607b677f97d1a0ef",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/273/273a9c39ecc331c1511e656807d880ab-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=702abe32eb7f67780eaedd1972588e87daa242e3695e650efd2f70040dc843be",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "mumslounge.com.au",
+          "url": "https://mumslounge.com.au/lifestyle/food/slow-cooker-french-cream-chicken-recipe/",
+          "shareAs": "http://www.edamam.com/recipe/slow-cooker-french-cream-chicken-recipe-23902171e3c793f058cd3b1f9a0a97aa/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "600g chicken thigh fillets, diced",
+            "250g block of cream cheese",
+            "1 pkt French Onion Soup Mix",
+            "400ml cream",
+            "120g baby spinach leaves",
+            "Steamed seasonal veggies and rice to serve"
+          ],
+          "calories": 3878.147869590591,
+          "cuisineType": [
+            "french"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/23902171e3c793f058cd3b1f9a0a97aa?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Mom's Chicken Scratch",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/f2a/f2a4b0edc352645efdea987007aeb716-s?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c23da264d7f454b80675b3cf128ed4f5295b659f62afd0019d849296304d3c0e",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/f2a/f2a4b0edc352645efdea987007aeb716-m?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9cad14b883d5111a5ede87d89913de0752b41ca9cba771cd38824eaecd070e4f",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/f2a/f2a4b0edc352645efdea987007aeb716?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e607b3512e2778c68c1a8c11ad1651ac93638e21df117a89e2315f2fec89f30c",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "justapinch.com",
+          "url": "https://www.justapinch.com/recipes/main-course/chicken/moms-chicken-scratch.html",
+          "shareAs": "http://www.edamam.com/recipe/mom-s-chicken-scratch-41ee8a6b290c356b4deaa57c7f453b2a/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "3-4 large chicken breasts, boneless and skinless",
+            "1 box four cheese flavored rice-a-roni rice (or any kind of rice you desire)",
+            "1 1/2-2 c chicken broth",
+            "1 can(s) cream of mushroom soup",
+            "1 c all purpose flour",
+            "2 tsp baking powder",
+            "1 c milk",
+            "1 tsp salt",
+            "1 stick butter (melted)",
+            "1/2 tsp pepper"
+          ],
+          "calories": 3328.7015000000006,
+          "cuisineType": [
+            "american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/41ee8a6b290c356b4deaa57c7f453b2a?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Risotto Wonderland",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/161/161e78b7814fa8060c45db9ea48a3cc8-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1f9064ef6dcef5d3044c059325924a1718e05a91401824690e31d90f05a567fe",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/161/161e78b7814fa8060c45db9ea48a3cc8-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d5043df983a53976e6f1392199a582613307ff9bfefa549db6abbdb9edebd6dd",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/161/161e78b7814fa8060c45db9ea48a3cc8.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5fa6a52c086dae7a763004041d48400d313fae35ece661b64d38f3bd99a0c984",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/161/161e78b7814fa8060c45db9ea48a3cc8-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=dff8048bc5091f78f1d1e125a349c9e547f6da1a73e2ee4bf303c483238213be",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "tastykitchen.com",
+          "url": "https://tastykitchen.com/recipes/sidedishes/risotto-wonderland/",
+          "shareAs": "http://www.edamam.com/recipe/risotto-wonderland-83b8b188c69babe9eba9a28a7480d242/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "8 ounces, weight Chicken Breast, Lean",
+            "1 cup White Mushrooms, Sliced",
+            "2 cloves Garlic, Minced",
+            "2 Tablespoons Butter",
+            "2 cups Low Sodium Chicken Broth",
+            "1 cup Arborio Rice",
+            "2 cups Spinach",
+            "1 Tablespoon Parmesan Cheese"
+          ],
+          "calories": 1343.156453249384,
+          "cuisineType": [
+            "italian"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/83b8b188c69babe9eba9a28a7480d242?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Veggie Stuffed Chicken",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/592/592f888b3d31961127e7ce97f94789a6-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=44ee6bed5cc8020304ec2619330d9bbe7fa5817599a4a9bfe3dccb68973a1804",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/592/592f888b3d31961127e7ce97f94789a6-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7cb3669e546d99d832f81b68707ac674cfc0df5f9d03e55b8d50149c2a8eca4a",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/592/592f888b3d31961127e7ce97f94789a6.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f8f82576405fe2c5178cc379e42b8f7617f769e0419df208a3d65eaa619527ce",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/592/592f888b3d31961127e7ce97f94789a6-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=691bb6b2f34cb248a724a4d8fec34f383152ca67a7aec5a69adf4328cc87532e",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "lovebugsandpostcards.com",
+          "url": "https://www.lovebugsandpostcards.com/veggie-stuffed-chicken/",
+          "shareAs": "http://www.edamam.com/recipe/veggie-stuffed-chicken-b42148c65f9216f4c7522b237903847a/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "2-3 large chicken breasts",
+            "1 cup Cauliflower Rice",
+            "1/2 cup chopped Broccoli",
+            "1/2 cup of Peppers (diced)",
+            "1/4 cup of Sweet onion (diced)",
+            "1 can of Ro-Tel Tomatoes",
+            "1 cup of Cheese",
+            "Seasonings (I used Mrs. Dash)",
+            "2 tbsp of melted butter"
+          ],
+          "calories": 1904.9171800000001,
+          "cuisineType": [
+            "french"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/b42148c65f9216f4c7522b237903847a?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Shrimp and Veggie Stir Fry with Toasted Coconut Rice recipes",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/f1b/f1bf75e1f6103814221544da0a62abef-s?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b4a0fdb82bfcd30725f62a33bc0656fb06b98e73b58e5a9e71b84542b49a3167",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/f1b/f1bf75e1f6103814221544da0a62abef-m?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=af9e7e60fd3d0667f8a920fcd13628700739b0cc95116aa728f5e25d942a3d51",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/f1b/f1bf75e1f6103814221544da0a62abef?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=975b5eeb42226ad3f62275fdc67531d46a27d0425d47f4ac29410d9071b01a3e",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "annies-eats.com",
+          "url": "http://www.annies-eats.com/2017/01/26/shrimp-and-veggie-stir-fry-with-toasted-coconut-rice/",
+          "shareAs": "http://www.edamam.com/recipe/shrimp-and-veggie-stir-fry-with-toasted-coconut-rice-recipes-afb056799577fd508b579272ba7d3caf/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "½ cup unsweetened shredded coconut",
+            "1½ jasmine or basmati rice (I prefer basmati)",
+            "1 (14 oz.) can coconut milk",
+            "1¾ cups water",
+            "2-4 tbsp. sugar",
+            "1½ tsp. kosher salt",
+            "1 lb. shrimp, peeled and deveined",
+            "1 tsp. cornstarch",
+            "salt",
+            "pepper",
+            "2 tbsp. peanut or canola oil, divided",
+            "1 small-medium yellow onion, thinly sliced",
+            "1 red bell pepper, seeded and thinly sliced",
+            "3 cloves garlic, minced",
+            "1 tbsp. minced fresh ginger",
+            "½ tsp. red pepper flakes",
+            "1 head broccoli, cut into small florets",
+            "8 oz. snow peas",
+            "¼ cup veggie or chicken broth",
+            "1 large carrot, peeled and shredded",
+            "¼ cup soy sauce",
+            "½ tsp. sesame oil"
+          ],
+          "calories": 2384.0571000325303,
+          "cuisineType": [
+            "chinese"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/afb056799577fd508b579272ba7d3caf?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Chicken With Shallot Cream Sauce",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/b76/b763c8c37b5382c7a483d0740e4a724a-s?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=df9829c1724d6fdd1db01bc61209df9cca4c07147e910ca75cc7a33ce633b6b9",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/b76/b763c8c37b5382c7a483d0740e4a724a-m?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7cb990f824a76ec35bce2782fb30b2e190a217d7ba15cd5af6d82ead10fe8b22",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/b76/b763c8c37b5382c7a483d0740e4a724a?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=530d3549ff6adec1393f6316c966b1450bd1e22ea8e79964ae9ee5eaf79e2e4c",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "Foodista",
+          "url": "http://www.foodista.com/recipe/MFNDBKFT/chicken-with-shallot-cream-sauce",
+          "shareAs": "http://www.edamam.com/recipe/chicken-with-shallot-cream-sauce-ca8a81a14a7741cc23970c88824fe93b/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "8 ounces boneless skinless chicken breasts (or four chicken tenders)",
+            "1/2 cup all purpose flour",
+            "1/2 teaspoon garlic powder",
+            "1/2 teaspoon salt",
+            "1/4 teaspoon cayenne pepper",
+            "3 tablespoons butter or margarine, divided in half",
+            "1 cup chicken broth",
+            "1 medium shallot, finely chopped",
+            "1 teaspoon dried thyme leaves",
+            "1 cup white wine (I used Lindeman's Chardonnay Riesling blend)",
+            "1 cup heavy cream"
+          ],
+          "calories": 1957.982922,
+          "cuisineType": [
+            "mediterranean"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "condiments and sauces"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/ca8a81a14a7741cc23970c88824fe93b?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Tempeh Delight",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/15e/15ef57d82da964f9a664b815df7c4442-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=95c9753608b290577ace98779ce030ef38cd077afa65a898e1e06c8d7ca56949",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/15e/15ef57d82da964f9a664b815df7c4442-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=aaa875bb0362082027c8e08df31d7b909d9c8d7f7addcc2a2346423f97c7270b",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/15e/15ef57d82da964f9a664b815df7c4442.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=83041bfd9fdaf6f7b877d5fad73d09416a3c600cbf161f9d3f8a53aa6c81b047",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "Allrecipes",
+          "url": "https://www.allrecipes.com/recipe/236202/tempeh-delight/",
+          "shareAs": "http://www.edamam.com/recipe/tempeh-delight-4c94f849be01c6e6f2bfbeb7d7ad8c76/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "1/4 cup soy sauce",
+            "1/4 cup water",
+            "1/4 cup maple syrup",
+            "3 cloves garlic, or more to taste",
+            "2 tablespoons chopped fresh ginger",
+            "2 tablespoons olive oil",
+            "2 (8 ounce) packages tempeh, sliced diagonally"
+          ],
+          "calories": 1375.6607740998377,
+          "cuisineType": [
+            "american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "starter"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/4c94f849be01c6e6f2bfbeb7d7ad8c76?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Grilled Chicken Banh Mi",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/4ee/4ee6a02b3e3431cf5c5af8477f99c85c-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b8bca7067ad655ff7c5608bbbebf39722040ad7f26e821f645ad4346361bbb8c",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/4ee/4ee6a02b3e3431cf5c5af8477f99c85c-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=203f7fa5a9a60333581c0d216f0b2e33dda8be544da741ca03b0b98030c406a0",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/4ee/4ee6a02b3e3431cf5c5af8477f99c85c.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9e8ec1bff10f16e947af107132ca28432527de542891170c092b7ba05072bde6",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "Foodista",
+          "url": "http://www.foodista.com/recipe/2Q34KBV6/grilled-chicken-banh-mi",
+          "shareAs": "http://www.edamam.com/recipe/grilled-chicken-banh-mi-27ce8141b280892a739f4af7d0bb315b/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "1/2 cup fish sauce",
+            "1/2 cup lime juice",
+            "1/4 cup sugar",
+            "4 cloves garlic, minced",
+            "1 chopped jalapeno",
+            "1 1/2 teaspoons salt",
+            "1 1/4 pounds boneless, skinless chicken breasts",
+            "1/4 cup hot tap water",
+            "1/4 cup rice vinegar",
+            "1/4 cup sugar",
+            "1/2 teaspoon salt",
+            "1/4 teaspoon crushed red pepper",
+            "2 carrots, sliced thin on the bias",
+            "2 daikon radishes, sliced thin on the bias",
+            "6 soft sub rolls",
+            "1/3 cup mayonnaise",
+            "1/2 cucumber, sliced thin",
+            "1 cup cilantro leaves (or mint)",
+            "1 sliced jalapeno for extra heat"
+          ],
+          "calories": 2789.907055000852,
+          "cuisineType": [
+            "south east asian"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "sandwiches"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/27ce8141b280892a739f4af7d0bb315b?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Senposai, Daikon, and Chili Garlic Chicken Wraps",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/684/684e323e575d1480bcf067436b086c4b-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c5dee226652a01039b13f4096ee8228f8724d71835c825e37d45052c69adff38",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/684/684e323e575d1480bcf067436b086c4b-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e351a65c51ce5dba05c22a622f444127982c0fca8ff2f053abfc320b20671e2a",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/684/684e323e575d1480bcf067436b086c4b.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d4754ee0d179460b841bfb83ce6f50cbc04acf0eae0f1bb943c8c2231bcbc4da",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "Food52",
+          "url": "https://food52.com/recipes/39009-senposai-daikon-and-chili-garlic-chicken-wraps",
+          "shareAs": "http://www.edamam.com/recipe/senposai-daikon-and-chili-garlic-chicken-wraps-361afcb55e4fab8ec2b3da85abc284be/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "1 pound chicken tenderloins",
+            "1/2 cup chili sauce",
+            "1/4 cup apricot jam",
+            "2 tablespoons honey",
+            "1 tablespoon chili garlic sauce",
+            "1 teaspoon corn starch",
+            "1 cup black forbidden rice",
+            "2 cups water",
+            "a pinch of salt",
+            "1 medium daikon radish",
+            "4 medium carrots",
+            "4 large senposai leaves",
+            "1/4 cup hot water"
+          ],
+          "calories": 2527.692933103575,
+          "cuisineType": [
+            "american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/361afcb55e4fab8ec2b3da85abc284be?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Orange-Ginger Chicken and Veggie Bowl",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/467/4670b1b838a6fe11d58da6b320c05e0d-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9792c9f8420f107d88c437ac4ba3444d6904a43f6173ee066c9d8cf36700e0d4",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/467/4670b1b838a6fe11d58da6b320c05e0d-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=998c4988dc3c4770befc0a639b72bca2b2b16d6c228389df888d806bf74406ab",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/467/4670b1b838a6fe11d58da6b320c05e0d.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=82ef09944edf79daf84690c34748bbb6097f2aff51a056da484b7f3826887e10",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/467/4670b1b838a6fe11d58da6b320c05e0d-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=caede4125bbcb98f2861e3d97b3a45b592a3b37fed7ac9bb5ecaa21f5d7a7b9d",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "Self",
+          "url": "https://www.self.com/recipe/orange-ginger-chicken-veggie-bowl",
+          "shareAs": "http://www.edamam.com/recipe/orange-ginger-chicken-and-veggie-bowl-fb895232143c42fb0c0082a5d64e497c/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "* 2 cloves garlic, minced",
+            "* 3tablespoons reduced-sodium soy sauce",
+            "* 2tablespoons orange juice",
+            "* 1tablespoon minced ginger",
+            "* 1lb boneless skinless chicken breast, thinly sliced",
+            "* 1/2teaspoon canola oil, divided",
+            "* 4 scallions, thinly sliced",
+            "* 1 red bell pepper, thinly sliced",
+            "* 1cup broccoli florets",
+            "* 1tablespoon sesame seeds",
+            "* 2cups cooked brown rice or Minute Whole-Grain brown rice"
+          ],
+          "calories": 1179.090621777461,
+          "cuisineType": [
+            "caribbean"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "condiments and sauces"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/fb895232143c42fb0c0082a5d64e497c?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Roasted Veggie Bowls with Sweet Onion Sauc",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/95f/95f035d0d9c49788fccbfae8aa95203f-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=de66c1e4b523ce969482eacb66c35f85dc5f390ce018e432791c31c1a7fb677a",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/95f/95f035d0d9c49788fccbfae8aa95203f-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c3450b6c07b5d5226a273e80bfba1a9f6520c8dba1bc1fbaa65957238d411cdd",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/95f/95f035d0d9c49788fccbfae8aa95203f.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a03096fb6885a233b98f448b32d40b5244a995f34e7681e4091c0782faa1f807",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/95f/95f035d0d9c49788fccbfae8aa95203f-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9f8bf7831722f2655af2135c512dc36c3420cb67edb41c2e2eb14b10ff5874fd",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "thegarlicdiaries.com",
+          "url": "http://www.thegarlicdiaries.com/roasted-veggie-bowls-with-sweet-onion-sauce-21-day-fix/",
+          "shareAs": "http://www.edamam.com/recipe/roasted-veggie-bowls-with-sweet-onion-sauc-371cc1ba9b41b82f53aa70451e9875e1/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "* 1 red pepper, diced",
+            "* 20 spear asparagus, fibrou end removed, chopped",
+            "* 2 cup broccoli floret",
+            "* 1 onion, thinly sliced",
+            "* 1 teaspoon garlic powder",
+            "* 1 clove garlic, left whole",
+            "* 1 teaspoon balsamic vinegar",
+            "* 1 teaspoon honey (optional)",
+            "* 6 tablespoon stock (chicken or veggie)",
+            "* 1 tablespoon almond milk",
+            "* 1 tablespoon lemon juice",
+            "* 3 cup cooked brown rice"
+          ],
+          "calories": 924.7200000004465,
+          "cuisineType": [
+            "south american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/371cc1ba9b41b82f53aa70451e9875e1?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Orange Chicken Kabobs",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/95f/95f2c03a577e1146435face9dd51e59c-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b2092a87545ee2528b27f19e4122813e7b1c20079dc4c55fc8cbeac9fd567e94",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/95f/95f2c03a577e1146435face9dd51e59c-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=43df7d1e83812a91c59c14be1eb77a3b170a73226557182dfa69b83e56bb4357",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/95f/95f2c03a577e1146435face9dd51e59c.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=43a8addaefab3e22120f5e1e565f9647caae735fc758a43339e76550b0b66df3",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "Allrecipes",
+          "url": "https://www.allrecipes.com/recipe/244213/orange-chicken-kabobs/",
+          "shareAs": "http://www.edamam.com/recipe/orange-chicken-kabobs-4caced31bc2d060cafb87b7b842afb6c/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "1/4 cup orange marmalade",
+            "2 tablespoons balsamic vinegar",
+            "2 tablespoons red wine",
+            "1 tablespoon olive oil",
+            "1 tablespoon chopped fresh chives",
+            "1 tablespoon chopped fresh basil",
+            "1 large garlic clove, minced",
+            "1/4 teaspoon dried sage",
+            "1/8 teaspoon garlic salt",
+            "1/8 teaspoon kosher salt",
+            "1 (6 ounce) package fresh mushrooms, or to taste",
+            "1 bell pepper, chopped, or to taste",
+            "1/2 red onion, chopped, or to taste",
+            "2 skinless, boneless chicken breast halves, cubed",
+            "1 cup chopped fresh pineapple, or to taste",
+            "skewers"
+          ],
+          "calories": 1214.6947455245775,
+          "cuisineType": [
+            "mediterranean"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/4caced31bc2d060cafb87b7b842afb6c?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Easiest Chicken Rice & Veggie Casserole",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/823/823aaa16989b675b5b9f131c8a4a2cf6-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=411369c8171778aa4d01ea9e92d07f0c5b7791a29449a60d4a0eeff67d624258",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/823/823aaa16989b675b5b9f131c8a4a2cf6-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=731a5a04e714b79100b02e312d47ff9c734d025c172b800827360782357b11c4",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/823/823aaa16989b675b5b9f131c8a4a2cf6.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5a42be3a400d1980cc6ab15d57c4ba0c3d1c6b952cfade3a347bfea5b65e1805",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/823/823aaa16989b675b5b9f131c8a4a2cf6-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=935df9c4970e537988ae7daeb05188e68ecfd5c7a3de0c60be09f21cefc0a7d0",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "food.com",
+          "url": "http://www.food.com/recipe/easiest-chicken-rice-veggie-casserole-257904",
+          "shareAs": "http://www.edamam.com/recipe/easiest-chicken-rice-veggie-casserole-a0ad6d54f646930f97ed8eff5b5ad654/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "4 -6 chicken breasts or 4 -6 chicken thighs",
+            "2 (15 ounce) cans cream of mushroom soup",
+            "2 (15 ounce) cans water (just use the cream of mushroom soup cans!)",
+            "8 ounces frozen mixed vegetables (something with broccoli is yummy)",
+            "2 cups uncooked rice",
+            "1⁄2-1 teaspoon paprika",
+            "1⁄4 teaspoon pepper"
+          ],
+          "calories": 3877.8612012625003,
+          "cuisineType": [
+            "american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/a0ad6d54f646930f97ed8eff5b5ad654?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Crockpot Cashew Chicken",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/9e6/9e6f2fcfb00d8ec1014b2a513317fab2-s?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3eb623c34575b75f6b6ced8fb27cfc7a5a6c07a0eaf67bff2a509c2c929f0aca",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/9e6/9e6f2fcfb00d8ec1014b2a513317fab2-m?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ffe4f231a6be01bb83917fd28692676a18810463b9a93788ef61d339eb3c6ef9",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/9e6/9e6f2fcfb00d8ec1014b2a513317fab2?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=429ec3c7a1803cb1caa2b73e395065988c9eb63d588ea87d47095e1467019cf4",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "justapinch.com",
+          "url": "https://www.justapinch.com/recipes/main-course/main-course-chicken/crockpot-cashew-chicken-4.html",
+          "shareAs": "http://www.edamam.com/recipe/crockpot-cashew-chicken-f195a1aee231ff54156f310b98686b4d/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "2 lb boneless, skinless chicken thigh tenders or chicken breast tenders",
+            "1/4 c all purpose flour",
+            "1/2 tsp black pepper",
+            "1 Tbsp canola oil",
+            "2 Tbsp rice wine vinegar",
+            "2 Tbsp ketchup",
+            "1 Tbsp brown sugar",
+            "1 clove garlic, minced",
+            "1/2 tsp grated fresh ginger",
+            "1/4 tsp red pepper flakes",
+            "1/2 c cashews"
+          ],
+          "calories": 858.1953749994495,
+          "cuisineType": [
+            "south american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/f195a1aee231ff54156f310b98686b4d?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Chicken And Veggie Burritos",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/dd1/dd1488b0af2d91cd547f1b07fd6e29bf-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5540ef8a15e296857349923b1e5d6ca2ea11a3be26d37a2267da6283862c2088",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/dd1/dd1488b0af2d91cd547f1b07fd6e29bf-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7f9a22417908b19ff84eb3e4221431b91a8ee5a7240aa0de5735591a3bf152ec",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/dd1/dd1488b0af2d91cd547f1b07fd6e29bf.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=75d631d6f3f681cb197a57d419d536d4bb496f553a7654f01f8ad3059322bcba",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "BigOven",
+          "url": "http://www.bigoven.com/recipe/Chicken-And-Veggie-Burritos/193412",
+          "shareAs": "http://www.edamam.com/recipe/chicken-and-veggie-burritos-e43aa1efaf28abd41735b421ce60f59d/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "1 chicken breast",
+            "1 cup brown rice",
+            "1/2 large portobello mushroom cap",
+            "1/4 large onion",
+            "1/2 large bell pepper",
+            "1 tablespoon olive oil",
+            "1/2 teaspoon garlic",
+            "4 tortillas"
+          ],
+          "calories": 1386.811,
+          "cuisineType": [
+            "mexican"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "sandwiches"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/e43aa1efaf28abd41735b421ce60f59d?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Easy Tandoori Chicken",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/115/115f1acfcc40dac3082419071a016718-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=dee68b8707a67621c5cc213989d653adc7a44f636b5799a3985e914f6ca35ed4",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/115/115f1acfcc40dac3082419071a016718-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8865b1c1d2f625c52c3ed0d6a4e4ba7809103cb6270033133a4abfb5aad5b50d",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/115/115f1acfcc40dac3082419071a016718.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=315977c72289d8b8eb928c050fd6b16fefa595066066cb9df96ff2cab9563155",
+              "width": 300,
+              "height": 300
+            },
+            "LARGE": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/115/115f1acfcc40dac3082419071a016718-l.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5a93d2cbcef62a6d7d3d11cea0871be33ace21e527832598237d27bf9f2ebc71",
+              "width": 600,
+              "height": 600
+            }
+          },
+          "source": "keepcalmgetorganised.com.au",
+          "url": "http://keepcalmgetorganised.com.au/easy-tandoori-chicken-recipe/",
+          "shareAs": "http://www.edamam.com/recipe/easy-tandoori-chicken-43f0093498809910c6e0dcf06c56aa01/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "* 500 g chicken breast",
+            "* 2 tablespoon store bought tandoori paste",
+            "* 2 garlic clove, crushed",
+            "* 2 tablespoon lime juice",
+            "* 2 tablespoon chopped coriander leaf (optional)",
+            "* 1/2 cup plain yoghurt",
+            "* boiled rice and steamed veggie to serve"
+          ],
+          "calories": 712.0249999995206,
+          "cuisineType": [
+            "indian"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/43f0093498809910c6e0dcf06c56aa01?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Lemon Garlic Chicken",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/0d6/0d6e7117096a8d5eb820ab233da49e77-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=71cda23ec172204be8f2ceecf6e4874e4f1867d028253a020e855ac7655ca554",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/0d6/0d6e7117096a8d5eb820ab233da49e77-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9f3b57ed7a66ef1b2a34fc4518bc7dcd593b64622cb583f0115b8954798a5000",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/0d6/0d6e7117096a8d5eb820ab233da49e77.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cf72d832ba15015bf42b029d8030d133420f720ac44144f217a9b384c05e4fb0",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "blog.myfitnesspal.com",
+          "url": "https://blog.myfitnesspal.com/lemon-garlic-chicken/",
+          "shareAs": "http://www.edamam.com/recipe/lemon-garlic-chicken-92771520ed0e46e911c293ce90fc5014/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "2 tablespoons unsalted butter",
+            "1 tablespoon canola oil",
+            "2 boneless, skinless chicken breasts, pounded thin into cutlets",
+            "Salt and pepper",
+            "1/3 cup all-purpose flour, plus 2 tablespoons",
+            "1/2 cup chicken broth",
+            "1 medium lemon, juiced",
+            "1 clove garlic, minced",
+            "1 green onion, sliced"
+          ],
+          "calories": 1263.978622693481,
+          "cuisineType": [
+            "american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/92771520ed0e46e911c293ce90fc5014?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "label": "Dolma Mshakla",
+          "images": {
+            "THUMBNAIL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/eee/eeebc8c82e624e3f2e3db126ead50d9c-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1bbc35d06e1f88eda415924f13f9c63366f95f094f4c09aff6e641f9b31f0681",
+              "width": 100,
+              "height": 100
+            },
+            "SMALL": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/eee/eeebc8c82e624e3f2e3db126ead50d9c-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=933bcf09ecd84d7d399657a240700875dc92b82df316ae90740c637727904dac",
+              "width": 200,
+              "height": 200
+            },
+            "REGULAR": {
+              "url": "https://edamam-product-images.s3.amazonaws.com/web-img/eee/eeebc8c82e624e3f2e3db126ead50d9c.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHUaCXVzLWVhc3QtMSJHMEUCIDw6%2BMJeBf4zDhWZpm65Ak%2BbhPXGpqm79I38XEzmovYEAiEA6TUmgoLC3%2F5gjep8wFdIPJTvwnMWlXpR2Z2%2F6dDphd4quQUIPhAAGgwxODcwMTcxNTA5ODYiDP%2BhzH792yxVsd5elSqWBbTc%2BKAKN85MD2qhKclaXkppF%2FzXNmj6vpIcpCwtKOCpc1Cu2TQnGtyFzeiWPE5u3UhA6YyOhFEiOBqr%2FyFSdbKyYEzYtWKLPKaI%2FwFORQTKRM2irpZSuCw7A5DKiwMPZFbH1L%2B4YRa9%2FajSKMzUuB5evuczYJICJ0HHZub289%2FyNE2LDFsNXpx8IclIeZwdilemhD5YbiJM%2BrXnp5QeH6lVKIZ4hs9dsEmWfpZ97TknM9y0LqhGTi6B%2F39zOtAxOCEj7ibqcWFra1eSEjUSXXMripuALies2jPp4ZwpGCogilGc8OfCzygFOw79Dt%2BoPdGH4JhG7%2BmMbDytJP2rdDjGBAOtWu4IWp6EGQaYEDqq3HD0MITA4T2kq7%2B09w6C8Fftuw0amztYKsaUTM4ZhgZlMQBntGfp8mt6roooFcfvZp9sFkm3d8QagaD3uyagKQ%2FVqS35eHYV4hu8MNoXZDL3SzgV207Skofjz4EjMgYYMvYIFoJsRMEuoOY5BD2PdZa%2FaA7K%2B9ebUE0fCGwNAWGRCGTzELPA7OM50osE8E0tSR5x%2FMqm6%2FnaXnwk67rQoNGlp0zOBvqaKExH%2FvGAOIjuNaxAAOiBFz%2Fp7%2FIKCShvEsd2zvweNxvJNCdP7xEMI0g96Lnmc%2FBxZLxO%2BhPgC6O%2FLY8bWCOBAGeMGPVpyQB0JyGt9najmNkyozCNXXUFzZYBiOybsJsS%2FR%2FCbtol7%2BroP7tT1ueN5QrxYLY%2BpbRXxym%2BVd3YuNcFrTE%2FhzJiDpfxskIb4o4lZwhDQywcPyTy4xUV5CqC2DaZsQq9vrvpTVHuot2WkmLuhLCBN%2Bcq8CeiqC%2FtegCe5mw8vp%2Ft%2FbxTaE54ArB6kHuLeKQvCFK%2BkONs0Xb3MJKK1aAGOrEBZs%2F5PIJWIAIostxKT9QizH%2BUYal09VDZpaCbQz8k%2FxVezK46CwcAlLx55QaPCEiBYIP7EAtVesYc3p8CMh07Iz3tgztGJOc7tor%2F5ZqolsxfSz6PjL2aQdQGfn8svuYOVmrbw%2BJKEP92iaSKjs%2FS2VKRVJ6ZufMHO4rx1Mjb6NNBWpKB2fvWoYo%2FuPAdnrjdvqHykeog1F4TUAEGGgZ92%2Bvhtc70mWYfwezyrEFRAbMB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230318T064705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJ7NEFGXN%2F20230318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4d37ec7d5d5d21def0c1acae5bf844ad813ed76fcb1a478fc3042b7f6d3dcc08",
+              "width": 300,
+              "height": 300
+            }
+          },
+          "source": "tastykitchen.com",
+          "url": "https://tastykitchen.com/recipes/main-courses/dolma-mshakla/",
+          "shareAs": "http://www.edamam.com/recipe/dolma-mshakla-6b7f528c7a12b6fd5f1622344cf9b208/chicken+and+rice+with+veggies",
+          "ingredientLines": [
+            "2 whole Russet Potatoes",
+            "3 whole Green Bell Peppers",
+            "FOR STUFFING OPTION 1:",
+            "½ cups Rice",
+            "½ cups Lemon Juice",
+            "2 whole Tomatoes, Chopped",
+            "1 whole Zucchini, Chopped",
+            "¾ cups Fresh Mushrooms, Chopped",
+            "1 whole Onion, Chopped",
+            "¼ cups Cilantro, Finely Chopped",
+            "3 Tablespoons Tomato Sauce",
+            "1 Tablespoon Garlic",
+            "½ cups Olive Oil",
+            "1 dash Salt To Taste",
+            "1 dash Pepper To Taste",
+            "FOR STUFFING OPTION 2:",
+            "½ cups Rice",
+            "¼ cups Lemon Juice",
+            "½ pounds Ground Chicken",
+            "2 Tablespoons Cilantro, Finely Chopped",
+            "2 Tablespoons Tomato Sauce",
+            "1 Tablespoon Garlic, Minced",
+            "½ cups Olive Oil",
+            "1 dash Salt To Taste",
+            "1 dash Pepper To Taste"
+          ],
+          "calories": 3610.775544549253,
+          "cuisineType": [
+            "american"
+          ],
+          "mealType": [
+            "lunch/dinner"
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "title": "Self",
+            "href": "https://api.edamam.com/api/recipes/v2/6b7f528c7a12b6fd5f1622344cf9b208?type=public&app_id=fd5ddc76&app_key=8ee077265c6c1745b1fe7e28c2be5290"
+          }
+        }
+      }
+    ]
+  }

@@ -7,7 +7,7 @@
   }
 }
 
-.links {
+.links, .links:visited {
   display: flex;
   flex-direction: row;
   list-style-type: none;

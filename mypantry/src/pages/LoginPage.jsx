@@ -23,7 +23,7 @@ function Login() {
     initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values.username);
+      // console.log(values.username);
       appUser.updateLogin(values.username);
       formik.values.username = '';
 

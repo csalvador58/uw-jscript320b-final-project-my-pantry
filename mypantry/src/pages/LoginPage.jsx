@@ -23,10 +23,15 @@ function Login() {
     initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // console.log(values.username);
+      // set login status
       appUser.updateLogin(values.username);
-      formik.values.username = '';
+      formik.resetForm();
 
+      // clear any temp recipe data
+      const myPantryData = "";
+      localStorage.setItem('myPantry-temp-recipes', myPantryData);
+
+      // query for any initial data from db
       setTimeout(() => {
         if (appUser.loginInfo) {
           const actionObject = {

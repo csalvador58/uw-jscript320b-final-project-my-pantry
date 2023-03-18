@@ -27,9 +27,9 @@ function Login() {
       appUser.updateLogin(values.username);
       formik.resetForm();
 
-      // clear any temp recipe data
-      const myPantryData = "";
-      localStorage.setItem('myPantry-temp-recipes', myPantryData);
+      // // clear any temp recipe data
+      // const myPantryData = JSON.stringify('');
+      // localStorage.setItem('myPantry-temp-recipes', myPantryData);
 
       // query for any initial data from db
       setTimeout(() => {

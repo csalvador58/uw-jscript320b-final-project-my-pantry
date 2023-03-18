@@ -10,8 +10,8 @@ import RecipeCard from '../components/RecipeCard';
 import { v4 as uuidv4 } from 'uuid';
 
 const BASE_URL = 'https://api.edamam.com/api/recipes/v2';
-const APP_ID = process.env.REACT_APP_EDAMAM_RECIPE_ID;
 const API_KEY = process.env.REACT_APP_EDAMAM_RECIPE_API;
+const APP_ID = process.env.REACT_APP_EDAMAM_RECIPE_ID;
 const LOCAL_STORE_TEMP_RECIPES = 'myPantry-temp-recipes';
 
 const validationSchema = yup.object({

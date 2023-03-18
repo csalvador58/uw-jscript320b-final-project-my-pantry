@@ -55,17 +55,20 @@ function RecipesPage() {
         .join('');
 
       // create url
-      const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}&imageSize=${IMAGE_SIZE}${exclude}&random=true&field=label&field=image&field=source&field=url&field=calories&field=cuisineType&field=mealType&field=tags`;
+      const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}&imageSize=${IMAGE_SIZE}${exclude}&random=true&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
 
       fetch(url)
         .then(function (data) {
           return data.json();
         })
         .then(function (responseJson) {
-          console.log(responseJson);
+          // set data in local storage
+          const myPantryData = JSON.stringify(responseJson);
+          localStorage.setItem('myPantry-temp-recipes', myPantryData);
+
         });
 
-      // resetFormik();
+      resetFormik();
       // resetEditDataState();
     },
   });
@@ -79,6 +82,9 @@ function RecipesPage() {
     formik.values.query = '';
     formik.values.exclude = '';
   };
+
+  const myPantryData = JSON.parse(localStorage.getItem('myPantry-temp-recipes'));
+  const initRecipeDB = myPantryData ? myPantryData : recipesObj;
 
   return (
     <>
@@ -140,7 +146,7 @@ function RecipesPage() {
               </div>
             </Grid>
             <Grid container item xs={12}>
-              {recipesObj.hits.map((recipe) => {
+              {initRecipeDB.hits.map((recipe) => {
                 return (
                   <Grid
                     key={uuidv4()}
@@ -164,3 +170,4 @@ function RecipesPage() {
 }
 
 export default RecipesPage;
+

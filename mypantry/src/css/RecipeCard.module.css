@@ -11,3 +11,23 @@
     max-width: 345px;
     height: "100%"
 }
+span.bold {
+  font-weight: bolder;
+}
+
+p.ingredients-list {
+  font-size: smaller;
+}
+
+.recipe-content-container {
+  padding: 2rem;
+}
+
+a.source {
+  font-size: smaller;
+}
+
+a.edamam {
+  font-size: smaller;
+  font-weight: bolder;
+}

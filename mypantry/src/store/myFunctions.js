@@ -40,7 +40,7 @@ export function queryAllCollection(data, setter) {
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // Query all docs in sub-collection
   const subCollectionRef = collection(userDocRef, subCollection);
@@ -54,6 +54,17 @@ export function queryAllCollection(data, setter) {
         pantryArray.push(item);
       });
       setter(pantryArray);
+
+      // set data in local storage
+      const storageName = data.collection === 'pantry' ? 'myPantry-pantry' : 'myPantry-fav-recipes';
+      const myPantryData = JSON.stringify(data);
+      localStorage.setItem(storageName, myPantryData);
+   
+      // const storageName = data.collection === 'pantry' ? 'myPantry-pantry' : 'myPantry-recipes';
+      // const myPantryData = JSON.parse(localStorage.getItem(storageName));
+      
+      // const myPantryData = "";
+      // localStorage.setItem(storageName, myPantryData);
     })
     .catch((e) => {
       alert('Error reading: ' + e);
@@ -71,7 +82,8 @@ function addToCollection(data) {
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  // const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // Query all docs in sub-collection with pantry name
   const subCollectionRef = collection(userDocRef, subCollection);
@@ -96,11 +108,21 @@ function addToCollection(data) {
           });
       } else {
         alert('Item already exists');
+        // deleteDocInCollection(action.data);
+        deleteDocIfFavorites();
+
+
       }
     })
     .catch((e) => {
       alert('Error reading: ' + e);
     });
+    const deleteDocIfFavorites = () => {
+      if(data.collection === 'recipe') {
+        deleteDocInCollection(data);
+        alert('Recipe will be removed from your favorites')
+      }
+    }
 }
 
 function updateDocInCollection(data) {
@@ -114,7 +136,7 @@ function updateDocInCollection(data) {
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // Query a matching doc in sub-collection with pantry name
   const subCollectionRef = collection(userDocRef, subCollection);
@@ -153,7 +175,7 @@ function deleteDocInCollection(data) {
   const userDocRef = doc(userCollection, data.uid);
 
   // setup sub-collection
-  const subCollection = 'pantry';
+  const subCollection = data.collection;
 
   // delete a single doc in a collection
   const subCollectionRef = collection(userDocRef, subCollection);

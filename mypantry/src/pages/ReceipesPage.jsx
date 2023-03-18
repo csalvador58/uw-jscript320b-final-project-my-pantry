@@ -41,7 +41,7 @@ function RecipesPage() {
     initialValues: defaultFormikValues,
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values);
+      // console.log(values);
 
       // create string from query input
       const queryStr = values.query;

@@ -89,8 +89,8 @@ function PantryPage() {
     if (over.id === 'delete') {
       // setItems((items) => items.filter((x) => active.id !== x));
       setDraggedOverEdit(true);
-      console.log('drag end - active');
-      console.log(active);
+      // console.log('drag end - active');
+      // console.log(active);
 
       appUser.updateEditData({
         id: active.id,

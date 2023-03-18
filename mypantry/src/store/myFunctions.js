@@ -11,10 +11,10 @@ import {
 import { db } from '../firebase';
 
 export function updatePantryHandler(action, setter) {
-  if (!action.data.uid) {
-    console.log('Error with uid in myFunction updatePantryHandler');
-    return;
-  }
+  // if (!action.data.uid) {
+  //   console.log('Error with uid in myFunction updatePantryHandler');
+  //   return;
+  // }
   async function execute() {
     if (action.type === 'add') {
       await addToCollection(action.data);
@@ -31,10 +31,10 @@ export function updatePantryHandler(action, setter) {
 }
 
 export function queryAllCollection(data, setter) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction queryAllCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction queryAllCollection');
+  //   return;
+  // }
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
   const userDocRef = doc(userCollection, data.uid);
@@ -72,10 +72,10 @@ export function queryAllCollection(data, setter) {
 }
 
 function addToCollection(data) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction addToCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction addToCollection');
+  //   return;
+  // }
 
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
@@ -126,10 +126,10 @@ function addToCollection(data) {
 }
 
 function updateDocInCollection(data) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction updateDocInCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction updateDocInCollection');
+  //   return;
+  // }
 
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');
@@ -165,10 +165,10 @@ function updateDocInCollection(data) {
 }
 
 function deleteDocInCollection(data) {
-  if (!data.uid) {
-    console.log('Error with uid in myFunction deleteDocInCollection');
-    return;
-  }
+  // if (!data.uid) {
+  //   console.log('Error with uid in myFunction deleteDocInCollection');
+  //   return;
+  // }
 
   // setup authorized-user collection
   const userCollection = collection(db, 'authorized-users');

@@ -62,7 +62,7 @@ div.nav-link-login:hover {
   color: #fff;
 }
 
-.dark-mode {
+button.dark-mode {
   color: #9c27b0;
   margin-top: -15px;
   min-height: 50px;

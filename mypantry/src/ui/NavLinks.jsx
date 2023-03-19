@@ -52,7 +52,7 @@ function NavLinks() {
           </NavLink>
         </li>
         <li>
-          <IconButton onClick={colorMode.toggleColorMode} color='inherit'>
+          <IconButton className={classes['dark-mode']} onClick={colorMode.toggleColorMode} color='inherit'>
             {theme.palette.mode === 'dark' ? (
               <Brightness7Icon />
             ) : (

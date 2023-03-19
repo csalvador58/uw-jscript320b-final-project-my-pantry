@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import RootLayout from './components/RootLayout';
 import ErrorPage from './pages/ErrorPage';
 import PantryPage from './pages/PantryPage';
@@ -68,6 +68,7 @@ function App() {
 
     <ThemeProvider theme={theme}>
       <UserProvider>
+      <CssBaseline />
         <RouterProvider router={router} />
       </UserProvider>
     </ThemeProvider>

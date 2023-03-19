@@ -96,25 +96,37 @@ function RecipesPage() {
       }
 
       // create url
+      // const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
+
+      //********************************************************************************
       const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
 
-      fetch(url)
-        .then(function (data) {
-          return data.json();
-        })
-        .then(function (responseJson) {
+      fetch(url, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      })
+        // fetch(url, {
+        //   mode: 'no-cors'
+        // })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+
           try {
             // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
-            if (responseJson[0].error) {
+            if (data[0].error) {
               console.log(
                 'Error is present from fetch. Data will not be saved.'
               );
             }
           } catch (info) {
-            setNewData(responseJson);
+            setNewData(data);
 
-            const data = JSON.stringify(responseJson);
-            localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, data);
+            const recipesData = JSON.stringify(data);
+            localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, recipesData);
           }
         })
         .catch((e) => {
@@ -124,6 +136,37 @@ function RecipesPage() {
             console.log(e, false);
           }
         });
+
+      //***************************************************************************************
+
+      //   const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
+
+      // fetch(url)
+      //   .then(function (data) {
+      //     return data.json();
+      //   })
+      //   .then(function (responseJson) {
+      //     try {
+      //       // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
+      //       if (responseJson[0].error) {
+      //         console.log(
+      //           'Error is present from fetch. Data will not be saved.'
+      //         );
+      //       }
+      //     } catch (info) {
+      //       setNewData(responseJson);
+
+      //       const data = JSON.stringify(responseJson);
+      //       localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, data);
+      //     }
+      //   })
+      //   .catch((e) => {
+      //     if (e instanceof SyntaxError) {
+      //       console.log(e, true);
+      //     } else {
+      //       console.log(e, false);
+      //     }
+      //   });
 
       resetFormik();
     },

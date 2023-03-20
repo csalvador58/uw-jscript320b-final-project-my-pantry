@@ -8,7 +8,7 @@ import classes from '../css/RecipesPage.module.css';
 import recipesObj from '../store/respExample.json';
 import RecipeCard from '../components/RecipeCard';
 import { v4 as uuidv4 } from 'uuid';
-import FadeCard from '../components/FadeCard';
+import { makeCORSRequest } from '../script/CorsRequest';
 
 const BASE_URL = 'https://api.edamam.com/api/recipes/v2';
 const API_KEY = process.env.REACT_APP_EDAMAM_RECIPE_API;
@@ -96,27 +96,15 @@ function RecipesPage() {
         exclude = '';
       }
 
-      // create url
-      // const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
-
       //********************************************************************************
       // const url = `https://cors-anywhere.herokuapp.com/${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
       const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
 
-      fetch(url, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-        },
-      })
-        // fetch(url, {
-        //   mode: 'no-cors'
-        // })
-        .then((response) => response.json())
-        .then((data) => {
+      makeCORSRequest('GET', url)
+        // .then((response) => response.json())
+        .then((response) => {
+          const data = JSON.parse(response);
           console.log(data);
-
           try {
             // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
             if (data[0].error) {
@@ -131,13 +119,42 @@ function RecipesPage() {
             localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, recipesData);
           }
         })
-        .catch((e) => {
-          if (e instanceof SyntaxError) {
-            console.log(e, true);
-          } else {
-            console.log(e, false);
-          }
+        .catch((error) => {
+          console.log('error', error.status, error.statusText);
         });
+
+      // fetch(url, {
+      //   method: 'GET',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //     'Access-Control-Allow-Origin': '*',
+      //   },
+      // })
+      // .then((response) => response.json())
+      // .then((data) => {
+      //   console.log(data);
+
+      //   try {
+      //     // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
+      //     if (data[0].error) {
+      //       console.log(
+      //         'Error is present from fetch. Data will not be saved.'
+      //       );
+      //     }
+      //   } catch (info) {
+      //     setNewData(data);
+
+      //     const recipesData = JSON.stringify(data);
+      //     localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, recipesData);
+      //   }
+      // })
+      // .catch((e) => {
+      //   if (e instanceof SyntaxError) {
+      //     console.log(e, true);
+      //   } else {
+      //     console.log(e, false);
+      //   }
+      // });
 
       //***************************************************************************************
 
@@ -264,9 +281,7 @@ function RecipesPage() {
                       p={1}
                       zeroMinWidth
                     >
-                      <FadeCard>
-                        <RecipeCard food={recipe} />
-                      </FadeCard>
+                      <RecipeCard food={recipe} />
                     </Grid>
                   );
                 })}

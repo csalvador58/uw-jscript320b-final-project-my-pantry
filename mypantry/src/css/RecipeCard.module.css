@@ -7,10 +7,13 @@
   min-width: 1px;
 }
 
-.recipe-card-container {
-    max-width: 345px;
-    height: "100%"
+div.recipe-card-container {
+  max-width: 345px;
+  height: '100%';
+  border-radius: 25%;
+  margin: 0 auto;
 }
+
 span.bold {
   font-weight: bolder;
 }
@@ -19,12 +22,13 @@ p.ingredients-list {
   font-size: smaller;
 }
 
-.recipe-content-container {
+div.recipe-content-container {
   padding: 2rem;
 }
 
 a.source {
   font-size: smaller;
+  color: #9c27b0;
 }
 
 a.edamam {
@@ -32,3 +36,5 @@ a.edamam {
   font-weight: bolder;
   color: #9c27b0;
 }
+
+

@@ -8,7 +8,6 @@ import classes from '../css/RecipesPage.module.css';
 import recipesObj from '../store/respExample.json';
 import RecipeCard from '../components/RecipeCard';
 import { v4 as uuidv4 } from 'uuid';
-import FadeCard from '../components/FadeCard';
 import { makeCORSRequest } from '../script/CorsRequest';
 
 const BASE_URL = 'https://api.edamam.com/api/recipes/v2';
@@ -282,9 +281,7 @@ function RecipesPage() {
                       p={1}
                       zeroMinWidth
                     >
-                      <FadeCard>
-                        <RecipeCard food={recipe} />
-                      </FadeCard>
+                      <RecipeCard food={recipe} />
                     </Grid>
                   );
                 })}

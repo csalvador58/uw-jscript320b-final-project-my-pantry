@@ -56,12 +56,13 @@ function Login() {
         <Grid container spacing={2} direction='column' columns={12}>
           <h2 className={classes.title}>Welcome!</h2>
 
-          <Grid item xs={4}>
+          <Grid className={classes.zeroPadding} item xs={4}>
             <TextField
               fullWidth
+              className={classes['name-field']}
               id='username'
               name='username'
-              label='Please enter your name'
+              label='Enter your username'
               InputProps={{
                 inputProps: {
                   style: { textAlign: 'center' },
@@ -73,11 +74,11 @@ function Login() {
               helperText={
                 formik.touched.username
                   ? formik.errors.username
-                  : 'This will be used to store your data'
+                  : 'This will be your Login ID'
               }
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid className={classes.zeroPadding} item xs={4}>
             <div className={classes.center}>
               <Button color='secondary' variant='contained' type='submit'>
                 Submit

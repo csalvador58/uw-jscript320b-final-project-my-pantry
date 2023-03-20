@@ -76,7 +76,7 @@ function RecipeCard({ food }) {
     <FadeCard>
       <div className={classes['recipe-card-container']}>
         <CardHeader
-          className={classes['no-wrap']}
+          className={classes['recipe-card-header']}
           avatar={
             <Avatar
               sx={{ bgcolor: red[500] }}
@@ -86,7 +86,7 @@ function RecipeCard({ food }) {
             </Avatar>
           }
           title={food.recipe.label}
-          subheader={food.recipe.source}
+          // subheader={food.recipe.source}
         />
 
         <CardMedia
@@ -100,7 +100,7 @@ function RecipeCard({ food }) {
             <FavoriteIcon color={favIcon} />
           </IconButton>
           <a className={classes.source} href={food.recipe.url}>
-            View Source
+            {food.recipe.source}
           </a>
           <ExpandMore
             expand={expanded}
@@ -118,11 +118,11 @@ function RecipeCard({ food }) {
             </a>
             <p>
               <span className={classes.bold}>Cuisine:</span>{' '}
-              {food.recipe.cuisineType[0]}
+              {food.recipe.cuisineType[0].slice(0, 1).toUpperCase() + food.recipe.cuisineType[0].slice(1)}
             </p>
             <p>
               <span className={classes.bold}>Meal Type:</span>{' '}
-              {food.recipe.mealType[0]}
+              {food.recipe.mealType[0].slice(0, 1).toUpperCase() + food.recipe.mealType[0].slice(1)}
             </p>
             <p>
               <span className={classes.bold}>Calories:</span>{' '}

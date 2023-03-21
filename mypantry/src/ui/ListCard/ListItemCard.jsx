@@ -46,7 +46,7 @@ function ListItemCard({ id }) {
   const icon = foodTypes[itemData.type];
 
   return (
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+    <div data-testid='pantry-list-item' ref={setNodeRef} style={style} {...attributes} {...listeners}>
       <ListItem>
         <ListItemAvatar>
           <Avatar>{icon}</Avatar>

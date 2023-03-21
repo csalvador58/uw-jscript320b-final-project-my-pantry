@@ -207,6 +207,7 @@ function PantryPage() {
             variant='contained'
             type='button'
             onClick={updateHandler}
+            data-testid='update-btn'
           >
             Update List
           </Button>

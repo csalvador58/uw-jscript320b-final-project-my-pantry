@@ -1,10 +1,11 @@
-.no-wrap {
+.recipe-card-header {
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
   /* display: block; */
-  width: calc(80%);
-  min-width: 1px;
+  /* width: calc(80%); */
+  /* min-width: 1px; */
+  font-weight: bolder;
 }
 
 div.recipe-card-container {

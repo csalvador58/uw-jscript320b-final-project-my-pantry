@@ -4,14 +4,13 @@ import PropTypes from 'prop-types';
 import { updatePantryHandler } from './myFunctions';
 
 function UserProvider({ children }) {
-
   const [userState, setUserState] = useState('');
   const [pantryArray, setPantryArray] = useState([]);
   const [editData, setEditData] = useState({});
   const [recipeArray, setRecipeArray] = useState([]);
 
-  const updateLoginState = (status) => {
-    setUserState(status);
+  const updateLoginState = (user) => {
+    setUserState(user);
   };
 
   // useEffect(() => {
@@ -29,9 +28,8 @@ function UserProvider({ children }) {
   };
 
   const updateEditState = (obj) => {
-    setEditData(obj)
-  }
-
+    setEditData(obj);
+  };
 
   const storedUserContext = {
     loginInfo: userState,
@@ -42,7 +40,6 @@ function UserProvider({ children }) {
     updateEditData: updateEditState,
     favorite: recipeArray,
     toggleFav: updateFavorites,
-    
   };
 
   return (

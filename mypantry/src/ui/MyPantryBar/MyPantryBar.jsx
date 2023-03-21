@@ -1,22 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
-import {
-  AppBar,
-  Avatar,
-  Grid,
-  IconButton,
-  Menu,
-  MenuItem,
-  Typography,
-} from '@mui/material/';
+import { Link, useNavigate } from 'react-router-dom';
+import NavLinks from '../NavLinks';
+import UserContext from '../../store/UserContext';
+import { AppBar, Avatar, Grid, IconButton } from '@mui/material/';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
-import classes from '../css/MyPantryBar.module.css';
-import { Link } from 'react-router-dom';
-import NavLinks from './NavLinks';
-import { useNavigate } from 'react-router-dom';
-import UserContext from '../store/UserContext';
+import classes from '../../css/MyPantryBar.module.css';
+import MyPantryMenu from './MyPantryMenu';
 
 function MyPantryBar() {
-  const [avatarMenu, setAvatarMenu] = useState({ name: '', state: '' });
+  const [avatarMenu, setAvatarMenu] = useState({ name: '', isLoggedIn: '' });
   const appUser = useContext(UserContext);
   const navigate = useNavigate();
 
@@ -46,12 +38,12 @@ function MyPantryBar() {
     }
     // Navigate to login screen to login
     navigate('/');
-
     handleCloseUserMenu();
   };
 
   return (
     <AppBar position='static' data-testid='main-app-bar'>
+      {/* Hide links if user not logged in */}
       <div style={{ visibility: true ? 'visible' : 'hidden' }}>
         <Grid
           className={classes['main-app-bar-container']}
@@ -59,8 +51,9 @@ function MyPantryBar() {
           columns={12}
         >
           <Grid item xs={2} sm={2} md={3}>
+            {/* Left Side icon */}
             <div className={classes['align-left']}>
-              <Link to='/' className={classes.link}>
+              <Link to='/home' className={classes.link}>
                 <IconButton
                   size='large'
                   aria-label='Return to home page'
@@ -80,6 +73,7 @@ function MyPantryBar() {
             </h1>
           </Grid>
           <Grid item xs={2} sm={2} md={3}>
+            {/* Right side avatar */}
             <div className={classes['align-right']}>
               <IconButton
                 onClick={
@@ -99,36 +93,12 @@ function MyPantryBar() {
                 </Avatar>
               </IconButton>
 
-              <Menu
-                sx={{ mt: '45px' }}
-                id='menu-appbar'
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {avatarMenu.isLoggedIn && (
-                  <MenuItem key={avatarMenu.name} onClick={handleCloseUserMenu}>
-                    <Typography textAlign='center'>
-                      Current User: {avatarMenu.name}
-                    </Typography>
-                  </MenuItem>
-                )}
-                <MenuItem key={'login-logout'} onClick={handleLoginLogout}>
-                  <Typography textAlign='center'>
-                    {avatarMenu.isLoggedIn ? 'Logout' : 'Login'}
-                  </Typography>
-                </MenuItem>
-                {/* ))} */}
-              </Menu>
+              <MyPantryMenu
+                anchorElUser={anchorElUser}
+                avatarMenu={avatarMenu}
+                handleCloseUserMenu={handleCloseUserMenu}
+                handleLoginLogout={handleLoginLogout}
+              />
             </div>
           </Grid>
         </Grid>

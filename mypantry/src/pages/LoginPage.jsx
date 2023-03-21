@@ -25,27 +25,18 @@ function Login() {
     onSubmit: (values) => {
       // set login status
       appUser.updateLogin(values.username);
+
+      const actionObject = {
+        type: 'query',
+        data: {
+          uid: values.username,
+          collection: 'pantry',
+          pantryObj: {},
+        },
+      };
+      appUser.updatePantry(actionObject);
+
       formik.resetForm();
-
-      // // clear any temp recipe data
-      // const myPantryData = JSON.stringify('');
-      // localStorage.setItem('myPantry-temp-recipes', myPantryData);
-
-      // query for any initial data from db
-      setTimeout(() => {
-        if (appUser.loginInfo) {
-          const actionObject = {
-            type: 'query',
-            data: {
-              uid: appUser.loginInfo,
-              collection: 'pantry',
-              pantryObj: {},
-            },
-          };
-          appUser.updatePantry(actionObject);
-        }
-      }, 0);
-
       navigate('/home');
     },
   });
@@ -56,12 +47,13 @@ function Login() {
         <Grid container spacing={2} direction='column' columns={12}>
           <h2 className={classes.title}>Welcome!</h2>
 
-          <Grid item xs={4}>
+          <Grid className={classes.zeroPadding} item xs={4}>
             <TextField
               fullWidth
+              className={classes['name-field']}
               id='username'
               name='username'
-              label='Please enter your name'
+              label='Enter your username'
               InputProps={{
                 inputProps: {
                   style: { textAlign: 'center' },
@@ -73,11 +65,11 @@ function Login() {
               helperText={
                 formik.touched.username
                   ? formik.errors.username
-                  : 'This will be used to store your data'
+                  : 'This will be your Login ID'
               }
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid className={classes.zeroPadding} item xs={4}>
             <div className={classes.center}>
               <Button color='secondary' variant='contained' type='submit'>
                 Submit

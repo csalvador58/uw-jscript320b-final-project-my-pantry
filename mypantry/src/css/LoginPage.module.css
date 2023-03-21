@@ -1,11 +1,15 @@
-.login-page-container {
+div.login-page-container {
   display: flex;
   justify-content: center;
   min-width: 345px;
-  width: 300px;
+  /* width: 500px; */
 
   margin: 5rem auto 0 auto;
   /* width: 100%; */
+}
+
+div.login-page-container > .MuiFormHelperText-root {
+  text-align: center !important;
 }
 
 div.center {
@@ -18,3 +22,12 @@ h2.title {
   margin: 2.5rem 0 0.8rem 0;
   text-align: center;
 }
+
+div.zeroPadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* input.name-field {
+  width: 50px !important;
+} */

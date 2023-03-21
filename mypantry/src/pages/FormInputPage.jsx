@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from 'react';
-import UserContext from '../store/UserContext';
+import React, { useCallback, useContext, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import UserContext from '../store/UserContext';
 import {
   Box,
   Button,
@@ -20,7 +21,6 @@ import * as yup from 'yup';
 import unitOfMeasure from '../store/units.json';
 import foodType from '../store/foods.json';
 import classes from '../css/FormInputPage.module.css';
-import { useNavigate } from 'react-router-dom';
 
 const validationSchema = yup.object({
   item: yup.string('Name of pantry item').required('Please enter a name'),
@@ -46,12 +46,11 @@ function FormInputPage() {
   const appUser = useContext(UserContext);
   const navigate = useNavigate();
 
+  const navigateToHome = useCallback(() => navigate('/'), [navigate]);
+
   useEffect(() => {
-    if (!appUser.loginInfo) {
-      navigate('/');
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [appUser.loginInfo]);
+    if (!appUser.loginInfo) navigateToHome();
+  }, [appUser.loginInfo, navigateToHome]);
 
   const formik = useFormik({
     initialValues: defaultFormikValues,
@@ -237,7 +236,7 @@ function FormInputPage() {
                 ))}
               </TextField>
             </FormControl>
-            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ flexGrow: 1, margin: 2 }} />
             <FormControl>
               <FormLabel id='isFavorite'>Favorite?</FormLabel>
               <RadioGroup

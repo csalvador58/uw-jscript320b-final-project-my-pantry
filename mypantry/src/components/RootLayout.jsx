@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import MyPantryBar from '../ui/MyPantryBar';
+import MyPantryBar from '../ui/MyPantryBar/MyPantryBar';
 import classes from '../css/RootLayout.module.css'
 
 function RootLayout() {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
+import PropTypes from 'prop-types';
 
 const filter = createFilterOptions();
 
@@ -13,11 +14,6 @@ function SearchBar({ search, data, setFilter }) {
     <Autocomplete
       value={value}
       onChange={(event, newValue) => {
-        // console.log('event')
-        // console.log(event)
-        // console.log('newValue')
-        // console.log(newValue)
-        
         if (typeof newValue === 'string') {
           setValue({
             name: '',
@@ -78,3 +74,14 @@ function SearchBar({ search, data, setFilter }) {
 }
 
 export default SearchBar;
+
+SearchBar.propTypes = {
+  search: PropTypes.string.isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  setFilter: PropTypes.func.isRequired,
+};

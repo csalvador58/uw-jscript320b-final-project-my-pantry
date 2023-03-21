@@ -1,19 +1,23 @@
 import { render, screen, cleanup } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import PantryPage from '../pages/PantryPage';
+import UserProvider from '../store/UserProvider';
 
 afterEach(() => {
   cleanup();
 });
 
-describe('PantryPage component', () => {
-  it('renders the Pantry page', () => {
-    render(<PantryPage />);
-    const component = screen.getByTestId('pantry-page');
-    // const searchBar = screen.getByTestId('search-bar');
-    // const addButton = screen.getByTestId('pantry-add-button');
+describe('Pantry page component', () => {
+  it('renders the page', () => {
+    render(
+      <UserProvider>
+        <Router>
+          <PantryPage />
+        </Router>
+      </UserProvider>
+    );
 
+    const component = screen.getByTestId('pantry-page');
     expect(component).toBeInTheDocument();
-    // expect(component).toContainElement(searchBar);
-    // expect(component).toContainElement(addButton);
   });
 });

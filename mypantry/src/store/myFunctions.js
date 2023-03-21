@@ -107,16 +107,16 @@ function addToCollection(data) {
             alert('Error adding document: ' + e);
           });
       } else {
-        alert('Item already exists');
-        // deleteDocInCollection(action.data);
+        if(data.collection === 'pantry') alert('Item already exists');
+        
+        // For Recipe favorites only
         deleteDocIfFavorites();
-
-
       }
     })
     .catch((e) => {
       alert('Error reading: ' + e);
     });
+
     const deleteDocIfFavorites = () => {
       if(data.collection === 'recipe') {
         deleteDocInCollection(data);

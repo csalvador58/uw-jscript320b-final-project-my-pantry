@@ -1,9 +1,14 @@
-import React, { useContext, useEffect, useState, forwardRef } from 'react';
-import UserContext from '../store/UserContext';
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+  forwardRef,
+} from 'react';
+import ListItemCard from '../ui/ListCard/ListItemCard';
 import { Link, useNavigate } from 'react-router-dom';
-import { Grid } from '@mui/material';
+import UserContext from '../store/UserContext';
 import SearchBar from '../components/SearchBar';
-import classes from '../css/PantryPage.module.css';
 import {
   closestCenter,
   DndContext,
@@ -19,11 +24,12 @@ import {
   rectSortingStrategy,
   rectSwappingStrategy,
   SortableContext,
-  // verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import { Button } from '@mui/material';
+import { Button, Fade, Grid } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
-import ListItemCard from '../ui/ListCard/ListItemCard';
+import classes from '../css/PantryPage.module.css';
+
+// Use to load test data
 // import { loadDb } from '../script/loadDb';
 
 function PantryPage() {
@@ -33,13 +39,11 @@ function PantryPage() {
   const [draggedOverEdit, setDraggedOverEdit] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!appUser.loginInfo) {
-      navigate('/');
-    }
+  const navigateToHome = useCallback(() => navigate('/'), [navigate]);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  useEffect(() => {
+    if (!appUser.loginInfo) navigateToHome();
+  }, [appUser.loginInfo, navigateToHome]);
 
   useEffect(() => {
     // Run query at mount
@@ -181,9 +185,11 @@ function PantryPage() {
           <SortableContext items={displayIds} strategy={rectSwappingStrategy}>
             <Grid container columns={12}>
               {displayIds.map((item) => (
-                <Grid item key={item} xs={6}>
-                  <ListItemCard id={item} />
-                </Grid>
+                <Fade key={item} in={true} timeout={1000}>
+                  <Grid item xs={6} sm={4} md={3}>
+                    <ListItemCard id={item} />
+                  </Grid>
+                </Fade>
               ))}
             </Grid>
           </SortableContext>
@@ -201,6 +207,7 @@ function PantryPage() {
             variant='contained'
             type='button'
             onClick={updateHandler}
+            data-testid='update-btn'
           >
             Update List
           </Button>

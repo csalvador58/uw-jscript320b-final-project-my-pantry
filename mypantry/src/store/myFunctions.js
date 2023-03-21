@@ -56,13 +56,16 @@ export function queryAllCollection(data, setter) {
       setter(pantryArray);
 
       // set data in local storage
-      const storageName = data.collection === 'pantry' ? 'myPantry-pantry' : 'myPantry-fav-recipes';
+      const storageName =
+        data.collection === 'pantry'
+          ? 'myPantry-pantry'
+          : 'myPantry-fav-recipes';
       const myPantryData = JSON.stringify(data);
       localStorage.setItem(storageName, myPantryData);
-   
+
       // const storageName = data.collection === 'pantry' ? 'myPantry-pantry' : 'myPantry-recipes';
       // const myPantryData = JSON.parse(localStorage.getItem(storageName));
-      
+
       // const myPantryData = "";
       // localStorage.setItem(storageName, myPantryData);
     })
@@ -101,14 +104,16 @@ function addToCollection(data) {
         const addDocToCollection = addDoc(setCollection, data.pantryObj);
         addDocToCollection
           .then((response) => {
-            alert('Pantry item has been added');
+            if (data.collection === 'recipe') {
+              alert('Recipe will be added to your favorites');
+            } else alert('Pantry item has been added');
           })
           .catch((e) => {
             alert('Error adding document: ' + e);
           });
       } else {
-        if(data.collection === 'pantry') alert('Item already exists');
-        
+        if (data.collection === 'pantry') alert('Item already exists');
+
         // For Recipe favorites only
         deleteDocIfFavorites();
       }
@@ -117,12 +122,12 @@ function addToCollection(data) {
       alert('Error reading: ' + e);
     });
 
-    const deleteDocIfFavorites = () => {
-      if(data.collection === 'recipe') {
-        deleteDocInCollection(data);
-        alert('Recipe will be removed from your favorites')
-      }
+  const deleteDocIfFavorites = () => {
+    if (data.collection === 'recipe') {
+      deleteDocInCollection(data);
+      alert('Recipe will be removed from your favorites');
     }
+  };
 }
 
 function updateDocInCollection(data) {
@@ -194,9 +199,15 @@ function deleteDocInCollection(data) {
 
         const deleteDocRef = deleteDoc(docRef);
 
-        deleteDocRef.then(alert('Delete successful')).catch((e) => {
-          alert('Error deleting: ' + e);
-        });
+        deleteDocRef
+          .then(() => {
+            if (data.collection === 'pantry') {
+              alert('Delete successful');
+            }
+          })
+          .catch((e) => {
+            alert('Error deleting: ' + e);
+          });
       }
     })
     .catch((e) => {

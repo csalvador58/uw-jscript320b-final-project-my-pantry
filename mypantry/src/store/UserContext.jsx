@@ -25,4 +25,6 @@ UserContext.PropTypes = {
   updateEditData: PropTypes.func.isRequired,
   recipes: PropTypes.array.isRequired,
   updateRecipe: PropTypes.func.isRequired,
+  favorite: PropTypes.array.isRequired,
+  toggleFav: PropTypes.func.isRequired,
 };

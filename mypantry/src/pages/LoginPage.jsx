@@ -25,27 +25,18 @@ function Login() {
     onSubmit: (values) => {
       // set login status
       appUser.updateLogin(values.username);
+
+      const actionObject = {
+        type: 'query',
+        data: {
+          uid: values.username,
+          collection: 'pantry',
+          pantryObj: {},
+        },
+      };
+      appUser.updatePantry(actionObject);
+
       formik.resetForm();
-
-      // // clear any temp recipe data
-      // const myPantryData = JSON.stringify('');
-      // localStorage.setItem('myPantry-temp-recipes', myPantryData);
-
-      // query for any initial data from db
-      setTimeout(() => {
-        if (appUser.loginInfo) {
-          const actionObject = {
-            type: 'query',
-            data: {
-              uid: appUser.loginInfo,
-              collection: 'pantry',
-              pantryObj: {},
-            },
-          };
-          appUser.updatePantry(actionObject);
-        }
-      }, 0);
-
       navigate('/home');
     },
   });

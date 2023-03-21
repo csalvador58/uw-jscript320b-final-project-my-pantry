@@ -1,19 +1,22 @@
 import React, { useContext, useState } from 'react';
+import FadeCard from './FadeCard';
+import { v4 as uuidv4 } from 'uuid';
 import { styled } from '@mui/material/styles';
-import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
 import { red } from '@mui/material/colors';
+import {
+  Avatar,
+  CardActions,
+  CardContent,
+  CardHeader,
+  CardMedia,
+  Collapse,
+  IconButton,
+} from '@mui/material/';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import classes from '../css/RecipeCard.module.css';
 import UserContext from '../store/UserContext';
-import { v4 as uuidv4 } from 'uuid';
-import FadeCard from './FadeCard';
+import classes from '../css/RecipeCard.module.css';
+import PropTypes from 'prop-types';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -118,11 +121,13 @@ function RecipeCard({ food }) {
             </a>
             <p>
               <span className={classes.bold}>Cuisine:</span>{' '}
-              {food.recipe.cuisineType[0].slice(0, 1).toUpperCase() + food.recipe.cuisineType[0].slice(1)}
+              {food.recipe.cuisineType[0].slice(0, 1).toUpperCase() +
+                food.recipe.cuisineType[0].slice(1)}
             </p>
             <p>
               <span className={classes.bold}>Meal Type:</span>{' '}
-              {food.recipe.mealType[0].slice(0, 1).toUpperCase() + food.recipe.mealType[0].slice(1)}
+              {food.recipe.mealType[0].slice(0, 1).toUpperCase() +
+                food.recipe.mealType[0].slice(1)}
             </p>
             <p>
               <span className={classes.bold}>Calories:</span>{' '}
@@ -146,3 +151,47 @@ function RecipeCard({ food }) {
 }
 
 export default RecipeCard;
+
+RecipeCard.propTypes = {
+  food: PropTypes.shape({
+    recipe: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      images: PropTypes.shape({
+        THUMBNAIL: PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          width: PropTypes.number.isRequired,
+          height: PropTypes.number.isRequired,
+        }),
+        SMALL: PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          width: PropTypes.number.isRequired,
+          height: PropTypes.number.isRequired,
+        }),
+        REGULAR: PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          width: PropTypes.number.isRequired,
+          height: PropTypes.number.isRequired,
+        }).isRequired,
+        LARGE: PropTypes.shape({
+          url: PropTypes.string.isRequired,
+          width: PropTypes.number.isRequired,
+          height: PropTypes.number.isRequired,
+        }),
+      }).isRequired,
+      source: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+      shareAs: PropTypes.string.isRequired,
+      ingredientLines: PropTypes.arrayOf(PropTypes.string).isRequired,
+      calories: PropTypes.number.isRequired,
+      cuisineType: PropTypes.arrayOf(PropTypes.string).isRequired,
+      mealType: PropTypes.arrayOf(PropTypes.string).isRequired,
+      dishType: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }).isRequired,
+    _links: PropTypes.shape({
+      self: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        href: PropTypes.string.isRequired,
+      }),
+    }),
+  }).isRequired,
+};

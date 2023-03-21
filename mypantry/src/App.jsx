@@ -1,15 +1,14 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
-import RootLayout from './components/RootLayout';
 import ErrorPage from './pages/ErrorPage';
-import PantryPage from './pages/PantryPage';
-import RecipesPage from './pages/ReceipesPage';
 import FormInputPage from './pages/FormInputPage';
 import LoginPage from './pages/LoginPage';
+import RootLayout from './components/RootLayout';
+import PantryPage from './pages/PantryPage';
+import RecipesPage from './pages/ReceipesPage';
 import UserProvider from './store/UserProvider';
-import ColorModeContext from './store/ColorModeContext'
-
+import ColorModeContext from './store/ColorModeContext';
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 
 const router = createBrowserRouter([
   {
@@ -46,7 +45,7 @@ function App() {
         setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
       },
     }),
-    [],
+    []
   );
 
   const theme = React.useMemo(
@@ -59,20 +58,17 @@ function App() {
           },
         },
       }),
-    [mode],
+    [mode]
   );
-
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-
-    <ThemeProvider theme={theme}>
-      <UserProvider>
-      <CssBaseline />
-        <RouterProvider router={router} />
-      </UserProvider>
-    </ThemeProvider>
-
+      <ThemeProvider theme={theme}>
+        <UserProvider>
+          <CssBaseline />
+          <RouterProvider router={router} />
+        </UserProvider>
+      </ThemeProvider>
     </ColorModeContext.Provider>
   );
 }

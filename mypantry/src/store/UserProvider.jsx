@@ -10,8 +10,8 @@ function UserProvider({ children }) {
   const [editData, setEditData] = useState({});
   const [recipeArray, setRecipeArray] = useState([]);
 
-  const updateLoginState = (status) => {
-    setUserState(status);
+  const updateLoginState = (user) => {
+    setUserState(user);
   };
 
   // useEffect(() => {

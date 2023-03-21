@@ -1,4 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import NavLinks from './NavLinks';
+import UserContext from '../store/UserContext';
 import {
   AppBar,
   Avatar,
@@ -10,15 +13,12 @@ import {
 } from '@mui/material/';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import classes from '../css/MyPantryBar.module.css';
-import { Link } from 'react-router-dom';
-import NavLinks from './NavLinks';
-import { useNavigate } from 'react-router-dom';
-import UserContext from '../store/UserContext';
 
 function MyPantryBar() {
-  const [avatarMenu, setAvatarMenu] = useState({ name: '', state: '' });
+  const [avatarMenu, setAvatarMenu] = useState({ name: '', isLoggedIn: '' });
   const appUser = useContext(UserContext);
   const navigate = useNavigate();
+
 
   useEffect(() => {
     if (appUser.loginInfo) {
@@ -46,12 +46,12 @@ function MyPantryBar() {
     }
     // Navigate to login screen to login
     navigate('/');
-
     handleCloseUserMenu();
   };
 
   return (
     <AppBar position='static' data-testid='main-app-bar'>
+      {/* Hide links if user not logged in */}
       <div style={{ visibility: true ? 'visible' : 'hidden' }}>
         <Grid
           className={classes['main-app-bar-container']}
@@ -127,7 +127,6 @@ function MyPantryBar() {
                     {avatarMenu.isLoggedIn ? 'Logout' : 'Login'}
                   </Typography>
                 </MenuItem>
-                {/* ))} */}
               </Menu>
             </div>
           </Grid>

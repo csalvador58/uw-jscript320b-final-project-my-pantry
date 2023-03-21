@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Box, Button, Grid, TextField } from '@mui/material';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
+import RecipeCard from '../components/RecipeCard';
 import { useNavigate } from 'react-router-dom';
-import UserContext from '../store/UserContext';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-import classes from '../css/RecipesPage.module.css';
-import recipesObj from '../store/respExample.json';
-import RecipeCard from '../components/RecipeCard';
 import { v4 as uuidv4 } from 'uuid';
+import UserContext from '../store/UserContext';
+import { Box, Button, Grid, TextField } from '@mui/material';
 import { makeCORSRequest } from '../script/CorsRequest';
+import recipesObj from '../store/respExample.json';
+import classes from '../css/RecipesPage.module.css';
 
 const BASE_URL = 'https://api.edamam.com/api/recipes/v2';
 const API_KEY = process.env.REACT_APP_EDAMAM_RECIPE_API;
@@ -32,14 +32,15 @@ function RecipesPage() {
   const [newData, setNewData] = useState(recipesObj);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!appUser.loginInfo) {
-      navigate('/');
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [appUser.loginInfo]);
+  const navigateToHome = useCallback(() => navigate('/'), [navigate]);
 
   useEffect(() => {
+    if (!appUser.loginInfo) navigateToHome();
+  }, [appUser.loginInfo, navigateToHome]);
+
+  useEffect(() => {
+    console.log('appUser.loginInfo');
+    console.log(appUser.loginInfo);
     if (appUser.loginInfo) {
       console.log('Loading recipes from local...');
       try {
@@ -122,70 +123,6 @@ function RecipesPage() {
         .catch((error) => {
           console.log('error', error.status, error.statusText);
         });
-
-      // fetch(url, {
-      //   method: 'GET',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //     'Access-Control-Allow-Origin': '*',
-      //   },
-      // })
-      // .then((response) => response.json())
-      // .then((data) => {
-      //   console.log(data);
-
-      //   try {
-      //     // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
-      //     if (data[0].error) {
-      //       console.log(
-      //         'Error is present from fetch. Data will not be saved.'
-      //       );
-      //     }
-      //   } catch (info) {
-      //     setNewData(data);
-
-      //     const recipesData = JSON.stringify(data);
-      //     localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, recipesData);
-      //   }
-      // })
-      // .catch((e) => {
-      //   if (e instanceof SyntaxError) {
-      //     console.log(e, true);
-      //   } else {
-      //     console.log(e, false);
-      //   }
-      // });
-
-      //***************************************************************************************
-
-      //   const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
-
-      // fetch(url)
-      //   .then(function (data) {
-      //     return data.json();
-      //   })
-      //   .then(function (responseJson) {
-      //     try {
-      //       // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
-      //       if (responseJson[0].error) {
-      //         console.log(
-      //           'Error is present from fetch. Data will not be saved.'
-      //         );
-      //       }
-      //     } catch (info) {
-      //       setNewData(responseJson);
-
-      //       const data = JSON.stringify(responseJson);
-      //       localStorage.setItem(LOCAL_STORE_TEMP_RECIPES, data);
-      //     }
-      //   })
-      //   .catch((e) => {
-      //     if (e instanceof SyntaxError) {
-      //       console.log(e, true);
-      //     } else {
-      //       console.log(e, false);
-      //     }
-      //   });
 
       resetFormik();
     },

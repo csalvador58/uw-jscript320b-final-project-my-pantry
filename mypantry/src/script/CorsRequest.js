@@ -23,7 +23,7 @@ export const makeCORSRequest = (method, url) => {
     // xhr.withCredentials = true;
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.setRequestHeader('Accept-Language', 'en');
-    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 
     // Onclude body msg if needed
     xhr.send();

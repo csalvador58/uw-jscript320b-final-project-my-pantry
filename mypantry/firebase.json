@@ -7,13 +7,7 @@
     "headers": [
       {
         "source": "/service-worker.js",
-        "headers": [
-          { "key": "Cache-Control", "value": "no-cache" },
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          }
-        ]
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
       }
     ],
     "public": "build",

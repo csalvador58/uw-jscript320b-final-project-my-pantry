@@ -53,7 +53,7 @@ function Login() {
               className={classes['name-field']}
               id='username'
               name='username'
-              label='Enter your username'
+              label='Enter a username'
               InputProps={{
                 inputProps: {
                   style: { textAlign: 'center' },

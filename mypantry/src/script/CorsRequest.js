@@ -20,7 +20,7 @@ export const makeCORSRequest = (method, url) => {
       });
     };
 
-    xhr.withCredentials = true;
+    // xhr.withCredentials = true;
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.setRequestHeader('Accept-Language', 'en');
     xhr.setRequestHeader('Access-Control-Allow-Origin', '*');

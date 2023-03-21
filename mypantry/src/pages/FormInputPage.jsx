@@ -236,7 +236,7 @@ function FormInputPage() {
                 ))}
               </TextField>
             </FormControl>
-            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ flexGrow: 1, margin: 2 }} />
             <FormControl>
               <FormLabel id='isFavorite'>Favorite?</FormLabel>
               <RadioGroup

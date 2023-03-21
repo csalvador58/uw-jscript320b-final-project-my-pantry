@@ -53,7 +53,7 @@ function MyPantryBar() {
           <Grid item xs={2} sm={2} md={3}>
             {/* Left Side icon */}
             <div className={classes['align-left']}>
-              <Link to='/' className={classes.link}>
+              <Link to='/home' className={classes.link}>
                 <IconButton
                   size='large'
                   aria-label='Return to home page'

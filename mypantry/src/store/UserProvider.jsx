@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { updatePantryHandler } from './myFunctions';
 
 function UserProvider({ children }) {
-
   const [userState, setUserState] = useState('');
   const [pantryArray, setPantryArray] = useState([]);
   const [editData, setEditData] = useState({});
@@ -29,9 +28,8 @@ function UserProvider({ children }) {
   };
 
   const updateEditState = (obj) => {
-    setEditData(obj)
-  }
-
+    setEditData(obj);
+  };
 
   const storedUserContext = {
     loginInfo: userState,
@@ -42,7 +40,6 @@ function UserProvider({ children }) {
     updateEditData: updateEditState,
     favorite: recipeArray,
     toggleFav: updateFavorites,
-    
   };
 
   return (

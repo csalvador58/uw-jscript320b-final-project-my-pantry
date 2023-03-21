@@ -25,7 +25,7 @@ import {
   rectSwappingStrategy,
   SortableContext,
 } from '@dnd-kit/sortable';
-import { Button, Grid } from '@mui/material';
+import { Button, Fade, Grid } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import classes from '../css/PantryPage.module.css';
 
@@ -185,9 +185,11 @@ function PantryPage() {
           <SortableContext items={displayIds} strategy={rectSwappingStrategy}>
             <Grid container columns={12}>
               {displayIds.map((item) => (
-                <Grid item key={item} xs={6}>
-                  <ListItemCard id={item} />
-                </Grid>
+                <Fade key={item} in={true} timeout={1000}>
+                  <Grid item xs={6} sm={4} md={3}>
+                    <ListItemCard id={item} />
+                  </Grid>
+                </Fade>
               ))}
             </Grid>
           </SortableContext>

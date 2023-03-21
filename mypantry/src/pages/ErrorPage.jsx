@@ -18,8 +18,11 @@ function ErrorPage() {
   return (
     <div data-testid='error-page' className={classes['error-page-container']}>
       <p className={classes['error-info']}>
-        An error has occurred. Click <Link to='/'> here </Link> or refresh page
-        to return to the login.
+        An error has occurred. Click{' '}
+        <Link to='/'>
+          <span style={{ color: 'blue' }}> here</span>{' '}
+        </Link>{' '}
+        or refresh page to return to the login.
       </p>
     </div>
   );

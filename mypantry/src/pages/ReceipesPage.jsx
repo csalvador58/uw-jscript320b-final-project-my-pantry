@@ -3,7 +3,7 @@ import RecipeCard from '../components/RecipeCard';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import UserContext from '../store/UserContext';
-import { Box, Grid } from '@mui/material';
+import { Box, Fade, Grid } from '@mui/material';
 import recipesObj from '../store/respExample.json';
 import classes from '../css/RecipesPage.module.css';
 import RecipeForm from '../components/RecipeForm';
@@ -74,17 +74,11 @@ function RecipesPage() {
             {newData &&
               newData.hits.map((recipe) => {
                 return (
-                  <Grid
-                    key={uuidv4()}
-                    item
-                    xs={12}
-                    sm={6}
-                    md={4}
-                    p={1}
-                    zeroMinWidth
-                  >
-                    <RecipeCard food={recipe} />
-                  </Grid>
+                  <Fade key={uuidv4()} in={true} timeout={1000}>
+                    <Grid item xs={12} sm={6} md={4} p={1} zeroMinWidth>
+                      <RecipeCard food={recipe} />
+                    </Grid>
+                  </Fade>
                 );
               })}
           </Grid>

@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import FadeCard from './FadeCard';
 import { v4 as uuidv4 } from 'uuid';
 import { styled } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
@@ -76,77 +75,82 @@ function RecipeCard({ food }) {
   }
 
   return (
-    <FadeCard>
-      <div className={classes['recipe-card-container']}>
-        <CardHeader
-          className={classes['recipe-card-header']}
-          avatar={
-            <Avatar
-              sx={{ bgcolor: red[500] }}
-              aria-label='cuisine first letter'
-            >
-              {food.recipe.cuisineType[0].slice(0, 1).toUpperCase()}
-            </Avatar>
-          }
-          title={food.recipe.label}
-          // subheader={food.recipe.source}
-        />
+    <div className={classes['recipe-card-container']}>
+      <CardHeader
+        className={classes['recipe-card-header']}
+        avatar={
+          <Avatar sx={{ bgcolor: red[500] }} aria-label='cuisine first letter'>
+            {food.recipe.cuisineType[0].slice(0, 1).toUpperCase()}
+          </Avatar>
+        }
+        title={food.recipe.label}
+        // subheader={food.recipe.source}
+      />
 
-        <CardMedia
-          component='img'
-          height='194'
-          image={food.recipe.images.REGULAR.url}
-          alt={food.recipe.label}
-        />
-        <CardActions disableSpacing>
-          <IconButton aria-label='add to favorites' onClick={favoriteHandler}>
-            <FavoriteIcon color={favIcon} />
-          </IconButton>
-          <a className={classes.source} href={food.recipe.url}>
-            {food.recipe.source}
-          </a>
-          <ExpandMore
-            expand={expanded}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label='show more'
+      <CardMedia
+        component='img'
+        height='194'
+        image={food.recipe.images.REGULAR.url}
+        alt={food.recipe.label}
+      />
+      <CardActions disableSpacing>
+        <IconButton aria-label='add to favorites' onClick={favoriteHandler}>
+          <FavoriteIcon color={favIcon} />
+        </IconButton>
+        <a
+          className={classes.source}
+          href={food.recipe.url}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          {food.recipe.source}
+        </a>
+        <ExpandMore
+          expand={expanded}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label='show more'
+        >
+          <ExpandMoreIcon />
+        </ExpandMore>
+      </CardActions>
+      <Collapse in={expanded} timeout='auto' unmountOnExit>
+        <CardContent className={classes['recipe-content-container']}>
+          <a
+            className={classes.edamam}
+            href={food.recipe.shareAs}
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <ExpandMoreIcon />
-          </ExpandMore>
-        </CardActions>
-        <Collapse in={expanded} timeout='auto' unmountOnExit>
-          <CardContent className={classes['recipe-content-container']}>
-            <a className={classes.edamam} href={food.recipe.shareAs}>
-              View Edamam Nutritional Details
-            </a>
-            <p>
-              <span className={classes.bold}>Cuisine:</span>{' '}
-              {food.recipe.cuisineType[0].slice(0, 1).toUpperCase() +
-                food.recipe.cuisineType[0].slice(1)}
-            </p>
-            <p>
-              <span className={classes.bold}>Meal Type:</span>{' '}
-              {food.recipe.mealType[0].slice(0, 1).toUpperCase() +
-                food.recipe.mealType[0].slice(1)}
-            </p>
-            <p>
-              <span className={classes.bold}>Calories:</span>{' '}
-              {Math.round(food.recipe.calories)}
-            </p>
-            <p>
-              <span className={classes.bold}>Ingredients List:</span>{' '}
-            </p>
-            {food.recipe.ingredientLines.map((ingredient) => {
-              return (
-                <p className={classes['ingredients-list']} key={uuidv4()}>
-                  {ingredient}
-                </p>
-              );
-            })}
-          </CardContent>
-        </Collapse>
-      </div>
-    </FadeCard>
+            View Edamam Nutritional Details
+          </a>
+          <p>
+            <span className={classes.bold}>Cuisine:</span>{' '}
+            {food.recipe.cuisineType[0].slice(0, 1).toUpperCase() +
+              food.recipe.cuisineType[0].slice(1)}
+          </p>
+          <p>
+            <span className={classes.bold}>Meal Type:</span>{' '}
+            {food.recipe.mealType[0].slice(0, 1).toUpperCase() +
+              food.recipe.mealType[0].slice(1)}
+          </p>
+          <p>
+            <span className={classes.bold}>Calories:</span>{' '}
+            {Math.round(food.recipe.calories)}
+          </p>
+          <p>
+            <span className={classes.bold}>Ingredients List:</span>{' '}
+          </p>
+          {food.recipe.ingredientLines.map((ingredient) => {
+            return (
+              <p className={classes['ingredients-list']} key={uuidv4()}>
+                {ingredient}
+              </p>
+            );
+          })}
+        </CardContent>
+      </Collapse>
+    </div>
   );
 }
 

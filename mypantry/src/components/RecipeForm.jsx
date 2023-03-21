@@ -47,13 +47,13 @@ function RecipeForm({ classes, setNewData }) {
 
       //********************************************************************************
       // const url = `https://cors-anywhere.herokuapp.com/${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
-      const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
+      const url = `${BASE_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${API_KEY}${exclude}&random=true&field=label&field=images&field=source&field=url&field=shareAs&field=ingredientLines&field=calories&field=cuisineType&field=mealType&field=dishType`;
 
       makeCORSRequest('GET', url)
         // .then((response) => response.json())
         .then((response) => {
           const data = JSON.parse(response);
-          console.log(data);
+          // console.log(data);
           try {
             // Error check test. If the attempt to read the error field in responseJson fails, data from API is good and catch block will save data.
             if (data[0].error) {

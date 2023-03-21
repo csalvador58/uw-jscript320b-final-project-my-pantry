@@ -34,6 +34,7 @@ function ListItemCard({ id }) {
           type: itemData.type,
           qty: itemData.qty,
           unit: itemData.unit,
+          fav: itemData.favorite,
         },
       ],
     });

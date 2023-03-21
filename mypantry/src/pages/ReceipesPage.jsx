@@ -75,7 +75,7 @@ function RecipesPage() {
               newData.hits.map((recipe) => {
                 return (
                   <Fade key={uuidv4()} in={true} timeout={1000}>
-                    <Grid item xs={12} sm={6} md={4} p={1} zeroMinWidth>
+                    <Grid  item xs={12} sm={6} md={4} p={1} zeroMinWidth>
                       <RecipeCard food={recipe} />
                     </Grid>
                   </Fade>

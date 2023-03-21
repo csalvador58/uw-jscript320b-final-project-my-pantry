@@ -140,16 +140,16 @@ function RecipesPage() {
   return (
     <>
       <Box data-testid='form-input' className={classes['form-input-container']}>
-        <form onSubmit={formik.handleSubmit}>
-          <Grid
-            className={classes['form-input-grid']}
-            container
-            spacing={2}
-            direction='column'
-            columns={12}
-          >
-            <h2 className={classes.title}>Find A Recipe</h2>
+        <Grid
+          className={classes['form-input-grid']}
+          container
+          spacing={2}
+          direction='column'
+          columns={12}
+        >
+          <h2 className={classes.title}>Find A Recipe</h2>
 
+          <form onSubmit={formik.handleSubmit}>
             <Grid item xs={12}>
               <TextField
                 fullWidth
@@ -205,26 +205,27 @@ function RecipesPage() {
                 </Button>
               </div>
             </Grid>
-            <Grid container item xs={12}>
-              {newData &&
-                newData.hits.map((recipe) => {
-                  return (
-                    <Grid
-                      key={uuidv4()}
-                      item
-                      xs={12}
-                      sm={6}
-                      md={4}
-                      p={1}
-                      zeroMinWidth
-                    >
-                      <RecipeCard food={recipe} />
-                    </Grid>
-                  );
-                })}
-            </Grid>
+          </form>
+
+          <Grid container item xs={12}>
+            {newData &&
+              newData.hits.map((recipe) => {
+                return (
+                  <Grid
+                    key={uuidv4()}
+                    item
+                    xs={12}
+                    sm={6}
+                    md={4}
+                    p={1}
+                    zeroMinWidth
+                  >
+                    <RecipeCard food={recipe} />
+                  </Grid>
+                );
+              })}
           </Grid>
-        </form>
+        </Grid>
       </Box>
     </>
   );

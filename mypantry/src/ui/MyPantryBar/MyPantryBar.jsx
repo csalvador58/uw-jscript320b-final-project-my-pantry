@@ -1,24 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import NavLinks from './NavLinks';
-import UserContext from '../store/UserContext';
-import {
-  AppBar,
-  Avatar,
-  Grid,
-  IconButton,
-  Menu,
-  MenuItem,
-  Typography,
-} from '@mui/material/';
+import NavLinks from '../NavLinks';
+import UserContext from '../../store/UserContext';
+import { AppBar, Avatar, Grid, IconButton } from '@mui/material/';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
-import classes from '../css/MyPantryBar.module.css';
+import classes from '../../css/MyPantryBar.module.css';
+import MyPantryMenu from './MyPantryMenu';
 
 function MyPantryBar() {
   const [avatarMenu, setAvatarMenu] = useState({ name: '', isLoggedIn: '' });
   const appUser = useContext(UserContext);
   const navigate = useNavigate();
-
 
   useEffect(() => {
     if (appUser.loginInfo) {
@@ -59,6 +51,7 @@ function MyPantryBar() {
           columns={12}
         >
           <Grid item xs={2} sm={2} md={3}>
+            {/* Left Side icon */}
             <div className={classes['align-left']}>
               <Link to='/' className={classes.link}>
                 <IconButton
@@ -80,6 +73,7 @@ function MyPantryBar() {
             </h1>
           </Grid>
           <Grid item xs={2} sm={2} md={3}>
+            {/* Right side avatar */}
             <div className={classes['align-right']}>
               <IconButton
                 onClick={
@@ -99,35 +93,12 @@ function MyPantryBar() {
                 </Avatar>
               </IconButton>
 
-              <Menu
-                sx={{ mt: '45px' }}
-                id='menu-appbar'
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {avatarMenu.isLoggedIn && (
-                  <MenuItem key={avatarMenu.name} onClick={handleCloseUserMenu}>
-                    <Typography textAlign='center'>
-                      Current User: {avatarMenu.name}
-                    </Typography>
-                  </MenuItem>
-                )}
-                <MenuItem key={'login-logout'} onClick={handleLoginLogout}>
-                  <Typography textAlign='center'>
-                    {avatarMenu.isLoggedIn ? 'Logout' : 'Login'}
-                  </Typography>
-                </MenuItem>
-              </Menu>
+              <MyPantryMenu
+                anchorElUser={anchorElUser}
+                avatarMenu={avatarMenu}
+                handleCloseUserMenu={handleCloseUserMenu}
+                handleLoginLogout={handleLoginLogout}
+              />
             </div>
           </Grid>
         </Grid>

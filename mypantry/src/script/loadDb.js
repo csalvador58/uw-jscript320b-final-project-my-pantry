@@ -9,7 +9,7 @@ import {
 import { v4 as uuidv4 } from 'uuid';
 import { db } from '../firebase';
 
-const UID = 'test';
+const UID = 'test2';
 const initializeDB = [
   {
     type: 'add',
@@ -169,6 +169,66 @@ const initializeDB = [
       pantryObj: {
         name: 'vinegar',
         type: 'condiment',
+        qty: 1,
+        unit: 'piece',
+        favorite: false,
+        id: uuidv4(),
+      },
+    },
+  },
+  {
+    type: 'add',
+    data: {
+      uid: UID,
+      collection: 'pantry',
+      pantryObj: {
+        name: 'rice',
+        type: 'grain',
+        qty: 10,
+        unit: 'pound',
+        favorite: false,
+        id: uuidv4(),
+      },
+    },
+  },
+  {
+    type: 'add',
+    data: {
+      uid: UID,
+      collection: 'pantry',
+      pantryObj: {
+        name: 'cereal',
+        type: 'grain',
+        qty: 1,
+        unit: 'piece',
+        favorite: false,
+        id: uuidv4(),
+      },
+    },
+  },
+  {
+    type: 'add',
+    data: {
+      uid: UID,
+      collection: 'pantry',
+      pantryObj: {
+        name: 'bread',
+        type: 'grain',
+        qty: 1,
+        unit: 'piece',
+        favorite: true,
+        id: uuidv4(),
+      },
+    },
+  },
+  {
+    type: 'add',
+    data: {
+      uid: UID,
+      collection: 'pantry',
+      pantryObj: {
+        name: 'salad',
+        type: 'vegetable',
         qty: 1,
         unit: 'piece',
         favorite: false,

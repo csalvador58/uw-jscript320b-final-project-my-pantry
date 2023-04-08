@@ -1,7 +1,139 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10323405&assignment_repo_type=AssignmentRepo)
-# 320-Final-Project
+<a name="readme-top"></a>
 
-Project requirements:
-* This criterion is linked to a Learning OutcomeReact application code published to GitHub
-* Application is deployed
-* This criterion is linked to a Learning OutcomeApplication is functional and provides an experience to the user
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+<br/>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+As of 2023, the <cite>[US Bureau of Labor Statistics][1]</cite> data shows the annual inflation is currently more than double the average prior to 2021.  <cite>[Forberg 2022][2]</cite> points out that one-third of the food that families buy every year makes it way into the garbage.  Now is not the time to be wasting food with the uncertainties of the job market and rising food prices.  
+
+Have you found yourself accidentally buying extra perishables and now forcing you to overcook.  Are you generally using a note app on your phone to track your grocery list?  Need something that can do a little more like help track when a favorite pantry item is getting low.  My Pantry is convenient as your notepad that just does a little more.  That "little more" will help reduce your food waste and save you money at the grocery.  With an easy to use interface, you can track your favorite pantry items and recipes all in one site - no app downloads necessary.
+
+<br/>
+
+![Mobile views of the Login, Pantry, Recipe, and Edit pages.](mypantry/MyPantry.png)
+<br/>
+
+### Dependencies
+
+* React
+* React Router Dom
+* Firebase
+* Formik
+* Material UI
+* React DND
+* API for Recipes (www.edamam.com)
+
+<br/>
+
+### Project Structure
+```
+└── src
+    ├── App.css
+    ├── App.jsx
+    ├── App.test.js
+    ├── __test__
+    │   ├── FormInputPage.test.js
+    │   ├── LoginPage.test.js
+    │   ├── MyPantryBar.test.js
+    │   ├── NavLinks.test.js
+    │   ├── PantryPage.test.js
+    │   └── RecipesPage.test.js
+    ├── components
+    │   ├── FadeCard.jsx
+    │   ├── RecipeCard.jsx
+    │   ├── RecipeForm.jsx
+    │   ├── RootLayout.jsx
+    │   └── SearchBar.jsx
+    ├── css
+    │   ├── ErrorPage.module.css
+    │   ├── FadeCard.module.css
+    │   ├── FormInputPage.module.css
+    │   ├── ListItemCard.module.css
+    │   ├── LoginPage.module.css
+    │   ├── MyPantryBar.module.css
+    │   ├── NavLinks.module.css
+    │   ├── PantryPage.module.css
+    │   ├── RecipeCard.module.css
+    │   ├── RecipesPage.module.css
+    │   └── RootLayout.module.css
+    ├── firebase.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    ├── pages
+    │   ├── ErrorPage.jsx
+    │   ├── FormInputPage.jsx
+    │   ├── LoginPage.jsx
+    │   ├── PantryPage.jsx
+    │   └── ReceipesPage.jsx
+    ├── reportWebVitals.js
+    ├── script
+    │   ├── CorsRequest.js
+    │   └── loadDb.js
+    ├── setupTests.js
+    ├── store
+    │   ├── ColorModeContext.jsx
+    │   ├── UserContext.jsx
+    │   ├── UserProvider.jsx
+    │   ├── ex.json
+    │   ├── foods.json
+    │   ├── myFunctions.js
+    │   ├── respExample.json
+    │   └── units.json
+    └── ui
+        ├── ListCard
+        │   ├── FoodTypeIcons.jsx
+        │   └── ListItemCard.jsx
+        ├── MyPantryBar
+        │   ├── MyPantryBar.jsx
+        │   └── MyPantryMenu.jsx
+        └── NavLinks.jsx
+```
+
+<br>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+npm install --legacy-peer-deps && npm start.
+
+
+### Prerequisites
+Web browser and code editor.
+
+<br/>
+
+
+<!-- CONTACT -->
+## Contact
+
+Chris Salvador
+
+Project Link: [https://github.com/csalvador58/uw-jscript320b-final-project-my-pantry](https://github.com/csalvador58/uw-jscript320b-final-project-my-pantry)
+
+<br/>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -8,6 +8,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
       </ul>
     </li>
     <li>
@@ -46,6 +47,73 @@ Have you found yourself accidentally buying extra perishables and now forcing yo
 * API for Recipes (www.edamam.com)
 
 <br/>
+
+### Project Structure
+```
+└── src
+    ├── App.css
+    ├── App.jsx
+    ├── App.test.js
+    ├── __test__
+    │   ├── FormInputPage.test.js
+    │   ├── LoginPage.test.js
+    │   ├── MyPantryBar.test.js
+    │   ├── NavLinks.test.js
+    │   ├── PantryPage.test.js
+    │   └── RecipesPage.test.js
+    ├── components
+    │   ├── FadeCard.jsx
+    │   ├── RecipeCard.jsx
+    │   ├── RecipeForm.jsx
+    │   ├── RootLayout.jsx
+    │   └── SearchBar.jsx
+    ├── css
+    │   ├── ErrorPage.module.css
+    │   ├── FadeCard.module.css
+    │   ├── FormInputPage.module.css
+    │   ├── ListItemCard.module.css
+    │   ├── LoginPage.module.css
+    │   ├── MyPantryBar.module.css
+    │   ├── NavLinks.module.css
+    │   ├── PantryPage.module.css
+    │   ├── RecipeCard.module.css
+    │   ├── RecipesPage.module.css
+    │   └── RootLayout.module.css
+    ├── firebase.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    ├── pages
+    │   ├── ErrorPage.jsx
+    │   ├── FormInputPage.jsx
+    │   ├── LoginPage.jsx
+    │   ├── PantryPage.jsx
+    │   └── ReceipesPage.jsx
+    ├── reportWebVitals.js
+    ├── script
+    │   ├── CorsRequest.js
+    │   └── loadDb.js
+    ├── setupTests.js
+    ├── store
+    │   ├── ColorModeContext.jsx
+    │   ├── UserContext.jsx
+    │   ├── UserProvider.jsx
+    │   ├── ex.json
+    │   ├── foods.json
+    │   ├── myFunctions.js
+    │   ├── respExample.json
+    │   └── units.json
+    └── ui
+        ├── ListCard
+        │   ├── FoodTypeIcons.jsx
+        │   └── ListItemCard.jsx
+        ├── MyPantryBar
+        │   ├── MyPantryBar.jsx
+        │   └── MyPantryMenu.jsx
+        └── NavLinks.jsx
+```
+
+<br>
 
 <!-- GETTING STARTED -->
 ## Getting Started

@@ -17,7 +17,7 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#recap">Recap</a></li>
   </ol>
 </details>
 <br/>
@@ -126,13 +126,22 @@ Web browser and code editor.
 
 <br/>
 
+<!-- Recap -->
+## Recap
 
-<!-- CONTACT -->
-## Contact
+This project was created for a Frontend course at [University of Washington - PCE](https://www.pce.uw.edu/). The intended requirements for the project was to build with the React library. This project started from the prior course [(view project here)](https://github.com/csalvador58/uw-jscript310b-final-project-my-pantry).  My continued plan for this project is to improve on the design as I continue through my Full-Stack program. Continue to follow my GitHub to see future versions of the app.
 
-Chris Salvador
+Some highlights in this project:
+- Designed with a mobile first approach
+- Included uses of React reusable components, Context, Routing
+- Touch, drag and drop friendly using React DND
+- Designed with Material-UI
+- Integration with a Food Recipe API
 
-Project Link: [https://github.com/csalvador58/uw-jscript320b-final-project-my-pantry](https://github.com/csalvador58/uw-jscript320b-final-project-my-pantry)
+My thoughts for improvement include:
+- Improve UX/UI by design reducing manual typing as much as possible
+- Include a backend and DB
+- Resolve CORs issue with Food Recipe API when deployed on Firebase
 
 <br/>
 

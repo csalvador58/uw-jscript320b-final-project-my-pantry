@@ -129,7 +129,7 @@ Web browser and code editor.
 <!-- Recap -->
 ## Recap
 
-This project was created for a Frontend course at [University of Washington - PCE](https://www.pce.uw.edu/). The intended requirements for the project was to build with the React library. This project started from the prior course [(view project here)](https://github.com/csalvador58/uw-jscript310b-final-project-my-pantry).  My continued plan for this project is to improve on the design as I continue through my Full-Stack program. Continue to follow my GitHub to see future versions of the app.
+This project was created for a Frontend course during the Full-Stack Development certificate program at [University of Washington - PCE](https://www.pce.uw.edu/). The intended requirements for the project was to build with the React library. This project started from the prior course [(view project here)](https://github.com/csalvador58/uw-jscript310b-final-project-my-pantry).  My continued plan for this project is to improve on the design as I continue through my Full-Stack program. This project is currently being upgraded [(view here for updates)](https://github.com/csalvador58/project-mypantry).
 
 Some highlights in this project:
 - Designed with a mobile first approach
